@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proyectos on camdax</title>
-    <link>http://www.example.com/categories/proyectos/</link>
+    <link>https://c4mdax.github.io/categories/proyectos/</link>
     <description>Recent content in Proyectos on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/categories/proyectos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://c4mdax.github.io/categories/proyectos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mi Proyecto Web</title>
-      <link>http://www.example.com/projects/project1/</link>
+      <link>https://c4mdax.github.io/projects/project1/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/projects/project1/</guid>
+      <guid>https://c4mdax.github.io/projects/project1/</guid>
       <description>&lt;h1 id=&#34;proyecto-web-con-hugo&#34;&gt;&#xA;  Proyecto Web con Hugo&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#proyecto-web-con-hugo&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Este es un proyecto web interactivo que he desarrollado utilizando &lt;strong&gt;Hugo&lt;/strong&gt;, un generador de sitios estáticos de alto rendimiento.&lt;/p&gt;&#xA;&lt;h2 id=&#34;descripción&#34;&gt;&#xA;  Descripción&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#descripci%c3%b3n&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Este proyecto web tiene como objetivo demostrar cómo Hugo puede ser usado para crear un sitio web rápido, eficiente y fácil de mantener. He configurado el sitio con una estructura de navegación básica, secciones de contenido dinámico y un tema personalizado para proporcionar una experiencia de usuario agradable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mi Proyecto Web</title>
-      <link>http://www.example.com/projects/project2/</link>
+      <link>https://c4mdax.github.io/projects/project2/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/projects/project2/</guid>
+      <guid>https://c4mdax.github.io/projects/project2/</guid>
       <description>&lt;h1 id=&#34;proyecto-web-con-hugo&#34;&gt;&#xA;  Proyecto Web con Hugo&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#proyecto-web-con-hugo&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Este es un proyecto web interactivo que he desarrollado utilizando &lt;strong&gt;Hugo&lt;/strong&gt;, un generador de sitios estáticos de alto rendimiento.&lt;/p&gt;&#xA;&lt;h2 id=&#34;descripción&#34;&gt;&#xA;  Descripción&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#descripci%c3%b3n&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Este proyecto web tiene como objetivo demostrar cómo Hugo puede ser usado para crear un sitio web rápido, eficiente y fácil de mantener. He configurado el sitio con una estructura de navegación básica, secciones de contenido dinámico y un tema personalizado para proporcionar una experiencia de usuario agradable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2: Ejemplo</title>
-      <link>http://www.example.com/posts/second/</link>
+      <link>https://c4mdax.github.io/posts/second/</link>
       <pubDate>Thu, 02 Jan 2025 14:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/second/</guid>
+      <guid>https://c4mdax.github.io/posts/second/</guid>
       <description>&lt;p&gt;Hace poco completé mi primer proyecto en Inteligencia Artificial. El objetivo era construir un modelo que predijera precios de casas con datos públicos.&lt;/p&gt;&#xA;&lt;h3 id=&#34;tecnologías-usadas&#34;&gt;&#xA;  Tecnologías usadas:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#tecnolog%c3%adas-usadas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 🐍&lt;/li&gt;&#xA;&lt;li&gt;Pandas y NumPy&lt;/li&gt;&#xA;&lt;li&gt;Scikit-Learn&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Estoy sorprendido por lo que se puede lograr con un poco de código y mucha curiosidad. 💡&lt;/p&gt;&#xA;&lt;p&gt;¿Quieres saber más? &lt;a href=&#34;../projects&#34; &gt;Consulta el proyecto aquí&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
