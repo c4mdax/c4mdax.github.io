@@ -1,0 +1,32 @@
+name: Deploy Hugo Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Puedes cambiar esto si tu rama principal no se llama "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.112.3'  # Cambia esto si usas una versión diferente de Hugo
+
+    - name: Build the site
+      run: hugo
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public  # La carpeta donde Hugo genera los archivos estáticos
+        branch: gh-pages  # La rama donde desplegarás el sitio
+        user_name: 'c4mdax'  # Tu nombre de usuario de GitHub
+        user_email: 'c4mdax@ciencias.unam.mx'  # Tu correo de GitHub
+
