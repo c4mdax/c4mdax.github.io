@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on camdax</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on camdax</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jan 2025 15:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 1: Ejemplo</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Fri, 03 Jan 2025 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>&lt;p&gt;¡Hola a todos! 👋&lt;/p&gt;&#xA;&lt;p&gt;Este es mi primer post en español. Estoy emocionado de compartir con ustedes mis proyectos, pensamientos y aprendizajes en el mundo de la Inteligencia Artificial y la Ciencia de la Computación.&lt;/p&gt;&#xA;&lt;p&gt;Sigue explorando para conocer más sobre mí y lo que hago. 🚀&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../about&#34; &gt;Leer más sobre mí&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post 2: Ejemplo</title>
+      <link>http://localhost:1313/posts/second/</link>
+      <pubDate>Thu, 02 Jan 2025 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/second/</guid>
+      <description>&lt;p&gt;Hace poco completé mi primer proyecto en Inteligencia Artificial. El objetivo era construir un modelo que predijera precios de casas con datos públicos.&lt;/p&gt;&#xA;&lt;h3 id=&#34;tecnologías-usadas&#34;&gt;&#xA;  Tecnologías usadas:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#tecnolog%c3%adas-usadas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 🐍&lt;/li&gt;&#xA;&lt;li&gt;Pandas y NumPy&lt;/li&gt;&#xA;&lt;li&gt;Scikit-Learn&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Estoy sorprendido por lo que se puede lograr con un poco de código y mucha curiosidad. 💡&lt;/p&gt;&#xA;&lt;p&gt;¿Quieres saber más? &lt;a href=&#34;../projects&#34; &gt;Consulta el proyecto aquí&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post 3: Ejemplo</title>
+      <link>http://localhost:1313/posts/third/</link>
+      <pubDate>Wed, 01 Jan 2025 13:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/third/</guid>
+      <description>&lt;p&gt;Aprender Ciencia de la Computación puede parecer intimidante, pero con estos consejos, ¡estarás en el camino correcto! 🎓&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comienza con fundamentos sólidos&lt;/strong&gt;: Aprende algoritmos, estructuras de datos y matemáticas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Practica constantemente&lt;/strong&gt;: Resuelve problemas en plataformas como &lt;a href=&#34;https://leetcode.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LeetCode&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Construye proyectos&lt;/strong&gt;: No hay mejor manera de aprender que creando algo.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lee documentación&lt;/strong&gt;: Te ayudará a entender herramientas y bibliotecas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sé constante&lt;/strong&gt;: Aprende algo nuevo cada día, por pequeño que sea.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;¡Espero que estos consejos te sirvan en tu camino! 🚀&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

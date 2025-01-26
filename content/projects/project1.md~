@@ -1,0 +1,27 @@
+# Mis Proyectos
+
+Aquí encontrarás una lista de los proyectos en los que he trabajado. Cada uno de estos proyectos refleja mis habilidades en desarrollo web, Machine Learning, y más.
+
+## 1. **API de Gestión de Notas de Estudiantes**
+   - **Descripción**: API backend para gestionar estudiantes y sus notas. Utiliza **Flask** para el backend y **SQLite** para la base de datos. Incluye autenticación con JWT.
+   - **Tecnologías**: Python, Flask, SQLAlchemy, JWT
+   - **Repositorio**: [Enlace al repositorio](https://github.com/tu-usuario/api-notas-estudiantes)
+   - **Enlace de demo**: [Enlace a la demo](https://demo-api-notas-estudiantes.com)
+
+## 2. **Sistema de Recomendación de Películas**
+   - **Descripción**: Un sistema de recomendación basado en filtrado colaborativo para sugerir películas. Usé técnicas de **Machine Learning** con **scikit-learn**.
+   - **Tecnologías**: Python, scikit-learn, pandas
+   - **Repositorio**: [Enlace al repositorio](https://github.com/tu-usuario/sistema-recomendacion)
+   - **Enlace de demo**: [Enlace a la demo](https://demo-recomendacion-peliculas.com)
+
+## 3. **Aplicación de Predicción del Clima**
+   - **Descripción**: Una aplicación que predice el clima usando modelos de Machine Learning y datos de APIs meteorológicas en tiempo real.
+   - **Tecnologías**: Python, Flask, APIs Meteorológicas, ML
+   - **Repositorio**: [Enlace al repositorio](https://github.com/tu-usuario/prediccion-clima)
+   - **Enlace de demo**: [Enlace a la demo](https://demo-prediccion-clima.com)
+
+## 4. **Juego de Adivinanza de Números**
+   - **Descripción**: Un juego interactivo donde el usuario debe adivinar un número generado aleatoriamente, creado con **JavaScript** y **HTML5**.
+   - **Tecnologías**: JavaScript, HTML5, CSS3
+   - **Repositorio**: [Enlace al repositorio](https://github.com/tu-usuario/juego-adivinanza)
+   - **Enlace de demo**: [Enlace a la demo](https://demo-juego-adivinanza.com)
