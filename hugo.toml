@@ -1,5 +1,5 @@
 baseURL = "https://c4mdax.github.io/"
-title = "Luis Angel"
+title = "Luis Angel Moreno Delgado"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -153,7 +153,7 @@ languageName = "🇺🇸"
 title = "camdax"
 
 [languages.en.params]
-author = "Luis Angel"
+author = "Luis Angel Moreno Delgado"
 info = "Computer Science and AI student"
 keywords = "personal, ai, ml, backend"
 
