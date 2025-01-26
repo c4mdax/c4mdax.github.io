@@ -2,59 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>camdax</title>
-    <link>https://c4mdax.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jan 2025 15:00:00 +0000</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 15:06:03 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Catsup</title>
+      <link>http://localhost:1313/posts/catsup/</link>
+      <pubDate>Sun, 26 Jan 2025 15:06:03 -0600</pubDate>
+      <guid>http://localhost:1313/posts/catsup/</guid>
+      <description>&lt;p&gt;Me alegro que ya puedas comer comidita rica yeni&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Post 1: Ejemplo</title>
-      <link>https://c4mdax.github.io/posts/first/</link>
+      <link>http://localhost:1313/posts/first/</link>
       <pubDate>Fri, 03 Jan 2025 15:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/posts/first/</guid>
+      <guid>http://localhost:1313/posts/first/</guid>
       <description>&lt;p&gt;¡Hola a todos! 👋&lt;/p&gt;&#xA;&lt;p&gt;Este es mi primer post en español. Estoy emocionado de compartir con ustedes mis proyectos, pensamientos y aprendizajes en el mundo de la Inteligencia Artificial y la Ciencia de la Computación.&lt;/p&gt;&#xA;&lt;p&gt;Sigue explorando para conocer más sobre mí y lo que hago. 🚀&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../about&#34; &gt;Leer más sobre mí&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Prueba 1</title>
+      <link>http://localhost:1313/posts/probando1/</link>
+      <pubDate>Fri, 03 Jan 2025 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/probando1/</guid>
+      <description>&lt;p&gt;Post de prueba&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About</title>
-      <link>https://c4mdax.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 03 Jan 2025 10:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;&#xA;  About Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Hi I&amp;rsquo;m Luis Angel. I&amp;rsquo;m a Computer Science student since 2023,&lt;/p&gt;&#xA;&lt;p&gt;Feel free to connect with me on &lt;a href=&#34;https://github.com/johndoe&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; or &lt;a href=&#34;https://www.linkedin.com/in/johndoe/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mi Proyecto Web</title>
-      <link>https://c4mdax.github.io/projects/project1/</link>
+      <link>http://localhost:1313/projects/project1/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/projects/project1/</guid>
+      <guid>http://localhost:1313/projects/project1/</guid>
       <description>&lt;h1 id=&#34;proyecto-web-con-hugo&#34;&gt;&#xA;  Proyecto Web con Hugo&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#proyecto-web-con-hugo&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Este es un proyecto web interactivo que he desarrollado utilizando &lt;strong&gt;Hugo&lt;/strong&gt;, un generador de sitios estáticos de alto rendimiento.&lt;/p&gt;&#xA;&lt;h2 id=&#34;descripción&#34;&gt;&#xA;  Descripción&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#descripci%c3%b3n&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Este proyecto web tiene como objetivo demostrar cómo Hugo puede ser usado para crear un sitio web rápido, eficiente y fácil de mantener. He configurado el sitio con una estructura de navegación básica, secciones de contenido dinámico y un tema personalizado para proporcionar una experiencia de usuario agradable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mi Proyecto Web</title>
-      <link>https://c4mdax.github.io/projects/project2/</link>
+      <link>http://localhost:1313/projects/project2/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/projects/project2/</guid>
+      <guid>http://localhost:1313/projects/project2/</guid>
       <description>&lt;h1 id=&#34;proyecto-web-con-hugo&#34;&gt;&#xA;  Proyecto Web con Hugo&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#proyecto-web-con-hugo&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Este es un proyecto web interactivo que he desarrollado utilizando &lt;strong&gt;Hugo&lt;/strong&gt;, un generador de sitios estáticos de alto rendimiento.&lt;/p&gt;&#xA;&lt;h2 id=&#34;descripción&#34;&gt;&#xA;  Descripción&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#descripci%c3%b3n&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Este proyecto web tiene como objetivo demostrar cómo Hugo puede ser usado para crear un sitio web rápido, eficiente y fácil de mantener. He configurado el sitio con una estructura de navegación básica, secciones de contenido dinámico y un tema personalizado para proporcionar una experiencia de usuario agradable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2: Ejemplo</title>
-      <link>https://c4mdax.github.io/posts/second/</link>
+      <link>http://localhost:1313/posts/second/</link>
       <pubDate>Thu, 02 Jan 2025 14:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/posts/second/</guid>
+      <guid>http://localhost:1313/posts/second/</guid>
       <description>&lt;p&gt;Hace poco completé mi primer proyecto en Inteligencia Artificial. El objetivo era construir un modelo que predijera precios de casas con datos públicos.&lt;/p&gt;&#xA;&lt;h3 id=&#34;tecnologías-usadas&#34;&gt;&#xA;  Tecnologías usadas:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#tecnolog%c3%adas-usadas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 🐍&lt;/li&gt;&#xA;&lt;li&gt;Pandas y NumPy&lt;/li&gt;&#xA;&lt;li&gt;Scikit-Learn&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Estoy sorprendido por lo que se puede lograr con un poco de código y mucha curiosidad. 💡&lt;/p&gt;&#xA;&lt;p&gt;¿Quieres saber más? &lt;a href=&#34;../projects&#34; &gt;Consulta el proyecto aquí&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 3: Ejemplo</title>
-      <link>https://c4mdax.github.io/posts/third/</link>
+      <link>http://localhost:1313/posts/third/</link>
       <pubDate>Wed, 01 Jan 2025 13:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/posts/third/</guid>
+      <guid>http://localhost:1313/posts/third/</guid>
       <description>&lt;p&gt;Aprender Ciencia de la Computación puede parecer intimidante, pero con estos consejos, ¡estarás en el camino correcto! 🎓&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comienza con fundamentos sólidos&lt;/strong&gt;: Aprende algoritmos, estructuras de datos y matemáticas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Practica constantemente&lt;/strong&gt;: Resuelve problemas en plataformas como &lt;a href=&#34;https://leetcode.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LeetCode&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Construye proyectos&lt;/strong&gt;: No hay mejor manera de aprender que creando algo.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lee documentación&lt;/strong&gt;: Te ayudará a entender herramientas y bibliotecas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sé constante&lt;/strong&gt;: Aprende algo nuevo cada día, por pequeño que sea.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;¡Espero que estos consejos te sirvan en tu camino! 🚀&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://c4mdax.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
   </channel>
