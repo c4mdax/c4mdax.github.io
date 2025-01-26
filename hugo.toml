@@ -1,4 +1,4 @@
-baseURL = "http://www.example.com"
+baseURL = "https://c4mdax.github.io/"
 title = "Luis Angel"
 theme = "hugo-coder"
 languageCode = "en"
