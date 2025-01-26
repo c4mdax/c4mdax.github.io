@@ -17,7 +17,7 @@ pagerSize = 6
 noClasses = false
 
 [params]
-author = "Luis Angel"
+author = "Luis Angel Moreno Delgado"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Luis Angel website"
 keywords = "ai,ml,personal"
