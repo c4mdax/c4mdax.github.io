@@ -2,91 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://c4mdax.github.io/</loc>
-    <lastmod>2025-01-26T16:31:27-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/catsup/</loc>
-    <lastmod>2025-01-26T16:31:27-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/</loc>
-    <lastmod>2025-01-26T16:31:27-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/papers/</loc>
-    <lastmod>2025-01-03T20:39:41-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/blog/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/introducci%C3%B3n/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/personal/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/first/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/</loc>
-    <lastmod>2025-01-03T15:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://c4mdax.github.io/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/frontend/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/hugo/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/projects/project1/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/projects/project2/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/projects/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/proyectos/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/web/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/aprendizaje/</loc>
-    <lastmod>2025-01-02T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/ia/</loc>
-    <lastmod>2025-01-02T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/second/</loc>
-    <lastmod>2025-01-02T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/proyectos/</loc>
-    <lastmod>2025-01-02T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/ciencia-de-la-computaci%C3%B3n/</loc>
-    <lastmod>2025-01-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/consejos/</loc>
-    <lastmod>2025-01-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/educaci%C3%B3n/</loc>
-    <lastmod>2025-01-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/educaci%C3%B3n/</loc>
-    <lastmod>2025-01-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/third/</loc>
-    <lastmod>2025-01-01T13:00:00+00:00</lastmod>
+    <loc>https://c4mdax.github.io/</loc>
+    <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/contact/</loc>
   </url><url>
     <loc>https://c4mdax.github.io/authors/</loc>
   </url><url>
+    <loc>https://c4mdax.github.io/categories/</loc>
+  </url><url>
     <loc>https://c4mdax.github.io/series/</loc>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/</loc>
   </url>
 </urlset>
