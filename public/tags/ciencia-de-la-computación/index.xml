@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ciencia De La Computación on camdax</title>
-    <link>https://c4mdax.github.io/tags/ciencia-de-la-computaci%C3%B3n/</link>
+    <link>http://localhost:1313/tags/ciencia-de-la-computaci%C3%B3n/</link>
     <description>Recent content in Ciencia De La Computación on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Jan 2025 13:00:00 +0000</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/tags/ciencia-de-la-computaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ciencia-de-la-computaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 3: Ejemplo</title>
-      <link>https://c4mdax.github.io/posts/third/</link>
+      <link>http://localhost:1313/posts/third/</link>
       <pubDate>Wed, 01 Jan 2025 13:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/posts/third/</guid>
+      <guid>http://localhost:1313/posts/third/</guid>
       <description>&lt;p&gt;Aprender Ciencia de la Computación puede parecer intimidante, pero con estos consejos, ¡estarás en el camino correcto! 🎓&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comienza con fundamentos sólidos&lt;/strong&gt;: Aprende algoritmos, estructuras de datos y matemáticas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Practica constantemente&lt;/strong&gt;: Resuelve problemas en plataformas como &lt;a href=&#34;https://leetcode.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LeetCode&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Construye proyectos&lt;/strong&gt;: No hay mejor manera de aprender que creando algo.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lee documentación&lt;/strong&gt;: Te ayudará a entender herramientas y bibliotecas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sé constante&lt;/strong&gt;: Aprende algo nuevo cada día, por pequeño que sea.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;¡Espero que estos consejos te sirvan en tu camino! 🚀&lt;/p&gt;</description>
     </item>
   </channel>
