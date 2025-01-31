@@ -1,4 +1,4 @@
-baseURL = "https://c4mdax.github.io/"
+baseURL = "https://c4mdax.github.io"
 title = "Luis Angel Moreno Delgado"
 theme = "hugo-coder"
 languageCode = "en"
