@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Papers on camdax</title>
-    <link>http://localhost:1313/papers/</link>
+    <link>https://c4mdax.github.io/papers/</link>
     <description>Recent content in Papers on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 22:45:29 -0600</lastBuildDate>
+    <atom:link href="https://c4mdax.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How critically can an AI think?</title>
+      <link>https://c4mdax.github.io/papers/ai_thinking/</link>
+      <pubDate>Thu, 30 Jan 2025 22:45:29 -0600</pubDate>
+      <guid>https://c4mdax.github.io/papers/ai_thinking/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
