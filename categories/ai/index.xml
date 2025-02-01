@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on camdax</title>
-    <link>https://c4mdax.github.io/categories/ai/</link>
+    <link>http://localhost:42307/categories/ai/</link>
     <description>Recent content in AI on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jan 2025 21:45:32 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:42307/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>El pequeño gigante DeepSeek</title>
-      <link>https://c4mdax.github.io/posts/deepseek/</link>
+      <title>The little giant DeepSeek</title>
+      <link>http://localhost:42307/posts/deepseek/</link>
       <pubDate>Thu, 30 Jan 2025 21:45:32 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/deepseek/</guid>
+      <guid>http://localhost:42307/posts/deepseek/</guid>
       <description>&lt;p&gt;A brief but powerful DeepSeek description&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
