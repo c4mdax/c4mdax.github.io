@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on camdax</title>
-    <link>http://localhost:42307/posts/</link>
-    <description>Recent content in Posts on camdax</description>
+    <title>Artificial Intelligence on camdax</title>
+    <link>http://localhost:42307/tags/artificial-intelligence/</link>
+    <description>Recent content in Artificial Intelligence on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jan 2025 22:30:30 -0600</lastBuildDate>
-    <atom:link href="http://localhost:42307/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:42307/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>La actual Inteligencia Artificial con 0% de Inteligencia</title>
       <link>http://localhost:42307/posts/thinking-simulation/</link>

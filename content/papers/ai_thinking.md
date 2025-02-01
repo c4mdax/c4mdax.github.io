@@ -1,0 +1,5 @@
++++
+date = '2025-01-30T22:45:29-06:00'
+draft = false
+title = 'How critically can an AI think?'
++++
