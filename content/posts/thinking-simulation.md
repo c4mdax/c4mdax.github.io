@@ -36,12 +36,12 @@ En este evento, se encuentra un proceso cognitivo instantáneo que nos hace deci
 
 ## Pensamiento sin Self
 Aunque un modelo de IA parezca cumplir este proceso, carecede cualidades para satisfacer un proceso del Pensamiento humano: carece de _Self_, sin capacidad de pensar...
-> Cogito, ergo sum - Pienso, luego existo.>
+> Cogito, ergo sum - Pienso, luego existo.
 >
 > -Descartes
 
-A pesar de esto, existen cientos de entusiastas que creen que las capacidades de la IA pueden dispararse y evolucionar abrumadoramente, pues es lo que el poder de los modelos de IA recientes (como lo es _GPT_) nos han engatusado. 
+A pesar de esto, existen cientos de entusiastas que creen que las capacidades de la IA pueden dispararse y evolucionar abrumadoramente, pues es lo que el poder de los modelos de IA recientes (como lo es _GPT_) nos ha engatusado. 
 
-Para mí, la Inteligencia Artificial actual es una **simulación** de la Inteligencia humana. Robusta, compleja, abstracta y colosal, pero solo eso, una simulación...
+Es así que para mí, la Inteligencia Artificial es una brillante **simulación** de la Inteligencia humana (mayormente resultado de fuerza bruta). Robusta, compleja, abstracta y colosal, pero solo eso, una simulación, sin concretar forma de Pensamiento o Inteligencia para la máquina...
 
 > Estimo imposible imitar algo que ni siquiera llegamos a entender: la Inteligencia.

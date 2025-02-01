@@ -2,46 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:42307/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-30T22:45:29-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/papers/ai_thinking/</loc>
+    <loc>http://localhost:1313/papers/ai_thinking/</loc>
     <lastmod>2025-01-30T22:45:29-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/papers/</loc>
+    <loc>http://localhost:1313/papers/</loc>
     <lastmod>2025-01-30T22:45:29-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/categories/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/posts/thinking-simulation/</loc>
+    <loc>http://localhost:1313/posts/thinking-simulation/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/categories/ai/</loc>
-    <lastmod>2025-01-30T21:45:32-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:42307/posts/deepseek/</loc>
-    <lastmod>2025-01-30T21:45:32-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:42307/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42307/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:42307/authors/</loc>
+    <loc>http://localhost:1313/authors/</loc>
   </url><url>
-    <loc>http://localhost:42307/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>

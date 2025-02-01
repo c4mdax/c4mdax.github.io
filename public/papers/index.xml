@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Papers on camdax</title>
-    <link>http://localhost:42307/papers/</link>
+    <link>http://localhost:1313/papers/</link>
     <description>Recent content in Papers on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jan 2025 22:45:29 -0600</lastBuildDate>
-    <atom:link href="http://localhost:42307/papers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How critically can an AI think?</title>
-      <link>http://localhost:42307/papers/ai_thinking/</link>
+      <link>http://localhost:1313/papers/ai_thinking/</link>
       <pubDate>Thu, 30 Jan 2025 22:45:29 -0600</pubDate>
-      <guid>http://localhost:42307/papers/ai_thinking/</guid>
+      <guid>http://localhost:1313/papers/ai_thinking/</guid>
       <description></description>
     </item>
   </channel>
