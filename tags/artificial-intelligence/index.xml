@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial Intelligence on camdax</title>
-    <link>https://c4mdax.github.io/tags/artificial-intelligence/</link>
+    <link>http://localhost:1313/tags/artificial-intelligence/</link>
     <description>Recent content in Artificial Intelligence on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jan 2025 22:30:30 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IA actual: Simulación brillante, pensamiento inexistente</title>
-      <link>https://c4mdax.github.io/posts/thinking-simulation/</link>
+      <link>http://localhost:1313/posts/thinking-simulation/</link>
       <pubDate>Thu, 30 Jan 2025 22:30:30 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/thinking-simulation/</guid>
+      <guid>http://localhost:1313/posts/thinking-simulation/</guid>
       <description>&lt;p&gt;Existe una gran disparidad entre los profesionales de la Teoría del Pensamiento y la Mente respecto a los conceptos y definiciones de Inteligencia y Pensamiento. Por ello, no pretendo ofrecer un análisis apresurado e inconsistente desde mi mero juicio prematuro sin un adecuado análisis ontológico. &lt;del&gt;&lt;em&gt;¿Aceptarías la idea de la no-definición absoluta de algo?&lt;/em&gt;&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sin embargo, quiero comparar lo Artificial y lo Humano en relación a algunos tipos de &lt;strong&gt;Pensamiento&lt;/strong&gt;, destacando que los modelos actuales de Inteligencia Artificial (especialmente la IA generativa) no cumplen con las etapas fundamentales de estos procesos y, por lo tanto, &lt;strong&gt;carecen de pensamiento&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

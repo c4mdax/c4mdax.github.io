@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://c4mdax.github.io/categories/artificial-intelligence/</loc>
+    <lastmod>2025-02-03T12:15:12-06:00</lastmod>
+  </url><url>
     <loc>https://c4mdax.github.io/</loc>
+    <lastmod>2025-02-03T12:15:12-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/</loc>
     <lastmod>2025-02-03T12:15:12-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/machine-thinking/</loc>
@@ -17,19 +23,7 @@
     <loc>https://c4mdax.github.io/papers/</loc>
     <lastmod>2025-01-30T22:45:29-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/artificial-intelligence/</loc>
-    <lastmod>2025-01-30T22:30:30-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/artificial-intelligence/</loc>
-    <lastmod>2025-01-30T22:30:30-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
-    <lastmod>2025-01-30T22:30:30-06:00</lastmod>
-  </url><url>
     <loc>https://c4mdax.github.io/posts/thinking-simulation/</loc>
-    <lastmod>2025-01-30T22:30:30-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/about/</loc>
@@ -40,5 +34,7 @@
     <loc>https://c4mdax.github.io/authors/</loc>
   </url><url>
     <loc>https://c4mdax.github.io/series/</loc>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/</loc>
   </url>
 </urlset>
