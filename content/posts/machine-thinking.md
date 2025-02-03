@@ -6,7 +6,7 @@ description = "¿Existe el Pensamiento de Máquina?"
 slug = ""
 authors = []
 tags = []
-categories = []
+categories = ["Artificial Intelligence"]
 externalLink = ""
 series = []
 +++
