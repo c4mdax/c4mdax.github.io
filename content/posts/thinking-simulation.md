@@ -76,7 +76,7 @@ Aunque un modelo de IA parezca cumplir en la mayoría de veces procesos o tipos 
 
 A pesar de esto, existen cientos de entusiastas que creen que las capacidades de la IA pueden dispararse y evolucionar abrumadoramente, pues es lo que el poder de los modelos de IA recientes nos ha engatusado. 
 
-Existirán varias preguntas ante esta situación: ¿Qué garantiza que la IA actual no piense?, ¿Podemos concluir que si una IA no tiene Pensamiento Crítico, Creativo e Intuitivo, entonces no piensa?, ¿Es suficiente hablar de Pensamiento Creativo, Crítico e Intuitivo para nuestra conclusión?, ¿Y si la IA exhibe otro tipo de Pensamiento, tal vez Pensamiento de Máquina?...
+Existirán varias preguntas ante esta situación: ¿Qué garantiza que la IA actual no piense?, ¿Podemos concluir que si una IA no tiene Pensamiento Crítico, Creativo e Intuitivo, entonces no piensa?, ¿Es suficiente hablar de Pensamiento Creativo, Crítico e Intuitivo para nuestra conclusión?, ¿Y si la IA exhibe otro tipo de Pensamiento, tal vez [Pensamiento de Máquina](../../posts/machine-thinking)?...
 
 Personalmente, pienso que la IA actual es resultado de un enorme esfuerzo por imitar a la Inteligencia Humana, con matices de fuerza bruta y matemáticas. Una robusta, compleja, abstracta y colosal simulación de la Inteligencia Humana, pero solo eso, una simulación, sin concretar el concepto de Pensamiento e Inteligencia _per se_, sin proyección a una verdadera Inteligencia Artificial.
 
