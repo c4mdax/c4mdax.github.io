@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 +++ 
 
-Existe una gran disparidad entre los profesionales de la Teoría del Pensamiento y la Mente respecto a los conceptos y definiciones de Inteligencia y Pensamiento. Por ello, no pretendo ofrecer un análisis apresurado e inconsistente desde mi mero juicio prematuro sin un adecuado análisis ontológico. ~~_¿Aceptarías la idea de la no-definición absoluta de algo?_~~
+Existe una gran disparidad entre los profesionales de la Teoría del Pensamiento y la Mente respecto a los conceptos y definiciones de Inteligencia y Pensamiento. Por ello, no pretendo asentar un análisis apresurado e inconsistente desde mi mero juicio prematuro sin un adecuado análisis ontológico. ~~_¿Aceptarías la idea de la no-definición absoluta de algo?_~~
 
 Sin embargo, quiero comparar lo Artificial y lo Humano en relación a algunos tipos de **Pensamiento**, destacando que los modelos actuales de Inteligencia Artificial (especialmente la IA generativa) no cumplen con las etapas fundamentales de estos procesos y, por lo tanto, **carecen de pensamiento**.
 

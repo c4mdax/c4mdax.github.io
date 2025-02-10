@@ -6,14 +6,42 @@
     <description>Recent content in Papers on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jan 2025 22:45:29 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 12:56:21 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How critically can an AI think?</title>
-      <link>http://localhost:1313/papers/ai_thinking/</link>
-      <pubDate>Thu, 30 Jan 2025 22:45:29 -0600</pubDate>
-      <guid>http://localhost:1313/papers/ai_thinking/</guid>
-      <description></description>
+      <title>LLMs vs Human Language</title>
+      <link>http://localhost:1313/papers/llm-vs-human/</link>
+      <pubDate>Sun, 09 Feb 2025 12:56:21 -0600</pubDate>
+      <guid>http://localhost:1313/papers/llm-vs-human/</guid>
+      <description>&lt;p&gt;A comparison between Human Language and Large Language Models&#xA;(&lt;a href=&#34;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Is the Turing test enough to define “Artificial Intelligence”?</title>
+      <link>http://localhost:1313/papers/turing-test/</link>
+      <pubDate>Sun, 09 Feb 2025 12:46:13 -0600</pubDate>
+      <guid>http://localhost:1313/papers/turing-test/</guid>
+      <description>&lt;p&gt;Paper that presents the disparity between the Turing test and the Chinese Room dilemma to define a model like Intelligence&#xA;(&lt;a href=&#34;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Artificial Intelligence (AI) or Intelligence Augmentation (IA): What Is the Future?</title>
+      <link>http://localhost:1313/papers/ai-or-ia/</link>
+      <pubDate>Sun, 09 Feb 2025 12:45:35 -0600</pubDate>
+      <guid>http://localhost:1313/papers/ai-or-ia/</guid>
+      <description>&lt;p&gt;The article analyzes two visions of the future of technology: artificial intelligence (AI) as a substitute for the human mind and augmented intelligence (AIug) as a tool to enhance our capabilities. Explores its implications, risks and the need for ethical frameworks to guide its development.&#xA;(&lt;a href=&#34;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A view inside the Chinese room</title>
+      <link>http://localhost:1313/papers/chinese-room/</link>
+      <pubDate>Sun, 09 Feb 2025 12:43:53 -0600</pubDate>
+      <guid>http://localhost:1313/papers/chinese-room/</guid>
+      <description>&lt;p&gt;The Chinese room dilemma is presented, presenting challenges in the characteristics of current AI.&#xA;(&lt;a href=&#34;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computational Thinking Trough Programming: A Learning Paradigm</title>
+      <link>http://localhost:1313/papers/machine-thinking/</link>
+      <pubDate>Fri, 07 Feb 2025 21:42:44 -0600</pubDate>
+      <guid>http://localhost:1313/papers/machine-thinking/</guid>
+      <description>&lt;p&gt;In this paper, a model (ambiguous for me) of Computational Thinking with an algorithmic approach is presented.&#xA;(&lt;a href=&#34;https://revistas.um.es/red/article/view/240011/182851&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://revistas.um.es/red/article/view/240011/182851&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
