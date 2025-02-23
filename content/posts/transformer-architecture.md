@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2025-02-23T11:10:28-06:00
 title = "Arquitectura Transformer para LLM's"
 description = "¿Qué es la Arquitectura Transformer aplicada en LLM's y cómo funciona?"

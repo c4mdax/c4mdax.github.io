@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2025-02-03T12:15:12-06:00
 title = "Pensamiento de Máquina"
 description = "¿Existe el Pensamiento de Máquina?"
