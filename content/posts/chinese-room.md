@@ -43,6 +43,6 @@ Los LLMs no comprenden el texto que generan, al igual que Juan no entiende chino
 
 -------
 
-Mientras un modelo de LLM sea incapaz de tener un estado mental ante un contexto, y relacionar su experiencia para poder reflexionar ante dicho contexto, mantendré la postura de que cualquier LLM, por colosal, capaz y fascinante que sea en su arquitectura, será incapaz de nivelarse con la esencia del Lenguaje Humano. 
+Mientras un LLM sea incapaz de tener un estado mental ante un contexto, y relacionar su experiencia para poder reflexionar ante dicho contexto, mantendré la postura de que cualquier LLM, por colosal, capaz y fascinante que sea en su arquitectura, será incapaz de nivelarse con la esencia del Lenguaje Humano. 
 
 A pesar de esto, encuentro importante una pregunta subjetiva que puede romper todo mi análisis: **Juan necesitó un poco de su Inteligencia para saber interpretar y usar el organigrama y las reglas del mandarín, ¿cierto?**...
