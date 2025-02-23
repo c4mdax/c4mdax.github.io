@@ -6,8 +6,15 @@
     <description>Recent content in Artificial Intelligence on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2025 12:15:12 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 21:53:44 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El Dilema de la Habitación China: Los LLM&#39;s actuales sin Comprensión ni Conciencia</title>
+      <link>http://localhost:1313/posts/chinese-room/</link>
+      <pubDate>Fri, 07 Feb 2025 21:53:44 -0600</pubDate>
+      <guid>http://localhost:1313/posts/chinese-room/</guid>
+      <description>&lt;p&gt;Desde la década de los 60&amp;rsquo;s, ante el nacimiento del concepto de Inteligencia Artificial como algo más allá de la utopía fantástica, se ha debatido sobre la proyección y concepción de una verdadera Inteligencia aterrizada en lo Artificial. Han nacido paradojas, teorías, argumentos y cadenas de razonamientos que en conjunto intentan definir el futuro de este campo.&lt;/p&gt;&#xA;&lt;p&gt;Como mencioné en el post sobre &lt;a href=&#34;../../posts/thinking-simulation&#34; &gt;La carencia de Pensamiento en la IA actual&lt;/a&gt;, es difícil hablar del futuro de esta tecnología ante una verdadera Inteligencia, pues el mismo concepto y concepción de Inteligencia presenta desafíos. Sin embargo, quiero presentar el desafío implícito detrás del &lt;strong&gt;Dilema de la Habitación China&lt;/strong&gt; ante las capacidades cognitivas de los Modelos Grandes de Lenguaje (LLM&amp;rsquo;s por sus siglas al inglés).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Pensamiento de Máquina</title>
       <link>http://localhost:1313/posts/machine-thinking/</link>

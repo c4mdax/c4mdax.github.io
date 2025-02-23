@@ -10,3 +10,4 @@ categories = ["Artificial Intelligence"]
 externalLink = ""
 series = []
 +++
+Posts que presentará la inconsistencia de la Prueba de Turing ante la conciencia de un modelo de IA.

@@ -10,7 +10,7 @@ I'm a 4th semester student of **Computer Science** at [Faculty of Sciences, UNAM
 
 I have a genuine interest in the theory of **Artificial Intelligence** (from the Theoretical-Practical part, to the Philosophical-Humanistic part), as well as a taste for implementing Machine Learning models in Software projects (specifically **Backend** and **Cloud** Software).
 
-In my free time, I usually wander through publications, papers or topics related to the semantics of AI, from which I usually rescue interesting information for [Posts](../posts/). Generally I write my posts in Spanish, because I enjoy writing in my language. I write some other things in English, because I need to improve hehe.
+In my free time, I usually wander through publications, papers or topics related to the semantics of AI, from which I usually rescue interesting information for [Posts](../posts/) (I also use this section for my study). Generally I write my posts in Spanish, because I enjoy writing in my language. I write some other things in English, because I need to improve hehe.
 > Memento Mori
 
 
