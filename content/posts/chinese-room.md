@@ -33,7 +33,7 @@ La cuestión es, ¿la máquina entiende la conversación que tuvo con la mujer?,
 # De la Conciencia
 La conciencia implica tener una **experiencia subjetiva** y la capacidad de **reflexionar** sobre el propio estado mental. Para saber si un LLM tiene conciencia, debemos preguntarnos: ¿Es consciente de sus acciones o respuestas?
 
-Los LLMs como GPT-4 no tienen conciencia de sí mismos ni de lo que están haciendo. Generan respuestas basadas en patrones estadísticos sin tener una experiencia subjetiva _no hay self_.
+Los LLMs como GPT-4 no tienen conciencia de sí mismos ni de lo que están haciendo. Generan respuestas basadas en patrones estadísticos sin tener una experiencia subjetiva; _no hay self_.
 
 La máquina dentro de la habitación puede sostener una conversación en chino, pero no sabe lo que está diciendo. No tiene una "experiencia" de lo que está generando, simplemente está siguiendo reglas predefinidas. De la misma manera, un LLM no tiene conciencia de sus respuestas. Aunque parece interactuar de manera coherente, no tiene un sentido interno de lo que está diciendo.
 
