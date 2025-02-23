@@ -20,23 +20,17 @@
     <loc>http://localhost:1313/papers/chinese-room/</loc>
     <lastmod>2025-02-09T12:43:53-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
-    <lastmod>2025-02-07T22:21:11-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-07T22:21:11-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/turing-test/</loc>
-    <lastmod>2025-02-07T22:21:11-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-07T22:21:11-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-room/</loc>
-    <lastmod>2025-02-07T21:53:44-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/papers/machine-thinking/</loc>
     <lastmod>2025-02-07T21:42:44-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
+    <lastmod>2025-02-03T12:15:12-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-02-03T12:15:12-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/machine-thinking/</loc>
     <lastmod>2025-02-03T12:15:12-06:00</lastmod>
