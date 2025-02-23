@@ -6,8 +6,15 @@
     <description>Recent content on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Feb 2025 12:56:21 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 11:10:28 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arquitectura Transformer para LLM&#39;s</title>
+      <link>https://c4mdax.github.io/posts/transformer-architecture/</link>
+      <pubDate>Sun, 23 Feb 2025 11:10:28 -0600</pubDate>
+      <guid>https://c4mdax.github.io/posts/transformer-architecture/</guid>
+      <description>&lt;p&gt;Posts que presentará la Arquitectura Transformer en LLM&amp;rsquo;s.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LLMs vs Human Language</title>
       <link>https://c4mdax.github.io/papers/llm-vs-human/</link>
@@ -37,6 +44,13 @@
       <description>&lt;p&gt;The Chinese room dilemma is presented, presenting challenges in the characteristics of current AI.&#xA;(&lt;a href=&#34;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
+      <title>El Dilema de la Habitación China: Los LLM&#39;s actuales sin Conciencia ni Comprensión</title>
+      <link>https://c4mdax.github.io/posts/chinese-room/</link>
+      <pubDate>Fri, 07 Feb 2025 21:53:44 -0600</pubDate>
+      <guid>https://c4mdax.github.io/posts/chinese-room/</guid>
+      <description>&lt;p&gt;Desde la década de los 60&amp;rsquo;s, ante el nacimiento del concepto de Inteligencia Artificial como algo más allá de la utopía fantástica, se ha debatido sobre la proyección y concepción de una verdadera Inteligencia aterrizada en lo Artificial. Han nacido paradojas, teorías, argumentos y cadenas de razonamientos que en conjunto intentan definir el futuro de este campo.&lt;/p&gt;&#xA;&lt;p&gt;Como mencioné en el post sobre &lt;a href=&#34;../../posts/thinking-simulation&#34; &gt;La carencia de Pensamiento en la IA actual&lt;/a&gt;, es difícil hablar del futuro de esta tecnología ante una verdadera Inteligencia, pues el mismo concepto y concepción de Inteligencia presenta desafíos. Sin embargo, quiero presentar el desafío implícito detrás del &lt;strong&gt;Dilema de la Habitación China&lt;/strong&gt; ante las capacidades cognitivas de los Modelos Grandes de Lenguaje (LLM&amp;rsquo;s por sus siglas al inglés).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Computational Thinking Trough Programming: A Learning Paradigm</title>
       <link>https://c4mdax.github.io/papers/machine-thinking/</link>
       <pubDate>Fri, 07 Feb 2025 21:42:44 -0600</pubDate>
@@ -62,7 +76,7 @@
       <link>https://c4mdax.github.io/about/</link>
       <pubDate>Fri, 03 Jan 2025 10:00:00 +0000</pubDate>
       <guid>https://c4mdax.github.io/about/</guid>
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;&#xA;  About Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a 4th semester student of &lt;strong&gt;Computer Science&lt;/strong&gt; at &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faculty of Sciences, UNAM&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have a genuine interest in the theory of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (from the Theoretical-Practical part, to the Philosophical-Humanistic part), as well as a taste for implementing Machine Learning models in Software projects (specifically &lt;strong&gt;Backend&lt;/strong&gt; and &lt;strong&gt;Cloud&lt;/strong&gt; Software).&lt;/p&gt;&#xA;&lt;p&gt;In my free time, I usually wander through publications, papers or topics related to the semantics of AI, from which I usually rescue interesting information for &lt;a href=&#34;../posts/&#34; &gt;Posts&lt;/a&gt;. Generally I write my posts in Spanish, because I enjoy writing in my language. I write some other things in English, because I need to improve hehe.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;&#xA;  About Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a 4th semester student of &lt;strong&gt;Computer Science&lt;/strong&gt; at &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faculty of Sciences, UNAM&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have a genuine interest in the theory of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (from the Theoretical-Practical part, to the Philosophical-Humanistic part), as well as a taste for implementing Machine Learning models in Software projects (specifically &lt;strong&gt;Backend&lt;/strong&gt; and &lt;strong&gt;Cloud&lt;/strong&gt; Software).&lt;/p&gt;&#xA;&lt;p&gt;In my free time, I usually wander through publications, papers or topics related to the semantics of AI, from which I usually rescue interesting information for &lt;a href=&#34;../posts/&#34; &gt;Posts&lt;/a&gt; (I also use this section for my study). Generally I write my posts in Spanish, because I enjoy writing in my language. I write some other things in English, because I need to improve hehe.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
