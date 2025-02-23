@@ -6,15 +6,8 @@
     <description>Recent content on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Feb 2025 11:10:28 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 12:56:21 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Arquitectura Transformer para LLM&#39;s</title>
-      <link>http://localhost:1313/posts/transformer-architecture/</link>
-      <pubDate>Sun, 23 Feb 2025 11:10:28 -0600</pubDate>
-      <guid>http://localhost:1313/posts/transformer-architecture/</guid>
-      <description>&lt;p&gt;Posts que presentará la Arquitectura Transformer en LLM&amp;rsquo;s.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>LLMs vs Human Language</title>
       <link>http://localhost:1313/papers/llm-vs-human/</link>
@@ -56,13 +49,6 @@
       <pubDate>Fri, 07 Feb 2025 21:42:44 -0600</pubDate>
       <guid>http://localhost:1313/papers/machine-thinking/</guid>
       <description>&lt;p&gt;In this paper, a model (ambiguous for me) of Computational Thinking with an algorithmic approach is presented.&#xA;(&lt;a href=&#34;https://revistas.um.es/red/article/view/240011/182851&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://revistas.um.es/red/article/view/240011/182851&lt;/a&gt;)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pensamiento de Máquina</title>
-      <link>http://localhost:1313/posts/machine-thinking/</link>
-      <pubDate>Mon, 03 Feb 2025 12:15:12 -0600</pubDate>
-      <guid>http://localhost:1313/posts/machine-thinking/</guid>
-      <description>&lt;p&gt;Publicación que propondrá un modelo simulado de Pensamiento Computacional&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>IA actual: Simulación brillante, pensamiento inexistente</title>
