@@ -24,7 +24,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GH_25 }}
         publish_dir: ./public  # La carpeta donde Hugo genera los archivos estáticos
         publish_branch: gh-pages  # La rama donde desplegarás el sitio
         user_name: 'c4mdax'  # Tu nombre de usuario de GitHub
