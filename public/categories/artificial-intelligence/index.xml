@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial Intelligence on camdax</title>
-    <link>https://c4mdax.github.io/categories/artificial-intelligence/</link>
+    <link>http://localhost:1313/categories/artificial-intelligence/</link>
     <description>Recent content in Artificial Intelligence on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 07 Feb 2025 22:21:11 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>La Prueba de Turing</title>
-      <link>https://c4mdax.github.io/posts/turing-test/</link>
+      <link>http://localhost:1313/posts/turing-test/</link>
       <pubDate>Fri, 07 Feb 2025 22:21:11 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/turing-test/</guid>
+      <guid>http://localhost:1313/posts/turing-test/</guid>
       <description>&lt;p&gt;Posts que presentará la inconsistencia de la Prueba de Turing ante la conciencia de un modelo de IA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>El Dilema de la Habitación China: Los LLM&#39;s actuales sin Conciencia ni Comprensión</title>
-      <link>https://c4mdax.github.io/posts/chinese-room/</link>
+      <link>http://localhost:1313/posts/chinese-room/</link>
       <pubDate>Fri, 07 Feb 2025 21:53:44 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/chinese-room/</guid>
+      <guid>http://localhost:1313/posts/chinese-room/</guid>
       <description>&lt;p&gt;Desde la década de los 60&amp;rsquo;s, ante el nacimiento del concepto de Inteligencia Artificial como algo más allá de la utopía fantástica, se ha debatido sobre la proyección y concepción de una verdadera Inteligencia aterrizada en lo Artificial. Han nacido paradojas, teorías, argumentos y cadenas de razonamientos que en conjunto intentan definir el futuro de este campo.&lt;/p&gt;&#xA;&lt;p&gt;Como mencioné en el post sobre &lt;a href=&#34;../../posts/thinking-simulation&#34; &gt;La carencia de Pensamiento en la IA actual&lt;/a&gt;, es difícil hablar del futuro de esta tecnología ante una verdadera Inteligencia, pues el mismo concepto y concepción de Inteligencia presenta desafíos. Sin embargo, quiero presentar el desafío implícito detrás del &lt;strong&gt;Dilema de la Habitación China&lt;/strong&gt; ante las capacidades cognitivas de los Modelos Grandes de Lenguaje (LLM&amp;rsquo;s por sus siglas al inglés).&lt;/p&gt;</description>
     </item>
     <item>
       <title>IA actual: Simulación brillante, pensamiento inexistente</title>
-      <link>https://c4mdax.github.io/posts/thinking-simulation/</link>
+      <link>http://localhost:1313/posts/thinking-simulation/</link>
       <pubDate>Thu, 30 Jan 2025 22:30:30 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/thinking-simulation/</guid>
+      <guid>http://localhost:1313/posts/thinking-simulation/</guid>
       <description>&lt;p&gt;Existe una gran disparidad entre los profesionales de la Teoría del Pensamiento y la Mente respecto a los conceptos y definiciones de Inteligencia y Pensamiento. Por ello, no pretendo asentar un análisis apresurado e inconsistente desde mi mero juicio prematuro sin un adecuado análisis ontológico. &lt;del&gt;&lt;em&gt;¿Aceptarías la idea de la no-definición absoluta de algo?&lt;/em&gt;&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sin embargo, quiero comparar lo Artificial y lo Humano en relación a algunos tipos de &lt;strong&gt;Pensamiento&lt;/strong&gt;, destacando que los modelos actuales de Inteligencia Artificial (especialmente la IA generativa) no cumplen con las etapas fundamentales de estos procesos y, por lo tanto, &lt;strong&gt;carecen de pensamiento&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

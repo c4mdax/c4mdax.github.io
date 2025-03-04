@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>camdax</title>
-    <link>https://c4mdax.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Feb 2025 12:56:21 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLMs vs Human Language</title>
-      <link>https://c4mdax.github.io/papers/llm-vs-human/</link>
+      <link>http://localhost:1313/papers/llm-vs-human/</link>
       <pubDate>Sun, 09 Feb 2025 12:56:21 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/llm-vs-human/</guid>
+      <guid>http://localhost:1313/papers/llm-vs-human/</guid>
       <description>&lt;p&gt;A comparison between Human Language and Large Language Models&#xA;(&lt;a href=&#34;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is the Turing test enough to define “Artificial Intelligence”?</title>
-      <link>https://c4mdax.github.io/papers/turing-test/</link>
+      <link>http://localhost:1313/papers/turing-test/</link>
       <pubDate>Sun, 09 Feb 2025 12:46:13 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/turing-test/</guid>
+      <guid>http://localhost:1313/papers/turing-test/</guid>
       <description>&lt;p&gt;Paper that presents the disparity between the Turing test and the Chinese Room dilemma to define a model like Intelligence&#xA;(&lt;a href=&#34;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Artificial Intelligence (AI) or Intelligence Augmentation (IA): What Is the Future?</title>
-      <link>https://c4mdax.github.io/papers/ai-or-ia/</link>
+      <link>http://localhost:1313/papers/ai-or-ia/</link>
       <pubDate>Sun, 09 Feb 2025 12:45:35 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/ai-or-ia/</guid>
+      <guid>http://localhost:1313/papers/ai-or-ia/</guid>
       <description>&lt;p&gt;The article analyzes two visions of the future of technology: artificial intelligence (AI) as a substitute for the human mind and augmented intelligence (AIug) as a tool to enhance our capabilities. Explores its implications, risks and the need for ethical frameworks to guide its development.&#xA;(&lt;a href=&#34;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>A view inside the Chinese room</title>
-      <link>https://c4mdax.github.io/papers/chinese-room/</link>
+      <link>http://localhost:1313/papers/chinese-room/</link>
       <pubDate>Sun, 09 Feb 2025 12:43:53 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/chinese-room/</guid>
+      <guid>http://localhost:1313/papers/chinese-room/</guid>
       <description>&lt;p&gt;The Chinese room dilemma is presented, presenting challenges in the characteristics of current AI.&#xA;(&lt;a href=&#34;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>La Prueba de Turing</title>
-      <link>https://c4mdax.github.io/posts/turing-test/</link>
+      <link>http://localhost:1313/posts/turing-test/</link>
       <pubDate>Fri, 07 Feb 2025 22:21:11 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/turing-test/</guid>
+      <guid>http://localhost:1313/posts/turing-test/</guid>
       <description>&lt;p&gt;Posts que presentará la inconsistencia de la Prueba de Turing ante la conciencia de un modelo de IA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>El Dilema de la Habitación China: Los LLM&#39;s actuales sin Conciencia ni Comprensión</title>
-      <link>https://c4mdax.github.io/posts/chinese-room/</link>
+      <link>http://localhost:1313/posts/chinese-room/</link>
       <pubDate>Fri, 07 Feb 2025 21:53:44 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/chinese-room/</guid>
+      <guid>http://localhost:1313/posts/chinese-room/</guid>
       <description>&lt;p&gt;Desde la década de los 60&amp;rsquo;s, ante el nacimiento del concepto de Inteligencia Artificial como algo más allá de la utopía fantástica, se ha debatido sobre la proyección y concepción de una verdadera Inteligencia aterrizada en lo Artificial. Han nacido paradojas, teorías, argumentos y cadenas de razonamientos que en conjunto intentan definir el futuro de este campo.&lt;/p&gt;&#xA;&lt;p&gt;Como mencioné en el post sobre &lt;a href=&#34;../../posts/thinking-simulation&#34; &gt;La carencia de Pensamiento en la IA actual&lt;/a&gt;, es difícil hablar del futuro de esta tecnología ante una verdadera Inteligencia, pues el mismo concepto y concepción de Inteligencia presenta desafíos. Sin embargo, quiero presentar el desafío implícito detrás del &lt;strong&gt;Dilema de la Habitación China&lt;/strong&gt; ante las capacidades cognitivas de los Modelos Grandes de Lenguaje (LLM&amp;rsquo;s por sus siglas al inglés).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computational Thinking Trough Programming: A Learning Paradigm</title>
-      <link>https://c4mdax.github.io/papers/machine-thinking/</link>
+      <link>http://localhost:1313/papers/machine-thinking/</link>
       <pubDate>Fri, 07 Feb 2025 21:42:44 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/machine-thinking/</guid>
+      <guid>http://localhost:1313/papers/machine-thinking/</guid>
       <description>&lt;p&gt;In this paper, a model (ambiguous for me) of Computational Thinking with an algorithmic approach is presented.&#xA;(&lt;a href=&#34;https://revistas.um.es/red/article/view/240011/182851&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://revistas.um.es/red/article/view/240011/182851&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>IA actual: Simulación brillante, pensamiento inexistente</title>
-      <link>https://c4mdax.github.io/posts/thinking-simulation/</link>
+      <link>http://localhost:1313/posts/thinking-simulation/</link>
       <pubDate>Thu, 30 Jan 2025 22:30:30 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/thinking-simulation/</guid>
+      <guid>http://localhost:1313/posts/thinking-simulation/</guid>
       <description>&lt;p&gt;Existe una gran disparidad entre los profesionales de la Teoría del Pensamiento y la Mente respecto a los conceptos y definiciones de Inteligencia y Pensamiento. Por ello, no pretendo asentar un análisis apresurado e inconsistente desde mi mero juicio prematuro sin un adecuado análisis ontológico. &lt;del&gt;&lt;em&gt;¿Aceptarías la idea de la no-definición absoluta de algo?&lt;/em&gt;&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sin embargo, quiero comparar lo Artificial y lo Humano en relación a algunos tipos de &lt;strong&gt;Pensamiento&lt;/strong&gt;, destacando que los modelos actuales de Inteligencia Artificial (especialmente la IA generativa) no cumplen con las etapas fundamentales de estos procesos y, por lo tanto, &lt;strong&gt;carecen de pensamiento&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://c4mdax.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 03 Jan 2025 10:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;&#xA;  About Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a 4th semester student of &lt;strong&gt;Computer Science&lt;/strong&gt; at &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faculty of Sciences, UNAM&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have a genuine interest in the theory of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (from the Theoretical-Practical part to the Philosophical-Humanistic part), as well as a taste for &lt;strong&gt;Software Development&lt;/strong&gt;  with &lt;strong&gt;Machine Learning implementations&lt;/strong&gt;, therefore, since 2024 I have been studying everything related to the &lt;strong&gt;Machine Learning Engineer&lt;/strong&gt; path (following this &lt;a href=&#34;https://github.com/C4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roadmap&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://c4mdax.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
   </channel>

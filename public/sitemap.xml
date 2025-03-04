@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://c4mdax.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-23T11:10:28-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-23T11:10:28-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/llm-vs-human/</loc>
+    <loc>http://localhost:1313/papers/llm-vs-human/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/</loc>
+    <loc>http://localhost:1313/papers/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/turing-test/</loc>
+    <loc>http://localhost:1313/papers/turing-test/</loc>
     <lastmod>2025-02-09T12:46:13-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/ai-or-ia/</loc>
+    <loc>http://localhost:1313/papers/ai-or-ia/</loc>
     <lastmod>2025-02-09T12:45:35-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/chinese-room/</loc>
+    <loc>http://localhost:1313/papers/chinese-room/</loc>
     <lastmod>2025-02-09T12:43:53-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
     <lastmod>2025-02-07T22:21:11-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-02-07T22:21:11-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/turing-test/</loc>
+    <loc>http://localhost:1313/posts/turing-test/</loc>
     <lastmod>2025-02-07T22:21:11-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/chinese-room/</loc>
+    <loc>http://localhost:1313/posts/chinese-room/</loc>
     <lastmod>2025-02-07T21:53:44-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/machine-thinking/</loc>
+    <loc>http://localhost:1313/papers/machine-thinking/</loc>
     <lastmod>2025-02-07T21:42:44-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/thinking-simulation/</loc>
+    <loc>http://localhost:1313/posts/thinking-simulation/</loc>
     <lastmod>2025-01-30T22:30:30-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://c4mdax.github.io/authors/</loc>
+    <loc>http://localhost:1313/authors/</loc>
   </url><url>
-    <loc>https://c4mdax.github.io/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
