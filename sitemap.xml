@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://c4mdax.github.io/</loc>
-    <lastmod>2025-02-23T11:10:28-06:00</lastmod>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/1/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/llms/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/</loc>
-    <lastmod>2025-02-23T11:10:28-06:00</lastmod>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/rag/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/papers/llm-vs-human/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
@@ -24,9 +36,6 @@
     <lastmod>2025-02-09T12:43:53-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/artificial-intelligence/</loc>
-    <lastmod>2025-02-07T21:53:44-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
     <lastmod>2025-02-07T21:53:44-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/chinese-room/</loc>

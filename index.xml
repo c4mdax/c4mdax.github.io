@@ -6,8 +6,15 @@
     <description>Recent content on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Feb 2025 12:56:21 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estructura de agente de LLM y RAG</title>
+      <link>https://c4mdax.github.io/posts/1/</link>
+      <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
+      <guid>https://c4mdax.github.io/posts/1/</guid>
+      <description>&lt;p&gt;dsads&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LLMs vs Human Language</title>
       <link>https://c4mdax.github.io/papers/llm-vs-human/</link>
