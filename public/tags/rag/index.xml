@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAG on camdax</title>
+    <link>http://localhost:1313/tags/rag/</link>
+    <description>Recent content in RAG on camdax</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estructura de agente de LLM y RAG</title>
+      <link>http://localhost:1313/posts/rag-structure/</link>
+      <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
+      <guid>http://localhost:1313/posts/rag-structure/</guid>
+      <description>&lt;p&gt;dsa&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
