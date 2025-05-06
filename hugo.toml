@@ -172,8 +172,8 @@ name = "Projects"
 weight = 3
 url = "/projects/"
 
-[[languages.en.menu.main]]
-name = "Papers"
-weight = 5
-url = "/papers/"
+#[[languages.en.menu.main]]
+#name = "Papers"
+#weight = 5
+#url = "/papers/"
 
