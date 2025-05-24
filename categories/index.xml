@@ -9,10 +9,24 @@
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>IA</title>
+      <link>https://c4mdax.github.io/categories/ia/</link>
+      <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
+      <guid>https://c4mdax.github.io/categories/ia/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>LLM&#39;s</title>
       <link>https://c4mdax.github.io/categories/llms/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
       <guid>https://c4mdax.github.io/categories/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proyectos</title>
+      <link>https://c4mdax.github.io/categories/proyectos/</link>
+      <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
+      <guid>https://c4mdax.github.io/categories/proyectos/</guid>
       <description></description>
     </item>
     <item>

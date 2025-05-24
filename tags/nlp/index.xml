@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RAG on camdax</title>
-    <link>https://c4mdax.github.io/tags/rag/</link>
-    <description>Recent content in RAG on camdax</description>
+    <title>NLP on camdax</title>
+    <link>https://c4mdax.github.io/tags/nlp/</link>
+    <description>Recent content in NLP on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://c4mdax.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proyecto de IA: Agente por RAG</title>
       <link>https://c4mdax.github.io/projects/rag-agente/</link>
