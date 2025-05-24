@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-  Estructura de agente de LLM y RAG · camdax
+  dRAGan: Proyecto de IA por Generación Aumentada por Recuperación (RAG) · camdax
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,19 @@
 
 
 <meta name="author" content="Luis Angel Moreno Delgado">
-<meta name="description" content="dsa">
+<meta name="description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
 <meta name="keywords" content="personal, ai, ml, backend">
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Estructura de agente de LLM y RAG">
-  <meta name="twitter:description" content="dsa">
+  <meta name="twitter:title" content="dRAGan: Proyecto de IA por Generación Aumentada por Recuperación (RAG)">
+  <meta name="twitter:description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
 
 <meta property="og:url" content="http://localhost:1313/posts/1/">
   <meta property="og:site_name" content="camdax">
-  <meta property="og:title" content="Estructura de agente de LLM y RAG">
-  <meta property="og:description" content="dsa">
+  <meta property="og:title" content="dRAGan: Proyecto de IA por Generación Aumentada por Recuperación (RAG)">
+  <meta property="og:description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -126,10 +126,6 @@
               <a class="navigation-link " href="/projects/">Projects</a>
             </li>
           
-            <li class="navigation-item">
-              <a class="navigation-link " href="/papers/">Papers</a>
-            </li>
-          
         
         
       </ul>
@@ -146,7 +142,7 @@
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="http://localhost:1313/posts/1/">
-              Estructura de agente de LLM y RAG
+              dRAGan: Proyecto de IA por Generación Aumentada por Recuperación (RAG)
             </a>
           </h1>
         </div>
@@ -160,7 +156,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              One-minute read
+              4-minute read
             </span>
           </div>
           
@@ -176,7 +172,113 @@
 
       <div class="post-content">
         
-        <p>dsads</p>
+        <p>Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los <strong>Modelos de Lenguaje a Gran Escala (LLMs)</strong> (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al <strong>Procesamiento del Lenguaje Natural (PLN)</strong>, en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.</p>
+<p>Para el final del curso, se nos pidió hacer un proyecto relacionado a los temas vistos en clase, a lo cual me remití a la arquitectura RAG para diseñar un agente capaz de, a partir de archivos de tipo PDF o de texto (.txt), generar respuestas concisas y precisas a la pregunta del usuario basándose únicamente en la información que contienen los documentos. Si quieres consultar más detalladamente el proyecto, lo encuentras aquí: <a href="../../projects/dragan" >dRAGan: Agente de IA por técnica RAG</a> (aunque vale la pena decir que con este proyecto tuve más la intención de aprender, que de generar algo útil más allá de otras tecnologías).</p>
+<p>Así pues, sería de mi gusto explicar el funcionamiento del proyecto, recordando que esta sección de publicaciones también la uso para mi estudio propio.</p>
+<h1 id="-funcionamiento-final-del-agente">
+  💻 Funcionamiento final del Agente
+  <a class="heading-link" href="#-funcionamiento-final-del-agente">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h4 id="entrada-de-datos">
+  Entrada de Datos
+  <a class="heading-link" href="#entrada-de-datos">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Recibe documentos en formatos PDF (.pdf) y/o texto plano (.txt)<br>
+<strong>Caso de uso</strong>: carpeta con artículos médicos sobre Tuberculosis.</li>
+</ul>
+<h4 id="consulta-del-usuario">
+  Consulta del Usuario
+  <a class="heading-link" href="#consulta-del-usuario">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Procesa preguntas en lenguaje natural.<br>
+<strong>Caso de uso</strong>: ¿Qué es la Tuberculosis?</li>
+</ul>
+<h4 id="procesamiento-de-la-respuesta">
+  Procesamiento de la Respuesta
+  <a class="heading-link" href="#procesamiento-de-la-respuesta">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li><strong>Búsqueda contextual</strong>: Extrae información relevante SOLO de los documentos.</li>
+<li><strong>Generación</strong>: Crea respuestas concisas basadas en el contexto recuperado.</li>
+<li><strong>Manejo de errores</strong>: Si no se encontró información suficiente (el agente necesita al menos 30% de contexto útil para generar la respuesta), invita al usuario a añadir más información.</li>
+</ul>
+<p>Este funcionamiento garantiza que la respuesta sea generada basándose únicamente en los documentos proporcionados, evitando ambigüedades y asegurando veracidad en la respuesta (la veracidad depende por supuesto de la veracidad de los documentos).</p>
+<h1 id="-funcionamiento-internomatemático-del-agente">
+  🧠 Funcionamiento interno/matemático del Agente
+  <a class="heading-link" href="#-funcionamiento-internomatem%c3%a1tico-del-agente">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h4 id="tokenización">
+  Tokenización
+  <a class="heading-link" href="#tokenizaci%c3%b3n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>El Agente utiliza un <strong>tokenizador especializado</strong> (como WordPiece o BPE) para dividir el texto en unidades significativas (como separar una receta en ingredientes individuales), y almacenar los tokens en un vector (imagina a un vector como una colección de elementos), por ejemplo:</p>
+<ul>
+<li>Información del documento: <code>&quot;Tuberculosis enfermedad infecciosa&quot; → [&quot;Tuberculosis&quot;, &quot;enfemedad&quot;, &quot;infecciosa&quot;]</code></li>
+<li>Pregunta: <code>&quot;¿Qué es la Tuberculosis?&quot; → [&quot;¿&quot;,&quot;Qué es&quot;,&quot;la&quot;,&quot;Tuberculosis&quot;,&quot;?&quot;]</code><br>
+Este ejemplo es demasiado pobre, pero es importante reconocer que al <em>tokenizarse</em> cada archivo, se generan vectores con demasiados elementos.</li>
+</ul>
+<h4 id="transformación-a-embeddings">
+  Transformación a Embeddings
+  <a class="heading-link" href="#transformaci%c3%b3n-a-embeddings">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Un <em>Embedding</em> es una representación numérica de una palabra o frase. Mediante una estructura de datos llamada <strong>diccionario</strong>, cada token del vector se &ldquo;mapea&rdquo; a un número. por ejemplo:</p>
+<ul>
+<li>Información del documento:   <code>[&quot;Tuberculosis&quot;, &quot;enfermedad&quot;, &quot;infecciosa&quot;] → [5.3, 0.24, -3.12]</code></li>
+<li>Pregunta: <code>[&quot;¿&quot;,&quot;Qué es&quot;,&quot;la&quot;,&quot;Tuberculosis&quot;,&quot;?&quot;] → [-6.45, 21.3, 3.2, 5.3, -6.23]</code></li>
+</ul>
+<p>La estructura de datos Diccionario garantiza que el mapeo numérico de un elemento siempre sea el mismo (suponiendo el diccionario que yo usé, el token &ldquo;Tuberculosis&rdquo; siempre se mapeará al número 5.3).</p>
+<h4 id="búsqueda-semántica-álgebra-lineal-en-búsqueda-vectorial">
+  Búsqueda Semántica (Álgebra Lineal en Búsqueda Vectorial)
+  <a class="heading-link" href="#b%c3%basqueda-sem%c3%a1ntica-%c3%a1lgebra-lineal-en-b%c3%basqueda-vectorial">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Calcula la <strong>similitud coseno</strong> entre los vectores de la pregunta y los fragmentos del documento. Esta medida indica qué tan cercanos (en significado) son dos vectores, siendo 1.0 (100%) la máxima similitud posible</p>
+<div class="highlight my-class" id="my-codeblock"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">similitud</span> <span class="o">=</span> <span class="o">(</span>vector_pregunta • vector_documento<span class="o">)</span> / <span class="o">(||</span>vector_pregunta<span class="o">||</span> * <span class="o">||</span>vector_documento<span class="o">||)</span>
+</span></span></code></pre></div><p><em>dRAGan</em> selecciona los 3 fragmentos con mayor similitud y se almacenan como contexto relevante.</p>
+<h4 id="recuperación-del-contexto">
+  Recuperación del contexto
+  <a class="heading-link" href="#recuperaci%c3%b3n-del-contexto">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>El agente concatena los fragmentos más relevantes en un sólo bloque de texto, que será utilizado como <em>fuente de conocimiento</em> para responder. Este paso se conoce como <strong>context retrieval</strong> y es clave en el enfoque RAG: el modelo no responde desde su entrenamiento general, sino desde lo que recupere.</p>
+<h4 id="generación-de-la-respuesta">
+  Generación de la Respuesta
+  <a class="heading-link" href="#generaci%c3%b3n-de-la-respuesta">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><em>dRAGan</em> le hace una petición a un modelo de lenguaje (LLM), en este caso Phi3 Mini, para que construya la respuesta a la pregunta del usuario basándose en el contexto recuperado. La generación de la respuesta es condicionada, es decir, está influenciada directamente por la información proporcionada. Antes de hacer la petición al LLM, el agente verifica que se haya encontrado al menos 30% de similitud promedio entre los fragmentos y la pregunta, si no se da el caso, el agente directamente devuelve la queja de que no se encontró información suficiente, invitiando al usuario a añadir más documentos.</p>
+<hr>
+<p>Este proyecto me permitió entender en la práctica cómo un LLM puede ser más controlable y preciso si lo conectamos con un mecanismo de recuperación (RAG), evitando respuestas inventadas (alucinaciones) típicas de los modelos generativos puros.</p>
+<p>Además, reafirmé la importancia del preprocesamiento, el manejo de vectores, y la integración efectiva entre IA generativa y técnicas clásicas como la búsqueda vectorial.</p>
 
       </div>
 

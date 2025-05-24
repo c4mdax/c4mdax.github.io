@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Proyectos on camdax</title>
-    <link>http://localhost:1313/categories/proyectos/</link>
-    <description>Recent content in Proyectos on camdax</description>
+    <title>NLP on camdax</title>
+    <link>http://localhost:1313/tags/nlp/</link>
+    <description>Recent content in NLP on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/proyectos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proyecto de IA: Agente por RAG</title>
       <link>http://localhost:1313/projects/rag-agente/</link>
