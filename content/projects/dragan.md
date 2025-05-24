@@ -22,6 +22,7 @@ Este proyecto consiste en un **agente de respuestas mediante Recuperación Aumen
 3. **Búsqueda Semántica**: Se calculan similitudes entre la pregunta y fragmentos indexados mediante **embeddings**.
 4. **Generación**: Se usa un LLM (Actualmente Phi3 Mini) para construir una respuesta solo con el contexto relevante recuperado.
 
+[Explicación detallada](../../posts/rag-structure)
 ---
 
 ## 🛠️ Herramientas Utilizadas
