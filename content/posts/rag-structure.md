@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2025-04-17T22:11:49-06:00
-title = "dRAGan: Proyecto de IA por Generación Aumentada por Recuperación (RAG)"
+title = "Técnica RAG para agentes de IA"
 description = ""
 slug = ""
 authors = []

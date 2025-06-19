@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  HiddenInk: LSB Steganography · camdax
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Luis Angel Moreno Delgado">
+<meta name="description" content="Hide and extract messages in PNG images using the Least Significant Bit (LSB) technique.">
+<meta name="keywords" content="personal, ai, ml, backend">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HiddenInk: LSB Steganography">
+  <meta name="twitter:description" content="Hide and extract messages in PNG images using the Least Significant Bit (LSB) technique.">
+
+<meta property="og:url" content="http://localhost:1313/projects/lsb-hiddenink/">
+  <meta property="og:site_name" content="camdax">
+  <meta property="og:title" content="HiddenInk: LSB Steganography">
+  <meta property="og:description" content="Hide and extract messages in PNG images using the Least Significant Bit (LSB) technique.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-11-19T21:03:00-06:00">
+    <meta property="article:modified_time" content="2024-11-19T21:03:00-06:00">
+    <meta property="article:tag" content="C">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Steganography">
+    <meta property="article:tag" content="LSB">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/projects/lsb-hiddenink/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      camdax
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/projects/lsb-hiddenink/">
+          HiddenInk: LSB Steganography
+        </a>
+      </h1>
+    </header>
+
+    <p>This project is a tool written in <strong>C language</strong> to hide and extract messages inside images using the <strong>LSB (Least Significant Bit) steganography</strong> technique. It was developed with the goal of exploring simple methods for hiding information in images without producing visible changes.</p>
+<hr>
+<h2 id="-general-operation">
+  ⚙️ General Operation
+  <a class="heading-link" href="#-general-operation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><strong>Input</strong>:
+<ul>
+<li>The user provides a PNG image and a text file.</li>
+</ul>
+</li>
+<li><strong>Hiding (mode <code>-h</code>)</strong>:
+<ul>
+<li>The image size is analyzed, and the least significant bit of each color channel is replaced with bits from the message.</li>
+</ul>
+</li>
+<li><strong>Extraction (mode <code>-u</code>)</strong>:
+<ul>
+<li>The image is scanned to reconstruct the hidden message from the modified bits.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-tools-used">
+  🛠️ Tools Used
+  <a class="heading-link" href="#-tools-used">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><strong>C language</strong>: Main implementation language.</li>
+<li><strong>libpng</strong>: Library for handling PNG files.</li>
+<li><strong>SDL2 / SDL2_image</strong>: Graphics libraries for image manipulation.</li>
+<li><strong>gcc</strong>: Compiler used to build all program modules (<code>hider.c</code>, <code>revealer.c</code>, etc.).</li>
+</ul>
+<hr>
+<p><a href="https://github.com/c4mdax/LSB-Steganography"  class="external-link" target="_blank" rel="noopener">GitHub repository</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Luis Angel Moreno Delgado 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

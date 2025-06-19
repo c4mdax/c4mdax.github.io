@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-  dRAGan: Agente de IA por RAG · camdax
+  dRAGan: AI Agent using the RAG Technique · camdax
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,28 @@
 
 
 <meta name="author" content="Luis Angel Moreno Delgado">
-<meta name="description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
+<meta name="description" content="Question-answering agent based on Retrieval-Augmented Generation (RAG) with LangChain, Chroma, and embeddings.">
 <meta name="keywords" content="personal, ai, ml, backend">
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="dRAGan: Agente de IA por RAG">
-  <meta name="twitter:description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
+  <meta name="twitter:title" content="dRAGan: AI Agent using the RAG Technique">
+  <meta name="twitter:description" content="Question-answering agent based on Retrieval-Augmented Generation (RAG) with LangChain, Chroma, and embeddings.">
 
 <meta property="og:url" content="http://localhost:1313/projects/dragan/">
   <meta property="og:site_name" content="camdax">
-  <meta property="og:title" content="dRAGan: Agente de IA por RAG">
-  <meta property="og:description" content="Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los Modelos de Lenguaje a Gran Escala (LLMs) (como GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al Procesamiento del Lenguaje Natural (PLN), en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.">
+  <meta property="og:title" content="dRAGan: AI Agent using the RAG Technique">
+  <meta property="og:description" content="Question-answering agent based on Retrieval-Augmented Generation (RAG) with LangChain, Chroma, and embeddings.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2025-05-23T18:28:16-06:00">
-    <meta property="article:modified_time" content="2025-05-23T18:28:16-06:00">
+    <meta property="article:published_time" content="2025-04-17T22:11:49-06:00">
+    <meta property="article:modified_time" content="2025-04-17T22:11:49-06:00">
+    <meta property="article:tag" content="RAG">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="LangChain">
+    <meta property="article:tag" content="NLP">
 
 
 
@@ -141,130 +145,49 @@
     <header>
       <h1 class="title">
         <a class="title-link" href="http://localhost:1313/projects/dragan/">
-          dRAGan: Agente de IA por RAG
+          dRAGan: AI Agent using the RAG Technique
         </a>
       </h1>
     </header>
 
-    <p>Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los <strong>Modelos de Lenguaje a Gran Escala (LLMs)</strong> (como GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al <strong>Procesamiento del Lenguaje Natural (PLN)</strong>, en particular la <strong>Generación Aumentada por Recuperación (RAG)</strong>, un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.</p>
+    <p>This project consists of a <strong>question-answering agent using Retrieval-Augmented Generation (RAG)</strong>, which responds to queries based solely on local documents (PDF or TXT). It was developed as part of an Artificial Intelligence course and aims to explore modern NLP architectures applied to specialized agents (of course, this is not a new idea, but implementing it helped me understand key concepts of this technology).</p>
 <hr>
-<h1 id="-descripción-del-proyecto">
-  🔧 Descripción del Proyecto
-  <a class="heading-link" href="#-descripci%c3%b3n-del-proyecto">
+<h2 id="-general-workflow">
+  ⚙️ General Workflow
+  <a class="heading-link" href="#-general-workflow">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h1>
-<p>Diseñé un <strong>agente conversacional basado en RAG</strong> que, a partir de documentos en formato PDF o texto plano, es capaz de responder preguntas de forma precisa, utilizando únicamente el contenido proporcionado por dichos documentos.</p>
-<p>Este enfoque evita las &ldquo;alucinaciones&rdquo; típicas de los LLMs y permite mayor control y veracidad en las respuestas. Aunque actualmente el proyecto no cuenta con una versión portátil de ejecución, el código se encuentra disponible en mi repositorio de GitHub. Estoy investigando cómo mejorar su portabilidad próximamente (por ejemplo, con interfaces web o contenedores ligeros).</p>
-<p>📁 Repositorio: <em><a href="https://github.com/tuusuario/dragan-rag"  class="external-link" target="_blank" rel="noopener">GitHub - dragan-rag</a></em></p>
-<hr>
-<h1 id="-herramientas-utilizadas">
-  ⚙️ Herramientas Utilizadas
-  <a class="heading-link" href="#-herramientas-utilizadas">
+</h2>
+<ol>
+<li><strong>Input</strong>: The user uploads <code>.pdf</code> or <code>.txt</code> documents.</li>
+<li><strong>Question</strong>: A natural language question is submitted.</li>
+<li><strong>Semantic Search</strong>: Similarities between the question and indexed fragments are calculated using <strong>embeddings</strong>.</li>
+<li><strong>Generation</strong>: A LLM (currently Phi3 Mini) is used to generate a response based only on the retrieved relevant context.</li>
+</ol>
+<h2 id="detailed-explanation">
+  <a href="../../posts/rag-structure" >Detailed explanation</a>
+  <a class="heading-link" href="#detailed-explanation">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h1>
+</h2>
+<h2 id="-tools-used">
+  🛠️ Tools Used
+  <a class="heading-link" href="#-tools-used">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <ul>
-<li><strong>Python</strong> — Lenguaje base del proyecto.</li>
-<li><strong>LangChain</strong> — Para orquestar los pasos del agente y facilitar la integración modular.</li>
-<li><strong>ChromaDB</strong> — Base de datos vectorial para indexación y búsqueda semántica.</li>
-<li><strong>all-MiniLM-L6-v2</strong> (de Hugging Face) — Modelo de embeddings para representación semántica del texto.</li>
-<li><strong>PyMuPDF</strong> y lectura de archivos <code>.txt</code> — Extracción de contenido desde los documentos.</li>
+<li><strong>LangChain</strong>: Orchestration of the RAG pipeline.</li>
+<li><strong>Chroma DB</strong>: Vector store for semantic search.</li>
+<li><strong>Hugging Face Embeddings</strong>: <code>all-MiniLM-L6-v2</code> used to transform text into vectors.</li>
+<li><strong>HNSW Algorithm</strong>: Used by Chroma for nearest neighbor search.</li>
+<li><strong>Python</strong>: Main programming language of the project.</li>
 </ul>
 <hr>
-<h1 id="-funcionamiento-general">
-  💻 Funcionamiento General
-  <a class="heading-link" href="#-funcionamiento-general">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<h3 id="entrada-de-datos">
-  Entrada de Datos
-  <a class="heading-link" href="#entrada-de-datos">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<ul>
-<li>Archivos en formatos <code>.pdf</code> y <code>.txt</code></li>
-<li>Ejemplo: colección de artículos médicos sobre tuberculosis</li>
-</ul>
-<h3 id="consulta-del-usuario">
-  Consulta del Usuario
-  <a class="heading-link" href="#consulta-del-usuario">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<ul>
-<li>Pregunta en lenguaje natural</li>
-<li>Ejemplo: <em>¿Qué es la tuberculosis?</em></li>
-</ul>
-<h3 id="procesamiento-y-respuesta">
-  Procesamiento y Respuesta
-  <a class="heading-link" href="#procesamiento-y-respuesta">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<ul>
-<li><strong>Tokenización y embeddings</strong> de los textos</li>
-<li><strong>Indexación semántica</strong> con ChromaDB</li>
-<li><strong>Recuperación</strong> del contexto más relevante</li>
-<li><strong>Generación</strong> de la respuesta con un modelo de lenguaje</li>
-<li><strong>Criterio de confiabilidad</strong>: si el contexto recuperado no alcanza 30% de similitud, se pide más información al usuario</li>
-</ul>
-<hr>
-<h1 id="-detalle-matemático-similitud-coseno">
-  🧠 Detalle Matemático: Similitud Coseno
-  <a class="heading-link" href="#-detalle-matem%c3%a1tico-similitud-coseno">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>Para determinar la relevancia entre la pregunta y los fragmentos del documento, se calcula la <strong>similitud coseno</strong> entre sus vectores:</p>
-<p>$$
-\cos(\theta) = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|}
-$$</p>
-<p>Donde:</p>
-<ul>
-<li>$\vec{A}$ es el vector de la pregunta</li>
-<li>$\vec{B}$ es el vector de un fragmento de documento</li>
-</ul>
-<p>Este cálculo permite ordenar los fragmentos por relevancia y elegir solo los más informativos como contexto.</p>
-<hr>
-<h1 id="-estado-actual-y-futuras-integraciones">
-  🚧 Estado Actual y Futuras Integraciones
-  <a class="heading-link" href="#-estado-actual-y-futuras-integraciones">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<ul>
-<li>✅ Funcionalidad completa en entorno local</li>
-<li>❌ Aún no disponible para ejecución fácil o portable</li>
-<li>🛠️ En proceso de exploración para:
-<ul>
-<li>Desplegar en una interfaz web ligera</li>
-<li>Crear contenedores Docker para facilitar la distribución</li>
-<li>Experimentar con frameworks como <strong>Gradio</strong> o <strong>Streamlit</strong></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h1 id="-reflexión-final">
-  📌 Reflexión Final
-  <a class="heading-link" href="#-reflexi%c3%b3n-final">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>Este proyecto ha sido una experiencia formativa, que me permitió comprender cómo conectar técnicas modernas de LLM con estructuras clásicas como la búsqueda vectorial. A futuro me gustaría llevar este agente a un entorno interactivo y más accesible, integrando elementos de interfaz gráfica y despliegue en la nube.</p>
-<p>Como estudiante de Ciencias de la Computación, valoro más el proceso de aprender que el de construir algo comercial desde el principio. Agradezco poder documentarlo aquí para futuras referencias personales y de colegas.</p>
-<hr>
+<p><a href="https://github.com/c4mdax/dragan-agent-rag"  class="external-link" target="_blank" rel="noopener">GitHub repository</a>.</p>
 
   </article>
 </section>
