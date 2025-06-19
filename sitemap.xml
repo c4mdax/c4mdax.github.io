@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://c4mdax.github.io/tags/ai/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/ai/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
     <loc>https://c4mdax.github.io/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/rag-structure/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/tags/ia/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/ia/</loc>
+    <loc>https://c4mdax.github.io/projects/dragan/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/tags/langchain/</loc>
@@ -32,10 +32,7 @@
     <loc>https://c4mdax.github.io/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/projects/rag-agente/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/proyectos/</loc>
+    <loc>https://c4mdax.github.io/categories/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/tags/rag/</loc>
@@ -45,6 +42,9 @@
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/tags/</loc>
+    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/rag-structure/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/papers/llm-vs-human/</loc>
@@ -76,6 +76,24 @@
   </url><url>
     <loc>https://c4mdax.github.io/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/c/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/projects/lsb-hiddenink/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/lsb/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/security/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/tags/steganography/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/systems/</loc>
+    <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/contact/</loc>
   </url><url>

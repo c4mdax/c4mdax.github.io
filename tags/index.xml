@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IA</title>
-      <link>https://c4mdax.github.io/tags/ia/</link>
+      <title>AI</title>
+      <link>https://c4mdax.github.io/tags/ai/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>https://c4mdax.github.io/tags/ia/</guid>
+      <guid>https://c4mdax.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -34,6 +34,34 @@
       <link>https://c4mdax.github.io/tags/rag/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
       <guid>https://c4mdax.github.io/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>https://c4mdax.github.io/tags/c/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>https://c4mdax.github.io/tags/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LSB</title>
+      <link>https://c4mdax.github.io/tags/lsb/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>https://c4mdax.github.io/tags/lsb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://c4mdax.github.io/tags/security/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>https://c4mdax.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Steganography</title>
+      <link>https://c4mdax.github.io/tags/steganography/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>https://c4mdax.github.io/tags/steganography/</guid>
       <description></description>
     </item>
   </channel>

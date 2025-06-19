@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on camdax</title>
+    <link>https://c4mdax.github.io/tags/security/</link>
+    <description>Recent content in Security on camdax</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Nov 2024 21:03:00 -0600</lastBuildDate>
+    <atom:link href="https://c4mdax.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HiddenInk: LSB Steganography</title>
+      <link>https://c4mdax.github.io/projects/lsb-hiddenink/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>https://c4mdax.github.io/projects/lsb-hiddenink/</guid>
+      <description>&lt;p&gt;This project is a tool written in &lt;strong&gt;C language&lt;/strong&gt; to hide and extract messages inside images using the &lt;strong&gt;LSB (Least Significant Bit) steganography&lt;/strong&gt; technique. It was developed with the goal of exploring simple methods for hiding information in images without producing visible changes.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-general-operation&#34;&gt;&#xA;  ⚙️ General Operation&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-general-operation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Input&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The user provides a PNG image and a text file.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hiding (mode &lt;code&gt;-h&lt;/code&gt;)&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The image size is analyzed, and the least significant bit of each color channel is replaced with bits from the message.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Extraction (mode &lt;code&gt;-u&lt;/code&gt;)&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The image is scanned to reconstruct the hidden message from the modified bits.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-tools-used&#34;&gt;&#xA;  🛠️ Tools Used&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-tools-used&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;C language&lt;/strong&gt;: Main implementation language.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;libpng&lt;/strong&gt;: Library for handling PNG files.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SDL2 / SDL2_image&lt;/strong&gt;: Graphics libraries for image manipulation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;gcc&lt;/strong&gt;: Compiler used to build all program modules (&lt;code&gt;hider.c&lt;/code&gt;, &lt;code&gt;revealer.c&lt;/code&gt;, etc.).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/c4mdax/LSB-Steganography&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
