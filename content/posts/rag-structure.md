@@ -6,7 +6,7 @@ description = ""
 slug = ""
 authors = []
 tags = []
-categories = ["LLM's", "RAG"]
+categories = ["LLMs", "RAG"]
 externalLink = ""
 series = []
 +++
