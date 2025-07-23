@@ -9,24 +9,24 @@
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IA</title>
-      <link>http://localhost:1313/categories/ia/</link>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/categories/ia/</guid>
+      <guid>http://localhost:1313/categories/ai/</guid>
       <description></description>
     </item>
     <item>
-      <title>LLM&#39;s</title>
+      <title>LLMs</title>
       <link>http://localhost:1313/categories/llms/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
       <guid>http://localhost:1313/categories/llms/</guid>
       <description></description>
     </item>
     <item>
-      <title>Proyectos</title>
-      <link>http://localhost:1313/categories/proyectos/</link>
+      <title>Projects</title>
+      <link>http://localhost:1313/categories/projects/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/categories/proyectos/</guid>
+      <guid>http://localhost:1313/categories/projects/</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +41,13 @@
       <link>http://localhost:1313/categories/artificial-intelligence/</link>
       <pubDate>Fri, 07 Feb 2025 21:53:44 -0600</pubDate>
       <guid>http://localhost:1313/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>http://localhost:1313/categories/systems/</link>
+      <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
+      <guid>http://localhost:1313/categories/systems/</guid>
       <description></description>
     </item>
   </channel>
