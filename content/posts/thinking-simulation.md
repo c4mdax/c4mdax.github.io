@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2025-01-30T22:30:30-06:00
 title = "IA actual: Simulación brillante, pensamiento inexistente"
 description = "Opinion personal respecto al concepto de IA"

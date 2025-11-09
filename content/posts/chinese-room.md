@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2025-02-07T21:53:44-06:00
 title = "El Dilema de la Habitación China: Los LLM's actuales sin Conciencia ni Comprensión"
 description = "Análisis de los límites de la Inteligencia Artificial derivado del experimento de la Habitación China"
