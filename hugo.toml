@@ -21,7 +21,7 @@ author = "Luis Angel Moreno Delgado"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Luis Angel website"
 keywords = "ai,ml,personal"
-info = ["Computer Science and AI student"]
+info = ["Computer Science student"]
 avatarURL = "/images/avatar.png"
 #gravatar = "static/images/avatar.png"
 since = 2025
@@ -154,7 +154,7 @@ title = "camdax"
 
 [languages.en.params]
 author = "Luis Angel Moreno Delgado"
-info = "Computer Science and AI student"
+info = "Computer Science & Backend, ML Enthusiast"
 keywords = "personal, ai, ml, backend"
 
 [[languages.en.menu.main]]
