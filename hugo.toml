@@ -154,7 +154,7 @@ title = "camdax"
 
 [languages.en.params]
 author = "Luis Angel Moreno Delgado"
-info = "Computer Science & Backend, ML Enthusiast"
+info = "Computer Science, Backend & ML Enthusiast"
 keywords = "personal, ai, ml, backend"
 
 [[languages.en.menu.main]]

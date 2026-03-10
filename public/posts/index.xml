@@ -6,8 +6,15 @@
     <description>Recent content in Posts on camdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 21:12:31 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taxonomía del Juego de la Vida de Conway</title>
+      <link>http://localhost:1313/posts/gol-conway/</link>
+      <pubDate>Tue, 17 Feb 2026 21:12:31 -0600</pubDate>
+      <guid>http://localhost:1313/posts/gol-conway/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Técnica RAG para agentes de IA</title>
       <link>http://localhost:1313/posts/rag-structure/</link>
