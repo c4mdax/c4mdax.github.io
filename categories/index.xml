@@ -6,8 +6,29 @@
     <description>Recent content in Categories on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automata Theory</title>
+      <link>https://c4mdax.github.io/categories/automata-theory/</link>
+      <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
+      <guid>https://c4mdax.github.io/categories/automata-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cellular Automata</title>
+      <link>https://c4mdax.github.io/categories/cellular-automata/</link>
+      <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
+      <guid>https://c4mdax.github.io/categories/cellular-automata/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conway&#39;s GoL</title>
+      <link>https://c4mdax.github.io/categories/conways-gol/</link>
+      <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
+      <guid>https://c4mdax.github.io/categories/conways-gol/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://c4mdax.github.io/categories/ai/</link>

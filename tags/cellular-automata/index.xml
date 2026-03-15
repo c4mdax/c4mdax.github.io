@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cellular Automata on c4mdax</title>
+    <link>http://localhost:37087/tags/cellular-automata/</link>
+    <description>Recent content in Cellular Automata on c4mdax</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
+    <atom:link href="http://localhost:37087/tags/cellular-automata/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taxonomía Juego de la Vida de Conway</title>
+      <link>http://localhost:37087/posts/taxonomy-gol/</link>
+      <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
+      <guid>http://localhost:37087/posts/taxonomy-gol/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

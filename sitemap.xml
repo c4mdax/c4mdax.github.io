@@ -3,21 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://c4mdax.github.io/</loc>
-    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+    <lastmod>2026-03-11T15:41:44-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/</loc>
-    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+    <lastmod>2026-03-11T15:41:44-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/gol-conway/</loc>
-    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+    <loc>https://c4mdax.github.io/authors/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/automata-theory/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/cellular-automata/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/categories/conways-gol/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/authors/luis-angel-moreno-delgado/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/taxonomy-gol/</loc>
+    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/tags/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/ai/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/projects/dragan/</loc>
@@ -90,8 +105,6 @@
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/contact/</loc>
-  </url><url>
-    <loc>https://c4mdax.github.io/authors/</loc>
   </url><url>
     <loc>https://c4mdax.github.io/series/</loc>
   </url>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collision-Based Computing on c4mdax</title>
+    <link>http://localhost:37087/categories/collision-based-computing/</link>
+    <description>Recent content in Collision-Based Computing on c4mdax</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Mar 2026 15:41:44 -0600</lastBuildDate>
+    <atom:link href="http://localhost:37087/categories/collision-based-computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cómputo basado en Colisiones</title>
+      <link>http://localhost:37087/posts/collision-based-computing/</link>
+      <pubDate>Sun, 15 Mar 2026 15:41:44 -0600</pubDate>
+      <guid>http://localhost:37087/posts/collision-based-computing/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
