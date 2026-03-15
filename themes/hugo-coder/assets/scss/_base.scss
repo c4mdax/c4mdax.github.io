@@ -58,7 +58,7 @@ h4,
 h5,
 h6 {
   font-family: $font-family;
-  font-weight: 600;
+  font-weight: 500;
   color: $alt-fg-color;
   margin: 4rem 0 2.5rem 0;
 
@@ -82,7 +82,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size:4.2rem;
   line-height: 3.6rem;
 
   @media only screen and (max-width: 768px) {
@@ -132,7 +132,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 0.8rem;
   line-height: 2.2rem;
 
   @media only screen and (max-width: 768px) {
