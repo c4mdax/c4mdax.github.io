@@ -1,6 +1,6 @@
 body.colorscheme-dark {
   color: #dadada;
-  background-color: #141719; }
+  background-color: #0d1117; }
   body.colorscheme-dark a {
     color: #32D6FF; }
   body.colorscheme-dark h1,
@@ -67,7 +67,7 @@ body.colorscheme-dark {
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
     color: #dadada;
-    background-color: #141719; }
+    background-color: #0d1117; }
     body.colorscheme-auto a {
       color: #32D6FF; }
     body.colorscheme-auto h1,
@@ -165,11 +165,11 @@ body.colorscheme-dark .content .centered .about ul li a {
       color: #32D6FF; } }
 
 body.colorscheme-dark .notice .notice-title {
-  border-bottom: 1px solid #141719; }
+  border-bottom: 1px solid #0d1117; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .notice .notice-title {
-    border-bottom: 1px solid #141719; } }
+    border-bottom: 1px solid #0d1117; } }
 
 body.colorscheme-dark .navigation a,
 body.colorscheme-dark .navigation span {
@@ -180,7 +180,7 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list {
-    background-color: #141719;
+    background-color: #0d1117;
     border-top: solid 2px #424242;
     border-bottom: solid 2px #424242; } }
 
@@ -209,7 +209,7 @@ body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .n
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list {
-    background-color: #141719;
+    background-color: #0d1117;
     border-top: solid 2px #424242;
     border-bottom: solid 2px #424242; } }
 
@@ -234,10 +234,10 @@ body.colorscheme-dark .tabs label.tab-label {
   border-color: #4f4f4f; }
 
 body.colorscheme-dark .tabs input.tab-input:checked + label.tab-label {
-  background-color: #141719; }
+  background-color: #0d1117; }
 
 body.colorscheme-dark .tabs .tab-content {
-  background-color: #141719;
+  background-color: #0d1117;
   border-color: #4f4f4f; }
 
 @media (prefers-color-scheme: dark) {
@@ -245,9 +245,9 @@ body.colorscheme-dark .tabs .tab-content {
     background-color: #424242;
     border-color: #4f4f4f; }
   body.colorscheme-auto .tabs input.tab-input:checked + label.tab-label {
-    background-color: #141719; }
+    background-color: #0d1117; }
   body.colorscheme-auto .tabs .tab-content {
-    background-color: #141719;
+    background-color: #0d1117;
     border-color: #4f4f4f; } }
 
 body.colorscheme-dark .taxonomy-element {

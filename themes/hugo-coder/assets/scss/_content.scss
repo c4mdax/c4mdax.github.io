@@ -114,7 +114,7 @@
 }
 
 .avatar img {
-  width: 20rem;
+  width: 30rem;
   height: auto;
   border-radius: 50%;
 
@@ -186,10 +186,13 @@
       margin-bottom: 0.5rem;
     }
 
-    h2 {
+    h2 { //aqui el subitutlo
       margin-top: 1rem;
       margin-bottom: 0.5rem;
-      font-size: 2.4rem;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.01rem;
+      opacity: 0.8;
 
       @media only screen and (max-width: 768px) {
         font-size: 2rem;

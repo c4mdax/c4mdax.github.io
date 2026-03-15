@@ -2,66 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on c4mdax</title>
-    <link>http://localhost:39733/tags/</link>
+    <link>http://localhost:37087/tags/</link>
     <description>Recent content in Tags on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
-    <atom:link href="http://localhost:39733/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37087/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:39733/tags/ai/</link>
+      <link>http://localhost:37087/tags/ai/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:39733/tags/ai/</guid>
+      <guid>http://localhost:37087/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>LangChain</title>
-      <link>http://localhost:39733/tags/langchain/</link>
+      <link>http://localhost:37087/tags/langchain/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:39733/tags/langchain/</guid>
+      <guid>http://localhost:37087/tags/langchain/</guid>
       <description></description>
     </item>
     <item>
       <title>NLP</title>
-      <link>http://localhost:39733/tags/nlp/</link>
+      <link>http://localhost:37087/tags/nlp/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:39733/tags/nlp/</guid>
+      <guid>http://localhost:37087/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>RAG</title>
-      <link>http://localhost:39733/tags/rag/</link>
+      <link>http://localhost:37087/tags/rag/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:39733/tags/rag/</guid>
+      <guid>http://localhost:37087/tags/rag/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>http://localhost:39733/tags/c/</link>
+      <link>http://localhost:37087/tags/c/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:39733/tags/c/</guid>
+      <guid>http://localhost:37087/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>LSB</title>
-      <link>http://localhost:39733/tags/lsb/</link>
+      <link>http://localhost:37087/tags/lsb/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:39733/tags/lsb/</guid>
+      <guid>http://localhost:37087/tags/lsb/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:39733/tags/security/</link>
+      <link>http://localhost:37087/tags/security/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:39733/tags/security/</guid>
+      <guid>http://localhost:37087/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Steganography</title>
-      <link>http://localhost:39733/tags/steganography/</link>
+      <link>http://localhost:37087/tags/steganography/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:39733/tags/steganography/</guid>
+      <guid>http://localhost:37087/tags/steganography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automata Theory</title>
+      <link>http://localhost:37087/tags/automata-theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:37087/tags/automata-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cellular Automata</title>
+      <link>http://localhost:37087/tags/cellular-automata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:37087/tags/cellular-automata/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conway&#39;s GoL</title>
+      <link>http://localhost:37087/tags/conways-gol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:37087/tags/conways-gol/</guid>
       <description></description>
     </item>
   </channel>
