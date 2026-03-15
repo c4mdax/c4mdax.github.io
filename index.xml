@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>camdax</title>
+    <title>c4mdax</title>
     <link>https://c4mdax.github.io/</link>
-    <description>Recent content on camdax</description>
+    <description>Recent content on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 21:12:31 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taxonomía del Juego de la Vida de Conway</title>
+      <link>https://c4mdax.github.io/posts/gol-conway/</link>
+      <pubDate>Tue, 17 Feb 2026 21:12:31 -0600</pubDate>
+      <guid>https://c4mdax.github.io/posts/gol-conway/</guid>
+      <description></description>
+    </item>
     <item>
       <title>dRAGan: AI Agent using the RAG Technique</title>
       <link>https://c4mdax.github.io/projects/dragan/</link>
@@ -62,7 +69,7 @@
       <link>https://c4mdax.github.io/about/</link>
       <pubDate>Fri, 03 Jan 2025 10:00:00 +0000</pubDate>
       <guid>https://c4mdax.github.io/about/</guid>
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;&#xA;  About Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a 4th semester student of &lt;strong&gt;Computer Science&lt;/strong&gt; at &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faculty of Sciences, UNAM&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have a genuine interest in the theory of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (from the Theoretical-Practical part to the Philosophical-Humanistic part), as well as a taste for &lt;strong&gt;Software Development&lt;/strong&gt;  with &lt;strong&gt;Machine Learning implementations&lt;/strong&gt;, therefore, since 2024 I have been studying everything related to the &lt;strong&gt;Machine Learning Engineer&lt;/strong&gt; path (following this &lt;a href=&#34;https://github.com/C4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roadmap&lt;/a&gt;). Although I don&amp;rsquo;t have a strong interest in any specific area of ML or Software, I like &lt;strong&gt;LLM&amp;rsquo;s Theory&lt;/strong&gt;, &lt;strong&gt;Computer Vision&lt;/strong&gt;, and &lt;strong&gt;Backend Development&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;me&#34;&gt;&#xA;  Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Computer Science student @ &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UNAM&lt;/a&gt;&lt;/strong&gt;&#xA;In the industry, enthusiastic about &lt;strong&gt;Backend Architecture&lt;/strong&gt; &amp;amp; &lt;strong&gt;ML&lt;/strong&gt;&#xA;In the academia, passionate about &lt;strong&gt;Automata Theory&lt;/strong&gt; &amp;amp; &lt;strong&gt;Discrete Dynamical Systems&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Java/Spring&lt;/strong&gt; for Backend&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; for experimental ML&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scala&lt;/strong&gt; for&amp;hellip; why not?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;resources-im-studying&#34;&gt;&#xA;  Resources I&amp;rsquo;m studying:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#resources-im-studying&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;For Industry purposes&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www-oracle-com.translate.goog/technical-resources/articles/javase/bloch-effective-08-qa.html?_x_tr_sl=en&amp;amp;_x_tr_tl=es&amp;amp;_x_tr_hl=es&amp;amp;_x_tr_pto=tc&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Effective Java&lt;/em&gt;&lt;/a&gt; - Joshua Bloch&lt;/li&gt;&#xA;&lt;li&gt;Spring (with everything I find on the web)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/c4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ML Roadmap&lt;/a&gt;, (made by me in 2nd semester)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;For academic purposes (and hopefully for my thesis)&lt;/p&gt;</description>
     </item>
     <item>
       <title>HiddenInk: LSB Steganography</title>

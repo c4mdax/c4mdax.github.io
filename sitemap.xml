@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://c4mdax.github.io/</loc>
+    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/</loc>
+    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/gol-conway/</loc>
+    <lastmod>2026-02-17T21:12:31-06:00</lastmod>
+  </url><url>
     <loc>https://c4mdax.github.io/tags/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/ai/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/tags/nlp/</loc>
-    <lastmod>2025-04-17T22:11:49-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/projects/</loc>
