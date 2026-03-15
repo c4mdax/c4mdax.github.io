@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on c4mdax</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:39733/posts/</link>
     <description>Recent content in Posts on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Feb 2026 21:12:31 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39733/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taxonomía del Juego de la Vida de Conway</title>
-      <link>http://localhost:1313/posts/gol-conway/</link>
+      <link>http://localhost:39733/posts/gol-conway/</link>
       <pubDate>Tue, 17 Feb 2026 21:12:31 -0600</pubDate>
-      <guid>http://localhost:1313/posts/gol-conway/</guid>
+      <guid>http://localhost:39733/posts/gol-conway/</guid>
       <description></description>
     </item>
     <item>
       <title>Técnica RAG para agentes de IA</title>
-      <link>http://localhost:1313/posts/rag-structure/</link>
+      <link>http://localhost:39733/posts/rag-structure/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/posts/rag-structure/</guid>
+      <guid>http://localhost:39733/posts/rag-structure/</guid>
       <description>&lt;p&gt;Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los &lt;strong&gt;Modelos de Lenguaje a Gran Escala (LLMs)&lt;/strong&gt; (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al &lt;strong&gt;Procesamiento del Lenguaje Natural (PLN)&lt;/strong&gt;, en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.&lt;/p&gt;</description>
     </item>
   </channel>

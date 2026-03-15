@@ -2,97 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:39733/</loc>
     <lastmod>2026-02-17T21:12:31-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:39733/posts/</loc>
     <lastmod>2026-02-17T21:12:31-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/gol-conway/</loc>
+    <loc>http://localhost:39733/posts/gol-conway/</loc>
     <lastmod>2026-02-17T21:12:31-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>http://localhost:39733/categories/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>http://localhost:39733/tags/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:39733/categories/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/dragan/</loc>
+    <loc>http://localhost:39733/projects/dragan/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/langchain/</loc>
+    <loc>http://localhost:39733/tags/langchain/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/llms/</loc>
+    <loc>http://localhost:39733/categories/llms/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nlp/</loc>
+    <loc>http://localhost:39733/tags/nlp/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/projects/</loc>
+    <loc>http://localhost:39733/categories/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:39733/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/rag/</loc>
+    <loc>http://localhost:39733/categories/rag/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rag/</loc>
+    <loc>http://localhost:39733/tags/rag/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:39733/tags/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/rag-structure/</loc>
+    <loc>http://localhost:39733/posts/rag-structure/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/llm-vs-human/</loc>
+    <loc>http://localhost:39733/papers/llm-vs-human/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/</loc>
+    <loc>http://localhost:39733/papers/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/turing-test/</loc>
+    <loc>http://localhost:39733/papers/turing-test/</loc>
     <lastmod>2025-02-09T12:46:13-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/ai-or-ia/</loc>
+    <loc>http://localhost:39733/papers/ai-or-ia/</loc>
     <lastmod>2025-02-09T12:45:35-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/chinese-room/</loc>
+    <loc>http://localhost:39733/papers/chinese-room/</loc>
     <lastmod>2025-02-09T12:43:53-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/machine-thinking/</loc>
+    <loc>http://localhost:39733/papers/machine-thinking/</loc>
     <lastmod>2025-02-07T21:42:44-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:39733/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/c/</loc>
+    <loc>http://localhost:39733/tags/c/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/lsb-hiddenink/</loc>
+    <loc>http://localhost:39733/projects/lsb-hiddenink/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lsb/</loc>
+    <loc>http://localhost:39733/tags/lsb/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/security/</loc>
+    <loc>http://localhost:39733/tags/security/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/steganography/</loc>
+    <loc>http://localhost:39733/tags/steganography/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/systems/</loc>
+    <loc>http://localhost:39733/categories/systems/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://localhost:39733/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>http://localhost:39733/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://localhost:39733/series/</loc>
   </url>
 </urlset>
