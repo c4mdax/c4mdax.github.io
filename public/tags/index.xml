@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on c4mdax</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://c4mdax.github.io/tags/</link>
     <description>Recent content in Tags on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Apr 2025 22:11:49 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://c4mdax.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://c4mdax.github.io/tags/ai/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://c4mdax.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>LangChain</title>
-      <link>http://localhost:1313/tags/langchain/</link>
+      <link>https://c4mdax.github.io/tags/langchain/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/tags/langchain/</guid>
+      <guid>https://c4mdax.github.io/tags/langchain/</guid>
       <description></description>
     </item>
     <item>
       <title>NLP</title>
-      <link>http://localhost:1313/tags/nlp/</link>
+      <link>https://c4mdax.github.io/tags/nlp/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/tags/nlp/</guid>
+      <guid>https://c4mdax.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>RAG</title>
-      <link>http://localhost:1313/tags/rag/</link>
+      <link>https://c4mdax.github.io/tags/rag/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>http://localhost:1313/tags/rag/</guid>
+      <guid>https://c4mdax.github.io/tags/rag/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>http://localhost:1313/tags/c/</link>
+      <link>https://c4mdax.github.io/tags/c/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:1313/tags/c/</guid>
+      <guid>https://c4mdax.github.io/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>LSB</title>
-      <link>http://localhost:1313/tags/lsb/</link>
+      <link>https://c4mdax.github.io/tags/lsb/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:1313/tags/lsb/</guid>
+      <guid>https://c4mdax.github.io/tags/lsb/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://c4mdax.github.io/tags/security/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://c4mdax.github.io/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Steganography</title>
-      <link>http://localhost:1313/tags/steganography/</link>
+      <link>https://c4mdax.github.io/tags/steganography/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>http://localhost:1313/tags/steganography/</guid>
+      <guid>https://c4mdax.github.io/tags/steganography/</guid>
       <description></description>
     </item>
   </channel>
