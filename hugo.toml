@@ -20,7 +20,7 @@ noClasses = false
 author = "Luis Angel Moreno Delgado"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Luis Angel M web"
-keywords = "ai,ml,personal"
+keywords = "backend,ai,ml,personal"
 info = ["Computer Science student"]
 avatarURL = "/images/avatar.png"
 #gravatar = "static/images/avatar.png"
