@@ -19,7 +19,7 @@ noClasses = false
 [params]
 author = "Luis Angel Moreno Delgado"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Luis Angel website"
+description = "Luis Angel web"
 keywords = "ai,ml,personal"
 info = ["Computer Science student"]
 avatarURL = "/images/avatar.png"
