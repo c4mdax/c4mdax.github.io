@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on c4mdax</title>
-    <link>http://localhost:37087/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
-    <atom:link href="http://localhost:37087/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Luis Angel Moreno Delgado</title>
-      <link>http://localhost:37087/authors/luis-angel-moreno-delgado/</link>
+      <link>http://localhost:1313/authors/luis-angel-moreno-delgado/</link>
       <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
-      <guid>http://localhost:37087/authors/luis-angel-moreno-delgado/</guid>
+      <guid>http://localhost:1313/authors/luis-angel-moreno-delgado/</guid>
       <description></description>
     </item>
   </channel>

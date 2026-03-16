@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cellular Automata on c4mdax</title>
-    <link>http://localhost:37087/categories/cellular-automata/</link>
+    <link>http://localhost:1313/categories/cellular-automata/</link>
     <description>Recent content in Cellular Automata on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
-    <atom:link href="http://localhost:37087/categories/cellular-automata/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/cellular-automata/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taxonomía Juego de la Vida de Conway</title>
-      <link>http://localhost:37087/posts/taxonomy-gol/</link>
+      <link>http://localhost:1313/posts/taxonomy-gol/</link>
       <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
-      <guid>http://localhost:37087/posts/taxonomy-gol/</guid>
-      <description></description>
+      <guid>http://localhost:1313/posts/taxonomy-gol/</guid>
+      <description>&lt;p&gt;En el autómata celular de Conway, una estructura se define como una configuración de células vivas que presenta un comportamiento predecible bajo las reglas de transición estándar. Ésta taxonomía clasifica los objetos en función de su evolución temporal y su interacción con el entorno.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-objetos-estacionarios-still-life&#34;&gt;&#xA;  1. Objetos Estacionarios (Still Life)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-objetos-estacionarios-still-life&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Son configuraciones que permanecen inalteradas a través de las generaciones ($t+1 = t$). Para que una estructura sea un &lt;em&gt;Still Life&lt;/em&gt;, cada célula viva debe tener exactamente 2 o 3 vecinos vivos, y cada célula muerta debe tener un número de vecinos distinto de 3 para evitar el nacimiento.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
