@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://c4mdax.github.io/</loc>
-    <lastmod>2026-03-11T15:41:44-06:00</lastmod>
+    <lastmod>2026-03-28T10:42:29-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/</loc>
-    <lastmod>2026-03-11T15:41:44-06:00</lastmod>
+    <lastmod>2026-03-28T10:42:29-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/posts/atomic-pulse/</loc>
+    <lastmod>2026-03-27T10:44:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/authors/</loc>
-    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
+    <lastmod>2026-03-27T10:44:49-06:00</lastmod>
+  </url><url>
+    <loc>https://c4mdax.github.io/authors/luis-angel-moreno-delgado/</loc>
+    <lastmod>2026-03-27T10:44:49-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/automata-theory/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
@@ -21,9 +27,6 @@
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/categories/conways-gol/</loc>
-    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/authors/luis-angel-moreno-delgado/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
     <loc>https://c4mdax.github.io/posts/taxonomy-gol/</loc>

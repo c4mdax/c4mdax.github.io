@@ -6,8 +6,15 @@
     <description>Recent content in Posts on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 10:44:49 -0600</lastBuildDate>
     <atom:link href="https://c4mdax.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AtomicPulse: Data Pipeline analysis</title>
+      <link>https://c4mdax.github.io/posts/atomic-pulse/</link>
+      <pubDate>Fri, 27 Mar 2026 10:44:49 -0600</pubDate>
+      <guid>https://c4mdax.github.io/posts/atomic-pulse/</guid>
+      <description>&lt;h4 id=&#34;requerimentos-construir-un-sistema-de-procesamiento-de-datos-que-extraiga-los-datos-de-interrupciones-nucleares-de-la-api-de-la-eia-los-almacene-de-manera-eficiente-y-proporcione-capacidades-básicas-de-análisis-y-consulta&#34;&gt;&#xA;  Requerimentos: Construir un sistema de procesamiento de datos que extraiga los datos de interrupciones nucleares de la API de la EIA, los almacene de manera eficiente y proporcione capacidades básicas de análisis y consulta.&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requerimentos-construir-un-sistema-de-procesamiento-de-datos-que-extraiga-los-datos-de-interrupciones-nucleares-de-la-api-de-la-eia-los-almacene-de-manera-eficiente-y-proporcione-capacidades-b%c3%a1sicas-de-an%c3%a1lisis-y-consulta&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;Recordando que esta sección también me es útil para estudio propio, quiero utilizar este post para dos objetivos:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Despejar aquellas lagunas que me quedaron al construir este proyecto&lt;/li&gt;&#xA;&lt;li&gt;Dar una descripción más robusta sobre el análisis técnico y decisiones que tomé para este mismo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Dividiré el análisis en 4 módulos (así se me asignaron en los requerimentos del proyecto) para abordar más organizado el análisis del proyecto.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Taxonomía Juego de la Vida de Conway</title>
       <link>https://c4mdax.github.io/posts/taxonomy-gol/</link>
