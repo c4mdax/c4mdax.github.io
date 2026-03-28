@@ -2,87 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>c4mdax</title>
-    <link>https://c4mdax.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on c4mdax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Feb 2026 14:53:05 -0600</lastBuildDate>
-    <atom:link href="https://c4mdax.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2026 10:44:49 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AtomicPulse: Data Pipeline analysis</title>
+      <link>http://localhost:1313/posts/atomic-pulse/</link>
+      <pubDate>Fri, 27 Mar 2026 10:44:49 -0600</pubDate>
+      <guid>http://localhost:1313/posts/atomic-pulse/</guid>
+      <description>&lt;h4 id=&#34;requerimentos-construir-un-sistema-de-procesamiento-de-datos-que-extraiga-los-datos-de-interrupciones-nucleares-de-la-api-de-la-eia-los-almacene-de-manera-eficiente-y-proporcione-capacidades-básicas-de-análisis-y-consulta&#34;&gt;&#xA;  Requerimentos: Construir un sistema de procesamiento de datos que extraiga los datos de interrupciones nucleares de la API de la EIA, los almacene de manera eficiente y proporcione capacidades básicas de análisis y consulta.&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requerimentos-construir-un-sistema-de-procesamiento-de-datos-que-extraiga-los-datos-de-interrupciones-nucleares-de-la-api-de-la-eia-los-almacene-de-manera-eficiente-y-proporcione-capacidades-b%c3%a1sicas-de-an%c3%a1lisis-y-consulta&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;Recordando que esta sección también me es útil para estudio propio, quiero utilizar este post para dos objetivos:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Despejar aquellas lagunas que me quedaron al construir este proyecto&lt;/li&gt;&#xA;&lt;li&gt;Dar una descripción más robusta sobre el análisis técnico y decisiones que tomé para este mismo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Dividiré el análisis en 4 módulos (así se me asignaron en los requerimentos del proyecto) para abordar más organizado el análisis del proyecto.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Taxonomía Juego de la Vida de Conway</title>
-      <link>https://c4mdax.github.io/posts/taxonomy-gol/</link>
+      <link>http://localhost:1313/posts/taxonomy-gol/</link>
       <pubDate>Thu, 26 Feb 2026 14:53:05 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/taxonomy-gol/</guid>
+      <guid>http://localhost:1313/posts/taxonomy-gol/</guid>
       <description>&lt;p&gt;En el autómata celular de Conway, una estructura se define como una configuración de células vivas que presenta un comportamiento predecible bajo las reglas de transición estándar. Ésta taxonomía clasifica los objetos en función de su evolución temporal y su interacción con el entorno.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-objetos-estacionarios-still-life&#34;&gt;&#xA;  1. Objetos Estacionarios (Still Life)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-objetos-estacionarios-still-life&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Son configuraciones que permanecen inalteradas a través de las generaciones ($t+1 = t$). Para que una estructura sea un &lt;em&gt;Still Life&lt;/em&gt;, cada célula viva debe tener exactamente 2 o 3 vecinos vivos, y cada célula muerta debe tener un número de vecinos distinto de 3 para evitar el nacimiento.&lt;/p&gt;</description>
     </item>
     <item>
       <title>dRAGan: AI Agent using the RAG Technique</title>
-      <link>https://c4mdax.github.io/projects/dragan/</link>
+      <link>http://localhost:1313/projects/dragan/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>https://c4mdax.github.io/projects/dragan/</guid>
+      <guid>http://localhost:1313/projects/dragan/</guid>
       <description>&lt;p&gt;This project consists of a &lt;strong&gt;question-answering agent using Retrieval-Augmented Generation (RAG)&lt;/strong&gt;, which responds to queries based solely on local documents (PDF or TXT). It was developed as part of an Artificial Intelligence course and aims to explore modern NLP architectures applied to specialized agents (of course, this is not a new idea, but implementing it helped me understand key concepts of this technology).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-general-workflow&#34;&gt;&#xA;  ⚙️ General Workflow&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-general-workflow&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Input&lt;/strong&gt;: The user uploads &lt;code&gt;.pdf&lt;/code&gt; or &lt;code&gt;.txt&lt;/code&gt; documents.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Question&lt;/strong&gt;: A natural language question is submitted.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Semantic Search&lt;/strong&gt;: Similarities between the question and indexed fragments are calculated using &lt;strong&gt;embeddings&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Generation&lt;/strong&gt;: A LLM (currently Phi3 Mini) is used to generate a response based only on the retrieved relevant context.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;detailed-explanation&#34;&gt;&#xA;  &lt;a href=&#34;../../posts/rag-structure&#34; &gt;Detailed explanation&lt;/a&gt;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#detailed-explanation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;-tools-used&#34;&gt;&#xA;  🛠️ Tools Used&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-tools-used&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;LangChain&lt;/strong&gt;: Orchestration of the RAG pipeline.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chroma DB&lt;/strong&gt;: Vector store for semantic search.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hugging Face Embeddings&lt;/strong&gt;: &lt;code&gt;all-MiniLM-L6-v2&lt;/code&gt; used to transform text into vectors.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;HNSW Algorithm&lt;/strong&gt;: Used by Chroma for nearest neighbor search.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;: Main programming language of the project.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/c4mdax/dragan-agent-rag&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Técnica RAG para agentes de IA</title>
-      <link>https://c4mdax.github.io/posts/rag-structure/</link>
+      <link>http://localhost:1313/posts/rag-structure/</link>
       <pubDate>Thu, 17 Apr 2025 22:11:49 -0600</pubDate>
-      <guid>https://c4mdax.github.io/posts/rag-structure/</guid>
+      <guid>http://localhost:1313/posts/rag-structure/</guid>
       <description>&lt;p&gt;Recientemente, a través de una asignatura en la Facultad, tuve la oportunidad de profundizar en el estudio teórico-práctico de Redes Neuronales, con especial enfoque en los &lt;strong&gt;Modelos de Lenguaje a Gran Escala (LLMs)&lt;/strong&gt; (como lo es GPT, Gemini, LlaMa, Claude, etc). Entre los temas abordados, destaco el análisis de técnicas de Inteligencia Artificial Generativa aplicadas al &lt;strong&gt;Procesamiento del Lenguaje Natural (PLN)&lt;/strong&gt;, en particular la Generación Aumentada por Recuperación (RAG), un paradigma que combina la capacidad generativa de los LLMs con la recuperación contextual de información externa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLMs vs Human Language</title>
-      <link>https://c4mdax.github.io/papers/llm-vs-human/</link>
+      <link>http://localhost:1313/papers/llm-vs-human/</link>
       <pubDate>Sun, 09 Feb 2025 12:56:21 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/llm-vs-human/</guid>
+      <guid>http://localhost:1313/papers/llm-vs-human/</guid>
       <description>&lt;p&gt;A comparison between Human Language and Large Language Models&#xA;(&lt;a href=&#34;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://archive.logos-science.com/index.php/conference-proceedings/article/view/1449/1480&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is the Turing test enough to define “Artificial Intelligence”?</title>
-      <link>https://c4mdax.github.io/papers/turing-test/</link>
+      <link>http://localhost:1313/papers/turing-test/</link>
       <pubDate>Sun, 09 Feb 2025 12:46:13 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/turing-test/</guid>
+      <guid>http://localhost:1313/papers/turing-test/</guid>
       <description>&lt;p&gt;Paper that presents the disparity between the Turing test and the Chinese Room dilemma to define a model like Intelligence&#xA;(&lt;a href=&#34;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.researchgate.net/publication/287545860_Basta_la_prueba_de_Turing_para_definir_la_inteligencia_artificial&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Artificial Intelligence (AI) or Intelligence Augmentation (IA): What Is the Future?</title>
-      <link>https://c4mdax.github.io/papers/ai-or-ia/</link>
+      <link>http://localhost:1313/papers/ai-or-ia/</link>
       <pubDate>Sun, 09 Feb 2025 12:45:35 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/ai-or-ia/</guid>
+      <guid>http://localhost:1313/papers/ai-or-ia/</guid>
       <description>&lt;p&gt;The article analyzes two visions of the future of technology: artificial intelligence (AI) as a substitute for the human mind and augmented intelligence (AIug) as a tool to enhance our capabilities. Explores its implications, risks and the need for ethical frameworks to guide its development.&#xA;(&lt;a href=&#34;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.mdpi.com/2673-2688/1/2/8/pdf?version=1586695841&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>A view inside the Chinese room</title>
-      <link>https://c4mdax.github.io/papers/chinese-room/</link>
+      <link>http://localhost:1313/papers/chinese-room/</link>
       <pubDate>Sun, 09 Feb 2025 12:43:53 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/chinese-room/</guid>
+      <guid>http://localhost:1313/papers/chinese-room/</guid>
       <description>&lt;p&gt;The Chinese room dilemma is presented, presenting challenges in the characteristics of current AI.&#xA;(&lt;a href=&#34;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.doc.gold.ac.uk/~mas02mb/Selected%20Papers/2004%20Short%20CRA.pdf&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computational Thinking Trough Programming: A Learning Paradigm</title>
-      <link>https://c4mdax.github.io/papers/machine-thinking/</link>
+      <link>http://localhost:1313/papers/machine-thinking/</link>
       <pubDate>Fri, 07 Feb 2025 21:42:44 -0600</pubDate>
-      <guid>https://c4mdax.github.io/papers/machine-thinking/</guid>
+      <guid>http://localhost:1313/papers/machine-thinking/</guid>
       <description>&lt;p&gt;In this paper, a model (ambiguous for me) of Computational Thinking with an algorithmic approach is presented.&#xA;(&lt;a href=&#34;https://revistas.um.es/red/article/view/240011/182851&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://revistas.um.es/red/article/view/240011/182851&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://c4mdax.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 03 Jan 2025 10:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;me&#34;&gt;&#xA;  Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Computer Science student @ &lt;a href=&#34;https://es.wikipedia.org/wiki/Facultad_de_Ciencias_%28Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico%29&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UNAM&lt;/a&gt;&lt;/strong&gt;&#xA;In the industry, enthusiastic about &lt;strong&gt;Backend Architecture&lt;/strong&gt; &amp;amp; &lt;strong&gt;ML&lt;/strong&gt;&#xA;In the academia, passionate about &lt;strong&gt;Automata Theory&lt;/strong&gt; &amp;amp; &lt;strong&gt;Discrete Dynamical Systems&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Java/Spring&lt;/strong&gt; for Backend&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; for experimental ML&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scala&lt;/strong&gt; for&amp;hellip; why not?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;resources-im-studying&#34;&gt;&#xA;  Resources I&amp;rsquo;m studying:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#resources-im-studying&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;For Industry purposes&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www-oracle-com.translate.goog/technical-resources/articles/javase/bloch-effective-08-qa.html?_x_tr_sl=en&amp;amp;_x_tr_tl=es&amp;amp;_x_tr_hl=es&amp;amp;_x_tr_pto=tc&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Effective Java&lt;/em&gt;&lt;/a&gt; - Joshua Bloch&lt;/li&gt;&#xA;&lt;li&gt;Spring (with everything I find on the web)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/c4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ML Roadmap&lt;/a&gt;, (made by me in 2nd semester)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;For academic purposes (and hopefully for my thesis)&lt;/p&gt;</description>
     </item>
     <item>
       <title>HiddenInk: LSB Steganography</title>
-      <link>https://c4mdax.github.io/projects/lsb-hiddenink/</link>
+      <link>http://localhost:1313/projects/lsb-hiddenink/</link>
       <pubDate>Tue, 19 Nov 2024 21:03:00 -0600</pubDate>
-      <guid>https://c4mdax.github.io/projects/lsb-hiddenink/</guid>
+      <guid>http://localhost:1313/projects/lsb-hiddenink/</guid>
       <description>&lt;p&gt;This project is a tool written in &lt;strong&gt;C language&lt;/strong&gt; to hide and extract messages inside images using the &lt;strong&gt;LSB (Least Significant Bit) steganography&lt;/strong&gt; technique. It was developed with the goal of exploring simple methods for hiding information in images without producing visible changes.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-general-operation&#34;&gt;&#xA;  ⚙️ General Operation&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-general-operation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Input&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The user provides a PNG image and a text file.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hiding (mode &lt;code&gt;-h&lt;/code&gt;)&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The image size is analyzed, and the least significant bit of each color channel is replaced with bits from the message.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Extraction (mode &lt;code&gt;-u&lt;/code&gt;)&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The image is scanned to reconstruct the hidden message from the modified bits.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-tools-used&#34;&gt;&#xA;  🛠️ Tools Used&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-tools-used&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;C language&lt;/strong&gt;: Main implementation language.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;libpng&lt;/strong&gt;: Library for handling PNG files.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SDL2 / SDL2_image&lt;/strong&gt;: Graphics libraries for image manipulation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;gcc&lt;/strong&gt;: Compiler used to build all program modules (&lt;code&gt;hider.c&lt;/code&gt;, &lt;code&gt;revealer.c&lt;/code&gt;, etc.).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/c4mdax/LSB-Steganography&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://c4mdax.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://c4mdax.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
   </channel>

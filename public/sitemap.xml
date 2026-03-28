@@ -2,110 +2,113 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://c4mdax.github.io/authors/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-28T10:44:49-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/atomic-pulse/</loc>
+    <lastmod>2026-03-28T10:44:49-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-28T10:44:49-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/automata-theory/</loc>
+    <loc>http://localhost:1313/categories/automata-theory/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/cellular-automata/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/cellular-automata/</loc>
+    <loc>http://localhost:1313/categories/conways-gol/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/conways-gol/</loc>
+    <loc>http://localhost:1313/authors/luis-angel-moreno-delgado/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/authors/luis-angel-moreno-delgado/</loc>
+    <loc>http://localhost:1313/posts/taxonomy-gol/</loc>
     <lastmod>2026-02-26T14:53:05-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/</loc>
-    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/posts/taxonomy-gol/</loc>
-    <lastmod>2026-02-26T14:53:05-06:00</lastmod>
-  </url><url>
-    <loc>https://c4mdax.github.io/categories/ai/</loc>
+    <loc>http://localhost:1313/categories/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/ai/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/projects/dragan/</loc>
+    <loc>http://localhost:1313/projects/dragan/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/langchain/</loc>
+    <loc>http://localhost:1313/tags/langchain/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/llms/</loc>
+    <loc>http://localhost:1313/categories/llms/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/nlp/</loc>
+    <loc>http://localhost:1313/tags/nlp/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/projects/</loc>
+    <loc>http://localhost:1313/categories/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/rag/</loc>
+    <loc>http://localhost:1313/categories/rag/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/rag/</loc>
+    <loc>http://localhost:1313/tags/rag/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/posts/rag-structure/</loc>
+    <loc>http://localhost:1313/posts/rag-structure/</loc>
     <lastmod>2025-04-17T22:11:49-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/llm-vs-human/</loc>
+    <loc>http://localhost:1313/papers/llm-vs-human/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/</loc>
+    <loc>http://localhost:1313/papers/</loc>
     <lastmod>2025-02-09T12:56:21-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/turing-test/</loc>
+    <loc>http://localhost:1313/papers/turing-test/</loc>
     <lastmod>2025-02-09T12:46:13-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/ai-or-ia/</loc>
+    <loc>http://localhost:1313/papers/ai-or-ia/</loc>
     <lastmod>2025-02-09T12:45:35-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/chinese-room/</loc>
+    <loc>http://localhost:1313/papers/chinese-room/</loc>
     <lastmod>2025-02-09T12:43:53-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/papers/machine-thinking/</loc>
+    <loc>http://localhost:1313/papers/machine-thinking/</loc>
     <lastmod>2025-02-07T21:42:44-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-03T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/c/</loc>
+    <loc>http://localhost:1313/tags/c/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/projects/lsb-hiddenink/</loc>
+    <loc>http://localhost:1313/projects/lsb-hiddenink/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/lsb/</loc>
+    <loc>http://localhost:1313/tags/lsb/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/security/</loc>
+    <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/tags/steganography/</loc>
+    <loc>http://localhost:1313/tags/steganography/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/categories/systems/</loc>
+    <loc>http://localhost:1313/categories/systems/</loc>
     <lastmod>2024-11-19T21:03:00-06:00</lastmod>
   </url><url>
-    <loc>https://c4mdax.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://c4mdax.github.io/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>
