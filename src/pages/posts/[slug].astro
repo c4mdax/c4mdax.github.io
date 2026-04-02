@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+    // Filtramos también aquí
+    const postEntries = await getCollection('posts', ({ data }) => {
+        return data.draft !== true;
+    });
+    
+    return postEntries.map(entry => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
+---
+
+<Layout title={`${entry.data.title} | Luis Angel Moreno`}>
+    <Header />
+    <main class="min-h-screen pt-40 pb-20 px-6 max-w-3xl mx-auto">
+        <article class="w-full">
+            
+            <header class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+                    {entry.data.title}
+                </h1>
+                
+                <p class="text-lg text-gray-500 dark:text-zinc-400 mb-6">
+                    {formattedDate}
+                </p>
+
+                {entry.data.categories && (
+                    <div class="flex flex-wrap gap-2 pb-8 border-b border-gray-200 dark:border-zinc-800">
+                        {entry.data.categories.map((category: string) => (
+                            <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400 rounded-md border border-gray-200 dark:border-zinc-700">
+                                {category}
+                            </span>
+                        ))}
+                    </div>
+                )}
+            </header>
+            
+            <div class="prose prose-zinc dark:prose-invert prose-lg max-w-none 
+                        prose-headings:scroll-mt-28 prose-p:text-gray-700 dark:prose-p:text-gray-300
+                        prose-a:text-blue-600 dark:prose-a:text-blue-400">
+                <Content />
+            </div>
+        </article>
+    </main>
+    <Footer />
+</Layout>

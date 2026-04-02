@@ -1,32 +1,35 @@
-name: Deploy Hugo Site to GitHub Pages
+name: Deploy Astro Site to GitHub Pages
 
 on:
   push:
     branches:
-      - master  # Puedes cambiar esto si tu rama principal no se llama "main"
+      - master
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
-    - name: Set up Hugo
-      uses: peaceiris/actions-hugo@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
       with:
-        hugo-version: '0.141.0'  # Cambia esto si usas una versión diferente de Hugo
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
 
     - name: Build the site
-      run: hugo
+      run: npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GH_25 }}
-        publish_dir: ./public  # La carpeta donde Hugo genera los archivos estáticos
-        publish_branch: gh-pages  # La rama donde desplegarás el sitio
-        user_name: 'c4mdax'  # Tu nombre de usuario de GitHub
-        user_email: 'c4mdax@ciencias.unam.mx'  # Tu correo de GitHub
-
+        publish_dir: ./dist  # Astro exporta los estáticos aquí
+        publish_branch: gh-pages
+        user_name: 'c4mdax'
+        user_email: 'c4mdax@ciencias.unam.mx'

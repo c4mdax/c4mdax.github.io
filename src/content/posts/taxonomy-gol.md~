@@ -1,0 +1,10 @@
+---
+title: "Juego de la Vida de Conway: Taxonomía"
+description: "Clasificación esclarecida de las entidades más importantes en el autómata celular de Conway."
+pubDate: "2026-03-30"
+categories: ["Teoría de Autómatas", "Java", "Astro"] 
+---
+
+Así pues, comparto una taxonomía (la más aceptada por la comunidad) rescatada principalmente de [Conway's "Game of Life" and the Epigenetic Principle](https://pmc.ncbi.nlm.nih.gov/articles/PMC4905947/)_
+
+

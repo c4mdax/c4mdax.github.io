@@ -1,0 +1,98 @@
+---
+import Layout from '../../layouts/Layout.astro'; // Ajusta la ruta si es necesario
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts', ({ data }) => {
+    return data.draft !== true;
+})).sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+const translations = {
+    title: { 
+        en: "Writings", 
+        es: "Escritos" 
+    },
+    description: { 
+        en: "Technical reflections, notes, and learnings on Data Engineering, Backend, and AI.", 
+        es: "Reflexiones técnicas, apuntes y aprendizajes sobre ingeniería de datos, backend e IA." 
+    }
+};
+---
+
+<Layout title="Blog | Luis Angel Moreno">
+    <Header />
+    
+    <main class="min-h-screen px-4 sm:px-6 md:px-6 flex flex-col justify-center">
+        <section class="max-w-3xl mx-auto w-full pt-32 sm:pt-40 pb-16 sm:pb-24 fade-in">
+            <header class="mb-14">
+                <h1 
+                    class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight"
+                    data-en={translations.title.en} 
+                    data-es={translations.title.es}
+                >
+                    {translations.title.es}
+                </h1>
+                <p 
+                    class="text-lg text-gray-500 dark:text-zinc-400 mt-4 leading-relaxed"
+                    data-en={translations.description.en} 
+                    data-es={translations.description.es}
+                >
+                    {translations.description.es}
+                </p>
+            </header>
+            
+            <div class="flex flex-col parallax-section">
+                {posts.map((post) => (
+                    <a 
+                        href={`/posts/${post.slug}`} 
+                        class="group flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 py-6 border-b border-gray-200 dark:border-zinc-800 transition-colors duration-300 hover:border-[#58dbff] dark:hover:border-[#58dbff]"
+                    >
+                        <time class="text-sm font-mono text-gray-500 dark:text-zinc-500 min-w-[120px]">
+                            {new Date(post.data.pubDate).toLocaleDateString('es-ES', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric',
+                            })}
+                        </time>
+                        
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-zinc-100 group-hover:text-[#58dbff] transition-colors duration-300">
+                                {post.data.title}
+                            </h2>
+                            {post.data.description && (
+                                <p class="text-gray-600 dark:text-zinc-400 mt-2 text-sm leading-relaxed">
+                                    {post.data.description}
+                                </p>
+                            )}
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </section>
+    </main>
+    
+    <Footer />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</Layout>
