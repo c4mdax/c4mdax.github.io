@@ -2,7 +2,7 @@
 title: "AtomicPulse: análisis y explicación del data pipeline"
 description: "Explicación y recuperación de conceptos laguna para mi proyecto Atomic Pulse."
 pubDate: "2026-03-27"
-categories: ["Computación basada en colisiones", "Teoría de Autómatas", "Turing completitud"] 
+categories: ["Python", "Ingeniería de Datos", "API"] 
 draft: false
 ---
 #### Requerimentos: Construir un sistema de procesamiento de datos que extraiga los datos de interrupciones nucleares de la API de la EIA, los almacene de manera eficiente y proporcione capacidades básicas de análisis y consulta.
