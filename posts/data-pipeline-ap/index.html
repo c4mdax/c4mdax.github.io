@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="description" content="Full Stack Developer Portfolio"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.16.10"><title>AtomicPulse: análisis y explicación del data pipeline | Luis Angel Moreno</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous"><link rel="stylesheet" href="/_astro/contact.C-h2zHLQ.css"></head> <body class="bg-[#e3e6e7] dark:bg-[#050505] transition-colors duration-300">  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-3 sm:pt-6 px-4"> <div class="backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border border-gray-200 dark:border-gray-700 rounded-full px-4 sm:px-6 py-2 sm:py-3 flex items-center justify-between sm:justify-center gap-2 sm:gap-6 shadow-sm w-full sm:w-auto"> <div class="hidden sm:flex items-center gap-6"> <a href="/" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-900 dark:text-white" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Contact" data-es="Contacto">
+Contact
+</a> <div class="w-px h-6 bg-gray-300 dark:bg-gray-600"></div> </div> <div class="flex items-center gap-2"> <button id="lang-btn" onclick="window.toggleLang()" class="px-2 py-1 text-xs font-bold rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer whitespace-nowrap">
+EN
+</button> <button onclick="window.toggleTheme()" class="p-1 sm:p-1.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer flex-shrink-0" aria-label="Toggle theme"> <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path> </svg> <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> </button> </div> <button id="mobile-menu-btn" class="sm:hidden p-1.5 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" aria-label="Toggle menu"> <svg class="w-5 h-5" id="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg class="w-5 h-5 hidden" id="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div id="mobile-menu" class="hidden absolute top-14 left-4 right-4 backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-3 space-y-2 shadow-lg sm:hidden"> <a href="/" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm bg-gray-900 dark:bg-white text-white dark:text-gray-900" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Contact" data-es="Contacto">
+Contact
+</a> </div> </nav> <script type="module">function c(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.toggle("hidden"),n.classList.toggle("hidden"),t.classList.toggle("hidden"))}function i(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.add("hidden"),n.classList.remove("hidden"),t.classList.add("hidden"))}window.toggleMobileMenu=c;window.closeMobileMenu=i;const o=document.getElementById("mobile-menu-btn");o&&o.addEventListener("click",e=>{e.stopPropagation(),c()});document.addEventListener("click",e=>{const n=document.getElementById("mobile-menu"),t=document.getElementById("mobile-menu-btn");n&&t&&!n.classList.contains("hidden")&&!n.contains(e.target)&&!t.contains(e.target)&&i()});</script> <main class="min-h-screen pt-40 pb-20 px-6 max-w-3xl mx-auto"> <article class="w-full"> <header class="mb-12"> <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight"> AtomicPulse: análisis y explicación del data pipeline </h1> <p class="text-lg text-gray-500 dark:text-zinc-400 mb-6"> 27 de marzo de 2026 </p> <div class="flex flex-wrap gap-2 pb-8 border-b border-gray-200 dark:border-zinc-800"> <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400 rounded-md border border-gray-200 dark:border-zinc-700"> Computación basada en colisiones </span><span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400 rounded-md border border-gray-200 dark:border-zinc-700"> Teoría de Autómatas </span><span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400 rounded-md border border-gray-200 dark:border-zinc-700"> Turing completitud </span> </div> </header> <div class="prose prose-zinc dark:prose-invert prose-lg max-w-none 
+                        prose-headings:scroll-mt-28 prose-p:text-gray-700 dark:prose-p:text-gray-300
+                        prose-a:text-blue-600 dark:prose-a:text-blue-400"> <h4 id="requerimentos-construir-un-sistema-de-procesamiento-de-datos-que-extraiga-los-datos-de-interrupciones-nucleares-de-la-api-de-la-eia-los-almacene-de-manera-eficiente-y-proporcione-capacidades-básicas-de-análisis-y-consulta">Requerimentos: Construir un sistema de procesamiento de datos que extraiga los datos de interrupciones nucleares de la API de la EIA, los almacene de manera eficiente y proporcione capacidades básicas de análisis y consulta.</h4>
+<p>Recordando que esta sección también me es útil para estudio propio, quiero utilizar este post para dos objetivos:</p>
+<ul>
+<li>Despejar aquellas lagunas que me quedaron al construir este proyecto</li>
+<li>Dar una descripción más robusta sobre el análisis técnico y decisiones que tomé para este mismo.</li>
+</ul>
+<p>Dividiré el análisis en 4 módulos (así se me asignaron en los requerimentos del proyecto) para abordarlo de forma más organizada.</p>
+<hr>
+<h2 id="1-conector-de-datos">1: Conector de Datos</h2>
+<p><strong>Objetivo</strong>: Crear un conector que extraiga datos de interrupciones nucleares de la API de la EIA.</p>
+<h3 id="decisiones-técnicas">Decisiones Técnicas</h3>
+<ul>
+<li>
+<p><strong>Resiliencia de red</strong>: Desde mi experiencia en QA, se que un sistema no debe detenerse por errores transitorios en los servidores de origen. Por ello, utilicé la librería <code>requests</code> combinada con la estrategia <code>Retry</code> de <code>urllib3</code>. Esto permite que el conector maneje excepciones temporales (como errores 502 o 503) y limites de tasa (429) reintentando la conexión antes de fallar por completo.</p>
+</li>
+<li>
+<p><strong>Carga Incremental</strong>: En lugar de realizar una extracción histórica completa (<em>Full Load</em>) en cada ejecución, implemente una lógica para leer la última fecha registrada en el almacenamiento local (<code>get_latest_date()</code>). De este modo, el script solo solicita los registros nuevos, optimizando drásticamente el uso de ancho de banda y el tiempo de ejecución.</p>
+</li>
+<li>
+<p><strong>Almacenamiento en Parquet</strong>: Parte de los requerimentos es almacenar la información extraída en archivos Parquet. Parquet, al ser orientado a almacenamiento columnar y salida binaria, es altamente eficiente para consultas grandes, pues hace uso de un menor almacenamiento y sus consultas analiticas son más rápidas al solo leer las columnas necesarias.</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-modelo-de-datos">2: Modelo de Datos</h2>
+<p><strong>Objetivo</strong>: Estructurar los datos eficientemente para su consulta analítica.</p>
+<h3 id="decisiones-técnicas-1">Decisiones Técnicas</h3>
+<ul>
+<li>
+<p><strong>Esquema Estrella (Star Schema)</strong>: Otro de los requerimentos era seguir el Esquema Estrella para la construcción de la base de datos. ¿Por qué?, bueno, al tratar con cargas de trabajo analíticas (OLAP), la prioridad cambia drásticamente respecto a los sistemas transaccionales (OLTP).
+No se prioriza la velicidad de escritura de registros inidivuales, ni la redundancia de datos, sino que se prioriza la eficiente y velocidad al leer, filtrar y agregar grandes volúmenes de información HISTÓRICA (Data Warehouse).</p>
+</li>
+<li>
+<p><strong>Lógica de negocio en la transformación</strong>: La clasificación de la severidad del corte (Critical, Warning, Nominal) la calculé en Python usando Pandas antes de la ingesta en la base de datos. Preferí aislar esta lógica en la capa de transformación en memoria.</p>
+</li>
+<li>
+<p><strong>SQLite como motor relacional</strong>: Para este proyecto en particular, implementar un contenedor con PostgreSQL resultaba excesivo. SQLite me permitió tener un motor SQL transaccional rápido y autocontenido, ideal para aislar el entorno de desarrollo sin sacrificar la capacidad de ejecutar consultas complejas.</p>
+</li>
+</ul>
+<h3 id="descripción-del-modelo-entidad-relación">Descripción del modelo Entidad-Relación</h3>
+<ul>
+<li><strong>Entidades, Atributos y Relaciones</strong>:
+<ul>
+<li>
+<p><code>dim_status_thresholds</code> (Dimensión): Es el catálogo de reglas de negocio. Define de manera estática los rangos o umbrales que dictan si un nivel de pérdida de energía se considera “Normal”, “Warning” o “Critical”. Lo implementé para darle un significado más legible y humano a los datos fríos obtenidos.</p>
+<ul>
+<li><strong>Atributos:</strong> <code>status_id</code> (Primary Key), <code>label</code>, <code>min_percent</code>, <code>max_percent</code>.</li>
+<li><strong>Relación:</strong> 1 a N (Uno a Muchos) con la tabla de hechos. Un mismo umbral de alerta aplica para múltiples registros diarios.</li>
+</ul>
+</li>
+<li>
+<p><code>dim_date</code> (Dimensión): Es el catálogo del tiempo. Almacena la llave de la fecha y sus atributos derivados útiles para el análisis (como el nombre del día de la semana). El propósito de esta tabla es permitir filtros y agrupaciones por periodos temporales de forma rápida.</p>
+<ul>
+<li><strong>Atributos:</strong> <code>date_key</code> (Primary Key), <code>day_name</code>.</li>
+<li><strong>Relación:</strong> 1 a N (Uno a Muchos) con la tabla de hechos. Una fecha única puede asociarse a múltiples registros (preparando el modelo para escalar si en el futuro se requieren datos granulares por planta en lugar de nacionales).</li>
+</ul>
+</li>
+<li>
+<p><code>fct_nuclear_outages</code> (Tabla de hechos): Es el corazón analítico del modelo. Almacena esas métricas cuantitativas que cambian diariamente, como la capacidad nuclear nacional (<code>capacity_mw</code>), la cantidad exacta de energía perdida (<code>outage_mw</code>) y el porcentaje de afectación. Ésta crece constantemente en cada nueva extracción.</p>
+<ul>
+<li><strong>Atributos:</strong> <code>id</code> (Primary Key), <code>date_key</code> (Foreign Key), <code>status_id</code> (Foreign Key), <code>capacity_mw</code>, <code>outage_mw</code>, <code>percent_outage</code> (Atributo derivado).</li>
+<li><strong>Relación:</strong> Centraliza el modelo. Contiene las llaves foráneas que apuntan directamente a <code>dim_date</code> y <code>dim_status_thresholds</code>, cerrando así el diseño del Esquema Estrella.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="conceptos-para-estudio-propio-lagunas">Conceptos para estudio propio (Lagunas)</h3>
+<ul>
+<li>Analizar el <em>trade-off</em> de rendimiento y complejidad computacional entre realizar la limpieza masiva de datos en memoria (Pandas) versus hacerlo dentro del motor de base de datos mediante SQL puro (ETL vs. ELT). Este mismo está contemplado en los commits <code>14bba0a</code> y <code>19d2b23</code> del día 25 de marzo.</li>
+</ul>
+<hr>
+<h2 id="3-api">3: API</h2>
+<p><strong>Objetivo</strong>: Hacer los datos accesibles mediante una arquitectura RESTful.</p>
+<h3 id="decisiones-técnicas-2">Decisiones Técnicas</h3>
+<ul>
+<li>
+<p><strong>Elección de FastAPI</strong>: Opté por FastAPI por su rendimiento y su tipado estricto a través de Pydantic. Acostumbrado a lenguajes más rígidos en la universidad, valoro que el framework valide los tipos de datos automsticamente y genere la especificación OpenAPI sin esfuerzo adicional.</p>
+</li>
+<li>
+<p><strong>Seguridad mediante inyección de dependencias</strong>: Implementé un control de acceso básico (<code>APIKeyHeader</code>) utilizando el sistema <code>Depends()</code>. Esto permite proteger los endpoints desde la capa de enrutamiento, manteniendo la lógica interna de las funciones limpia e independiente de la validación de seguridad.</p>
+</li>
+<li>
+<p><strong>Paginación en SQL</strong>: Para evitar saturar la memoria del servidor, la API no carga el dataset completo. La paginación se maneja directamente en la base de datos utilizando <code>LIMIT</code> y <code>OFFSET</code>, los cuales se inyectan dinámicamente en las consultas.</p>
+</li>
+</ul>
+<h3 id="conceptos-para-estudio-propio-lagunas-1">Conceptos para estudio propio (Lagunas)</h3>
+<ul>
+<li>El manejo interno de la concurrencia en Python. Especificamente, cómo el <em>Event Loop</em> de <code>asyncio</code> interactúa por debajo con drivers de bases de datos que son bloqueantes o síncronos por naturaleza.</li>
+</ul>
+<hr>
+<h2 id="4-interfaz-de-visualización-de-datos">4: Interfaz de Visualización de Datos</h2>
+<p><strong>Objetivo</strong>: Construir un frontend web ligero que consuma la API.</p>
+<h3 id="decisiones-técnicas-3">Decisiones Técnicas</h3>
+<p>En este punto, la interfaz inicial que desarrollé yo mismo fue demasiado básica, se encuentra en la versión  <code>/staging/1.1.0-beta</code> del repositorio, sin embargo, con el objetivo de darle un mejor rostro al proyecto, utilicé un prompt para un LLM, con el objetivo de que me resultara en una interfaz muchísimo más moderna (pues CSS nunca ha sido mi fuerte ni mi foco principal). La interfaz final se encuentra en producción.</p>
+<hr>
+<p><a href="https://github.com/c4mdax/nuclear-data-pipeline/">Repositorio</a></p> </div> </article> </main> <footer class="border-t border-gray-200 dark:border-gray-800 py-6 sm:py-8 mt-12 sm:mt-20 bg-white dark:bg-gray-950 transition-colors duration-300"> <div class="max-w-3xl mx-auto px-4 sm:px-6 md:px-6 text-center"> <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4" data-en="© 2026 c4mdax" data-es="© 2026 c4mdax"> © 2026 c4mdax </p> <div class="flex items-center justify-center gap-2 sm:gap-4 flex-wrap"> <span class="text-xs text-gray-500 dark:text-gray-500 font-medium" data-en="Built with" data-es="Construido con"> Built with </span> <div class="flex items-center gap-2 sm:gap-3"> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity" aria-label="Astro"> <img src="/_astro/Astro_light.BkQuFR_J.svg" class="dark:hidden h-3 sm:h-4 w-auto" alt="Astro"> <img src="/_astro/Astro_dark.grJ3tsv2.svg" class="hidden dark:block h-3 sm:h-4 w-auto" alt="Astro"> </a> <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity" aria-label="Tailwind CSS"> <img src="/_astro/tailwindcss.CSt91nGH.svg" class="h-3 sm:h-4 w-auto" alt="Tailwind CSS"> </a> </div> </div> </div> </footer>  <script type="module">const l=localStorage.getItem("theme");l&&document.documentElement.classList.toggle("dark",l==="dark");let s=localStorage.getItem("lang")||"es";document.documentElement.setAttribute("data-lang",s);window.updatePageContent=function(){const t=document.documentElement.getAttribute("data-lang")||"es",o=document.getElementById("lang-btn");o&&(o.textContent=t==="es"?"ES":"EN"),document.querySelectorAll("[data-en]").forEach(e=>{const a=e.getAttribute("data-en"),n=e.getAttribute("data-es");a&&n&&(e.innerHTML.includes("<span")?t==="es"?e.innerHTML=n.replace("Technologist in Information Systems",'<span class="font-semibold text-gray-900 dark:text-white">Tecnólogo en Sistemas de información</span>').replace("Full Stack Developer",'<span class="font-semibold text-gray-900 dark:text-white">Desarrollador Full Stack</span>'):e.innerHTML=a.replace("Technologist in Information Systems",'<span class="font-semibold text-gray-900 dark:text-white">Technologist in Information Systems</span>').replace("Full Stack Developer",'<span class="font-semibold text-gray-900 dark:text-white">Full Stack Developer</span>'):e.textContent=t==="es"?n:a)}),document.querySelectorAll("[data-en-placeholder]").forEach(e=>{const a=e.getAttribute("data-en-placeholder"),n=e.getAttribute("data-es-placeholder");a&&n&&(e.placeholder=t==="es"?n:a)}),document.querySelectorAll("[data-en-label]").forEach(e=>{const a=e.getAttribute("data-en-label"),n=e.getAttribute("data-es-label");a&&n&&(e.textContent=t==="es"?n:a)})};window.toggleTheme=()=>{const o=document.documentElement.classList.toggle("dark")?"dark":"light";localStorage.setItem("theme",o),document.cookie=`theme=${o}; path=/; max-age=31536000`};window.toggleLang=()=>{const t=document.createElement("div");t.className="lang-change-overlay";const o=document.createElement("div");o.className="lang-change-modal";const n=(document.documentElement.getAttribute("data-lang")||"en")==="es"?"Changing language...":"Cambiando lenguaje...";o.innerHTML=`<h2>${n}</h2>`,t.appendChild(o),document.body.appendChild(t),setTimeout(()=>{s=s==="en"?"es":"en",document.documentElement.setAttribute("data-lang",s),localStorage.setItem("lang",s),window.updatePageContent(),t.classList.add("hidden"),setTimeout(()=>{t.remove()},300)},1e3)};document.addEventListener("DOMContentLoaded",()=>{window.updatePageContent()});</script> </body> </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="description" content="Full Stack Developer Portfolio"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.16.10"><title>AtomicPulse | Luis Angel Moreno</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous"><link rel="stylesheet" href="/_astro/contact.C-h2zHLQ.css"></head> <body class="bg-[#e3e6e7] dark:bg-[#050505] transition-colors duration-300">  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-3 sm:pt-6 px-4"> <div class="backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border border-gray-200 dark:border-gray-700 rounded-full px-4 sm:px-6 py-2 sm:py-3 flex items-center justify-between sm:justify-center gap-2 sm:gap-6 shadow-sm w-full sm:w-auto"> <div class="hidden sm:flex items-center gap-6"> <a href="/" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-900 dark:text-white" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" class="text-sm font-medium transition-colors whitespace-nowrap text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" data-en="Contact" data-es="Contacto">
+Contact
+</a> <div class="w-px h-6 bg-gray-300 dark:bg-gray-600"></div> </div> <div class="flex items-center gap-2"> <button id="lang-btn" onclick="window.toggleLang()" class="px-2 py-1 text-xs font-bold rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer whitespace-nowrap">
+EN
+</button> <button onclick="window.toggleTheme()" class="p-1 sm:p-1.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors cursor-pointer flex-shrink-0" aria-label="Toggle theme"> <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path> </svg> <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> </button> </div> <button id="mobile-menu-btn" class="sm:hidden p-1.5 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" aria-label="Toggle menu"> <svg class="w-5 h-5" id="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg class="w-5 h-5 hidden" id="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div id="mobile-menu" class="hidden absolute top-14 left-4 right-4 backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-3 space-y-2 shadow-lg sm:hidden"> <a href="/" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm bg-gray-900 dark:bg-white text-white dark:text-gray-900" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded-lg transition-colors font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800" data-en="Contact" data-es="Contacto">
+Contact
+</a> </div> </nav> <script type="module">function c(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.toggle("hidden"),n.classList.toggle("hidden"),t.classList.toggle("hidden"))}function i(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.add("hidden"),n.classList.remove("hidden"),t.classList.add("hidden"))}window.toggleMobileMenu=c;window.closeMobileMenu=i;const o=document.getElementById("mobile-menu-btn");o&&o.addEventListener("click",e=>{e.stopPropagation(),c()});document.addEventListener("click",e=>{const n=document.getElementById("mobile-menu"),t=document.getElementById("mobile-menu-btn");n&&t&&!n.classList.contains("hidden")&&!n.contains(e.target)&&!t.contains(e.target)&&i()});</script> <main class="min-h-screen pt-40 pb-16 px-4 sm:px-6 md:px-6 max-w-3xl mx-auto"> <article class="w-full"> <div class="w-full rounded-2xl overflow-hidden mb-8 border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-zinc-900 flex justify-center"> <img src="/_astro/atomic-pulse.BEMcH0e2_Z1NI83k.webp" alt="AtomicPulse" loading="lazy" decoding="async" fetchpriority="auto" width="1862" height="961" class="w-full h-auto object-contain max-h-[500px]"> </div> <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"> AtomicPulse </h1> <div class="flex flex-wrap gap-2 mb-8 pb-8 border-b border-gray-200 dark:border-gray-800"> <span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700"> Python </span><span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700"> Data Engineering </span><span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700"> API </span> </div> <div class="prose prose-zinc dark:prose-invert max-w-none mt-8"> <h1 id="español">Español</h1>
+<h3 id="-descripción">🔘 Descripción</h3>
+<p>AtomicPulse es una herramienta que automatiza la recopilación de datos sobre fallas y mantenimientos en reactores nucleares de USA, mediante el consumo de la API de la EIA (<em>Energy Information Administration</em>) del país.</p>
+<p>Está construido en base a un pipeline de datos de tipo <strong>ETL</strong> (Extract, Transform, Load), desplegado en una API para facilitar un consumo con GUI web.</p>
+<p><a href="atomic-pulse.onrender.com">-> Sitio en vivo</a></p>
+<h3 id="-funcionamiento">🔘 Funcionamiento</h3>
+<p>La interfaz ofrece los resultados tabulados bajo 4 parámetros:</p>
+<ul>
+<li><strong>Temporal index:</strong> la fecha correspondiente al resumen de fallas y mantenimientos ocurridos en ese día.</li>
+<li><strong>Classification:</strong> la clasificación de las fallas y mantenimientos ocurridos en ese día, teniendo 3 categorías: <em>Critical</em>, <em>Warning</em> y <em>Nominal</em></li>
+<li><strong>Magnitude:</strong> la potencia eléctrica total en mw que dejó de generarse en la fecha correspondiente</li>
+<li><strong>Impact:</strong> el porcentaje relativo de la capacidad nuclear que está fuera de servicio (pérdida en mw)</li>
+</ul>
+<p>Además, el sistema ofrece:</p>
+<ul>
+<li>Actualización dinámica de los datos, mediante consulta instantánea a la API de la EIA</li>
+<li>Búsqueda de información mediante filtros de día, mes y año.</li>
+</ul>
+<h3 id="-tecnologías-usadas">🔘 Tecnologías usadas</h3>
+<p><strong>Lenguajes</strong>:</p>
+<ul>
+<li>Python, SQL, JS, HTML, CSS</li>
+</ul>
+<p><strong>Frameworks y herramientas</strong>:</p>
+<ul>
+<li><strong>Backend &#x26; APIs</strong>: FastAPI, Pydantic, Uvicorn, RESTful APIs.</li>
+<li><strong>Extracción de datos</strong>: Pandas, Apache Parquet (PyArrow), ETL pipelines, extracción incremental</li>
+<li><strong>Base de datos</strong>: SQLite, SQL, Esquema Estrella ER (Data Warehouse)</li>
+<li><strong>DevOps y despliegue</strong>: Render, Git/GitHub, .env, logging</li>
+<li><strong>Testing</strong>: Pytest</li>
+<li><strong>Frontend</strong>: JavaScript (Vanilla), CSS3, HTML5</li>
+</ul>
+<hr>
+<h1 id="english">English</h1>
+<h3 id="-overview">🔘 Overview</h3>
+<p>AtomicPulse is a tool that automates the collection of data regarding outages and maintenance in US nuclear reactors by consuming the country’s EIA (Energy Information Administration) API.</p>
+<p>It is built upon an <strong>ETL</strong> (Extract, Transform, Load) data pipeline, deployed as an API to facilitate consumption through a web GUI.</p>
+<p><a href="https://atomic-pulse.onrender.com">-> Live Site</a></p>
+<h3 id="-how-it-works">🔘 How it Works</h3>
+<p>The interface provides tabulated results based on 4 parameters:</p>
+<ul>
+<li><strong>Temporal index:</strong> The date corresponding to the summary of outages and maintenance that occurred on that day.</li>
+<li><strong>Classification:</strong> The classification of the outages and maintenance for that day, divided into 3 categories: <em>Critical</em>, <em>Warning</em>, and <em>Nominal</em>.</li>
+<li><strong>Magnitude:</strong> The total electrical power in Megawatts (MW) that was lost on the corresponding date.</li>
+<li><strong>Impact:</strong> The relative percentage of nuclear capacity that is offline (loss in MW).</li>
+</ul>
+<p>Additionally, the system features:</p>
+<ul>
+<li>Dynamic data updates via real-time queries to the EIA API.</li>
+<li>Information retrieval using day, month, and year filters.</li>
+</ul>
+<h3 id="-technologies-used">🔘 Technologies Used</h3>
+<p><strong>Languages</strong>:</p>
+<ul>
+<li>Python</li>
+<li>SQL</li>
+</ul>
+<p><strong>Frameworks &#x26; Tools</strong>:</p>
+<ul>
+<li><strong>Backend &#x26; APIs</strong>: FastAPI, Pydantic, Uvicorn, RESTful APIs.</li>
+<li><strong>Data Extraction</strong>: Pandas, Apache Parquet (PyArrow), ETL pipelines, incremental extraction.</li>
+<li><strong>Database</strong>: SQLite, SQL, Star Schema ER (Data Warehouse).</li>
+<li><strong>DevOps &#x26; Deployment</strong>: Render, Git/GitHub, .env, logging.</li>
+<li><strong>Testing</strong>: Pytest.</li>
+<li><strong>Frontend</strong>: JavaScript (Vanilla), CSS3, HTML5.</li>
+</ul> </div> </article> </main> <footer class="border-t border-gray-200 dark:border-gray-800 py-6 sm:py-8 mt-12 sm:mt-20 bg-white dark:bg-gray-950 transition-colors duration-300"> <div class="max-w-3xl mx-auto px-4 sm:px-6 md:px-6 text-center"> <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4" data-en="© 2026 c4mdax" data-es="© 2026 c4mdax"> © 2026 c4mdax </p> <div class="flex items-center justify-center gap-2 sm:gap-4 flex-wrap"> <span class="text-xs text-gray-500 dark:text-gray-500 font-medium" data-en="Built with" data-es="Construido con"> Built with </span> <div class="flex items-center gap-2 sm:gap-3"> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity" aria-label="Astro"> <img src="/_astro/Astro_light.BkQuFR_J.svg" class="dark:hidden h-3 sm:h-4 w-auto" alt="Astro"> <img src="/_astro/Astro_dark.grJ3tsv2.svg" class="hidden dark:block h-3 sm:h-4 w-auto" alt="Astro"> </a> <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity" aria-label="Tailwind CSS"> <img src="/_astro/tailwindcss.CSt91nGH.svg" class="h-3 sm:h-4 w-auto" alt="Tailwind CSS"> </a> </div> </div> </div> </footer>  <script type="module">const l=localStorage.getItem("theme");l&&document.documentElement.classList.toggle("dark",l==="dark");let s=localStorage.getItem("lang")||"es";document.documentElement.setAttribute("data-lang",s);window.updatePageContent=function(){const t=document.documentElement.getAttribute("data-lang")||"es",o=document.getElementById("lang-btn");o&&(o.textContent=t==="es"?"ES":"EN"),document.querySelectorAll("[data-en]").forEach(e=>{const a=e.getAttribute("data-en"),n=e.getAttribute("data-es");a&&n&&(e.innerHTML.includes("<span")?t==="es"?e.innerHTML=n.replace("Technologist in Information Systems",'<span class="font-semibold text-gray-900 dark:text-white">Tecnólogo en Sistemas de información</span>').replace("Full Stack Developer",'<span class="font-semibold text-gray-900 dark:text-white">Desarrollador Full Stack</span>'):e.innerHTML=a.replace("Technologist in Information Systems",'<span class="font-semibold text-gray-900 dark:text-white">Technologist in Information Systems</span>').replace("Full Stack Developer",'<span class="font-semibold text-gray-900 dark:text-white">Full Stack Developer</span>'):e.textContent=t==="es"?n:a)}),document.querySelectorAll("[data-en-placeholder]").forEach(e=>{const a=e.getAttribute("data-en-placeholder"),n=e.getAttribute("data-es-placeholder");a&&n&&(e.placeholder=t==="es"?n:a)}),document.querySelectorAll("[data-en-label]").forEach(e=>{const a=e.getAttribute("data-en-label"),n=e.getAttribute("data-es-label");a&&n&&(e.textContent=t==="es"?n:a)})};window.toggleTheme=()=>{const o=document.documentElement.classList.toggle("dark")?"dark":"light";localStorage.setItem("theme",o),document.cookie=`theme=${o}; path=/; max-age=31536000`};window.toggleLang=()=>{const t=document.createElement("div");t.className="lang-change-overlay";const o=document.createElement("div");o.className="lang-change-modal";const n=(document.documentElement.getAttribute("data-lang")||"en")==="es"?"Changing language...":"Cambiando lenguaje...";o.innerHTML=`<h2>${n}</h2>`,t.appendChild(o),document.body.appendChild(t),setTimeout(()=>{s=s==="en"?"es":"en",document.documentElement.setAttribute("data-lang",s),localStorage.setItem("lang",s),window.updatePageContent(),t.classList.add("hidden"),setTimeout(()=>{t.remove()},300)},1e3)};document.addEventListener("DOMContentLoaded",()=>{window.updatePageContent()});</script> </body> </html>
