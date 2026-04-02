@@ -141,7 +141,7 @@ const translations = {
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto py-16 border-t border-gray-200 dark:border-gray-800 parallax-section fade-in w-full">
+        <section class="max-w-4xl mx-auto py-16 border-t border-gray-200 dark:border-gray-800 fade-in w-full">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-10 tracking-tight" data-en={translations.aboutTitle.en} data-es={translations.aboutTitle.es}>{translations.aboutTitle.es}</h2>
             
             <div class="space-y-8">
@@ -236,38 +236,38 @@ const translations = {
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto py-16 border-t border-gray-200 dark:border-gray-800 parallax-section fade-in w-full overflow-hidden">
+<section class="max-w-4xl mx-auto pt-16 pb-24 border-t border-gray-200 dark:border-gray-800 fade-in w-full">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-8 tracking-tight" data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
             
-            <div class="tech-ticker-container relative overflow-hidden flex w-full">
-                <div class="tech-ticker-content flex gap-4 animate-[ticker_20s_linear_infinite] w-max">
+            <div class="carousel-container">
+                <div class="carousel-track">
                     {[1, 2].map(() => (
                         <>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Java</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Spring Boot</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Scala</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Python</p>
                             </div>
-			    <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">SQL</p>
                             </div>
-			    <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Machine Learning</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">LLMs</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Data Engineering</p>
                             </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap">
+                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
                                 <p class="text-sm font-semibold text-gray-900 dark:text-white">Docker</p>
                             </div>
                         </>
@@ -280,14 +280,34 @@ const translations = {
     <Footer />
 
     <style>
-        @keyframes ticker {
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            /* Máscara de desvanecimiento suave en los bordes */
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 1rem; /* Espacio entre los items */
+            width: max-content; /* Crítico: obliga al contenedor a medir exactamente lo de sus hijos */
+            animation: scroll 25s linear infinite;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            /* Se desplaza exactamente a la mitad (el arreglo está duplicado) menos la mitad del gap */
+            100% { transform: translateX(calc(-50% - 0.5rem)); } 
         }
     </style>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
+    <script>        document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',

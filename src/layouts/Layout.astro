@@ -9,18 +9,19 @@ import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="dark">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Full Stack Developer Portfolio" />
+        <meta name="description" content="Luis Angel Moreno Delgado Portfolio" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
         
+	<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+        
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     </head>
-    <body class="bg-[#e3e6e7] dark:bg-[#050505] transition-colors duration-300">
+    <body class="bg-[#e3e6e7] dark:bg-[#080512] transition-colors duration-300">
         <slot />
         <script>
             declare global {
@@ -34,7 +35,10 @@ import '../styles/global.css';
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-            }
+            } else{
+		document.documentElement.classList.add('dark');
+		localStorage.setItem('theme', 'dark');
+	    }
 
             let currentLang = localStorage.getItem('lang') || 'es';
             document.documentElement.setAttribute('data-lang', currentLang);
