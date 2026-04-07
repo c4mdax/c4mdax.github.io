@@ -14,13 +14,13 @@ import '../styles/global.css';
         <meta charset="UTF-8" />
         <meta name="description" content="Luis Angel Moreno Delgado Portfolio" />
         <meta name="viewport" content="width=device-width" />
-	<meta name="google-site-verification" content="k55eSCNIwKGhLQSqWPTtQNw10HnX7ZdqzkNynyf64pE" />
-	<link rel="icon" type="image/png" href="/favicon.png?v=3" />
+        <meta name="google-site-verification" content="k55eSCNIwKGhLQSqWPTtQNw10HnX7ZdqzkNynyf64pE" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=3" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     </head>
-    <body class="bg-[#e3e6e7] dark:bg-gray-950 transition-colors duration-300">
+    <body class="bg-white dark:bg-[#050505] text-zinc-900 dark:text-zinc-100 transition-colors duration-300 antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-white">
         <slot />
         <script>
             declare global {
@@ -35,9 +35,9 @@ import '../styles/global.css';
             if (savedTheme) {
                 document.documentElement.classList.toggle('dark', savedTheme === 'dark');
             } else{
-		document.documentElement.classList.add('dark');
-		localStorage.setItem('theme', 'dark');
-	    }
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
 
             let currentLang = localStorage.getItem('lang') || 'es';
             document.documentElement.setAttribute('data-lang', currentLang);
@@ -56,12 +56,11 @@ import '../styles/global.css';
                     if (en && es) {
                         if (el.innerHTML.includes('<span')) {
                             if (lang === 'es') {
-                                el.innerHTML = es.replace('Technologist in Information Systems', '<span class="font-semibold text-gray-900 dark:text-white">Tecnólogo en Sistemas de información</span>')
-                                    .replace('Full Stack Developer', '<span class="font-semibold text-gray-900 dark:text-white">Desarrollador Full Stack</span>');
+                                el.innerHTML = es.replace('Technologist in Information Systems', '<span class="font-semibold text-zinc-900 dark:text-white">Tecnólogo en Sistemas de información</span>')
+                                    .replace('Full Stack Developer', '<span class="font-semibold text-zinc-900 dark:text-white">Desarrollador Full Stack</span>');
                             } else {
-                                // Para inglés
-                                el.innerHTML = en.replace('Technologist in Information Systems', '<span class="font-semibold text-gray-900 dark:text-white">Technologist in Information Systems</span>')
-                                    .replace('Full Stack Developer', '<span class="font-semibold text-gray-900 dark:text-white">Full Stack Developer</span>');
+                                el.innerHTML = en.replace('Technologist in Information Systems', '<span class="font-semibold text-zinc-900 dark:text-white">Technologist in Information Systems</span>')
+                                    .replace('Full Stack Developer', '<span class="font-semibold text-zinc-900 dark:text-white">Full Stack Developer</span>');
                             }
                         } else {
                             el.textContent = lang === 'es' ? es : en;
@@ -94,7 +93,6 @@ import '../styles/global.css';
             };
 
             window.toggleLang = () => {
-                // Crear overlay
                 const overlay = document.createElement('div');
                 overlay.className = 'lang-change-overlay';
                 
@@ -103,25 +101,23 @@ import '../styles/global.css';
                 
                 const currentLangAttr = document.documentElement.getAttribute('data-lang') || 'en';
                 const isSpanish = currentLangAttr === 'es';
-                const text = isSpanish ? 'Changing language...' : 'Cambiando lenguaje...';
+                const text = isSpanish ? 'CHANGING LOCALE...' : 'CAMBIANDO LOCALE...';
                 
-                modal.innerHTML = `<h2>${text}</h2>`;
+                modal.innerHTML = `<h2 class="font-mono text-sm tracking-[0.2em] uppercase">${text}</h2>`;
                 overlay.appendChild(modal);
                 document.body.appendChild(overlay);
                 
-                // Cambiar idioma después de 1 segundo
                 setTimeout(() => {
                     currentLang = currentLang === 'en' ? 'es' : 'en';
                     document.documentElement.setAttribute('data-lang', currentLang);
                     localStorage.setItem('lang', currentLang);
                     window.updatePageContent();
                     
-                    // Ocultar overlay después de 500ms
                     overlay.classList.add('hidden');
                     setTimeout(() => {
                         overlay.remove();
                     }, 300);
-                }, 1000);
+                }, 800);
             };
 
             document.addEventListener('DOMContentLoaded', () => {
