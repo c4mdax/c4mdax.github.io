@@ -6,10 +6,6 @@ import heroPhoto from '../assets/photo.jpeg';
 import cvFile from '../assets/CV_2026_LuisAngelMorenoDelgado.pdf';
 
 const translations = {
-    greeting: { 
-        en: "", 
-        es: "" 
-    },
     name: { 
         en: "Luis Angel Moreno Delgado", 
         es: "Luis Angel Moreno Delgado" 
@@ -48,7 +44,7 @@ const translations = {
     },
     aboutTitle: { 
         en: "About", 
-        es: "Sobre" 
+        es: "Sobre Mí" 
     },
     meTitle: {
         en: "Me",
@@ -75,11 +71,11 @@ const translations = {
     },
     industryTitle: {
         en: "For Industry purposes",
-        es: "Para la industria"
+        es: "Industria"
     },
     academiaTitle: {
         en: "For academic purposes (and hopefully for my thesis)",
-        es: "Para fines académicos (y con suerte para mi tesis)"
+        es: "Academia"
     },
     madeByMe: {
         en: "(made by me)",
@@ -87,146 +83,135 @@ const translations = {
     },
     tech: { 
         en: "Tech Stack", 
-        es: "Tecnologías" 
+        es: "Stack Tecnológico" 
     }
 };
 ---
 
-<Layout title={`Home | Luis Angel Moreno`}>
+<Layout title={`Luis Angel Moreno Delgado`}>
     <Header />
     
-    <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center">
-        <section class="max-w-4xl mx-auto w-full pt-32 sm:pt-48 pb-16 sm:pb-24 fade-in">
-            <div class="flex flex-col sm:flex-row items-center gap-8 sm:gap-12 text-center sm:text-left">
+    <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white">
+        
+        <section class="max-w-5xl mx-auto w-full pt-32 sm:pt-48 pb-20 sm:pb-28 fade-in">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12 sm:gap-16 text-center lg:text-left">
                 
-                <div class="flex-shrink-0">
-                    <div class="w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-gray-100 dark:bg-zinc-900 border-2 border-[#58dbff]/30 flex items-center justify-center overflow-hidden shadow-[0_0_25px_rgba(88,219,255,0.3)] transition-all hover:border-[#58dbff] hover:shadow-[0_0_35px_rgba(88,219,255,0.5)]">
-                        <img src={heroPhoto.src} alt="Luis Angel Moreno Delgado" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                        <span class="text-3xl font-mono text-gray-400 dark:text-gray-600 hidden uppercase">LM</span>
+                <div class="flex-shrink-0 relative group">
+                    <div class="absolute -inset-2 border border-[#e11d48]/0 group-hover:border-[#e11d48]/50 transition-colors duration-700 ease-out z-0"></div>
+                    
+                    <div class="w-48 h-64 sm:w-64 sm:h-80 bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-white/10 p-2 flex items-center justify-center overflow-hidden transition-all duration-700 relative z-10 shadow-xl group-hover:shadow-[0_0_40px_rgba(225,29,72,0.15)]">
+                        <img src={heroPhoto.src} alt="Luis Angel Moreno Delgado" class="w-full h-full object-cover grayscale contrast-125 transition-all duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
                     </div>
                 </div>
                 
-                <div class="flex flex-col items-center sm:items-start max-w-lg">
-                    <p class="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-500 mb-2 tracking-wider uppercase" data-en={translations.greeting.en} data-es={translations.greeting.es}>{translations.greeting.es}</p>
+                <div class="flex flex-col items-center lg:items-start max-w-2xl mt-8 lg:mt-4">
                     
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 sm:mb-6 tracking-tight leading-tight" data-en={translations.name.en} data-es={translations.name.es}>
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-zinc-900 dark:text-white mb-8 tracking-tighter leading-[1.05]" data-en={translations.name.en} data-es={translations.name.es}>
                         {translations.name.es}
                     </h1>
                     
-                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                        <span class="font-semibold text-gray-900 dark:text-white" data-en={translations.heroDesc1.en} data-es={translations.heroDesc1.es}>{translations.heroDesc1.es}</span> 
-                        <span data-en={translations.heroDesc2.en} data-es={translations.heroDesc2.es}>{translations.heroDesc2.es}</span> 
-                        <span class="font-semibold text-gray-900 dark:text-white" data-en={translations.heroDesc3.en} data-es={translations.heroDesc3.es}>{translations.heroDesc3.es}</span> 
-                        <span data-en={translations.heroDesc4.en} data-es={translations.heroDesc4.es}>{translations.heroDesc4.es}</span>
+                    <p class="text-base sm:text-xl text-zinc-600 dark:text-zinc-400 mb-12 leading-relaxed font-light">
+                        <span class="text-zinc-900 dark:text-zinc-200 font-medium" data-en={translations.heroDesc1.en} data-es={translations.heroDesc1.es}>{translations.heroDesc1.es}</span> 
+                        <span class="italic text-[#e11d48] px-1 font-serif" data-en={translations.heroDesc2.en} data-es={translations.heroDesc2.es}>{translations.heroDesc2.es}</span> 
+                        <span class="text-zinc-900 dark:text-zinc-200 font-medium" data-en={translations.heroDesc3.en} data-es={translations.heroDesc3.es}>{translations.heroDesc3.es}</span> 
                     </p>
 
-                    <div class="flex flex-wrap gap-4 justify-center sm:justify-start w-full">
-                        <a href="/projects" class="cursor-pointer px-6 py-2.5 text-sm sm:text-base bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold rounded-xl hover:scale-105 transition-all shadow-md" data-en={translations.viewProjects.en} data-es={translations.viewProjects.es}>
-                            {translations.viewProjects.es}
+                    <div class="flex flex-wrap gap-6 justify-center lg:justify-start w-full font-mono">
+                        <a href="/projects" class="group relative px-8 py-3 text-xs tracking-[0.2em] uppercase text-white dark:text-black bg-zinc-900 dark:bg-white overflow-hidden transition-all duration-500" data-en={translations.viewProjects.en} data-es={translations.viewProjects.es}>
+                            <span class="absolute inset-0 w-full h-full bg-[#e11d48] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+                            <span class="relative z-10 group-hover:text-white transition-colors duration-500">{translations.viewProjects.es}</span>
                         </a>
-                        <a href="/contact" class="cursor-pointer px-6 py-2.5 text-sm sm:text-base border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white font-medium rounded-xl hover:border-[#58dbff] dark:hover:border-[#58dbff] hover:text-[#58dbff] transition-colors" data-en={translations.getInTouch.en} data-es={translations.getInTouch.es}>
-                            {translations.getInTouch.es}
+                        <a href="/contact" class="group relative px-8 py-3 text-xs tracking-[0.2em] uppercase text-zinc-900 dark:text-white hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors duration-500" data-en={translations.getInTouch.en} data-es={translations.getInTouch.es}>
+                            <span class="absolute inset-0 w-full h-full border border-zinc-300 dark:border-white/20 group-hover:border-[#e11d48] transition-colors duration-500"></span>
+                            <span class="relative z-10">{translations.getInTouch.es}</span>
                         </a>
                     </div>
                     
-                    <div class="mt-8 sm:mt-10 flex w-full justify-center sm:justify-start">
-                        <a href={cvFile} download="CV_LuisAngelMorenoDelgado.pdf" class="group flex items-center justify-center gap-3 px-5 py-2.5 w-full sm:w-auto rounded-xl bg-gray-50 dark:bg-zinc-900/50 border border-gray-200 dark:border-gray-800 hover:border-[#58dbff] transition-colors">
-                            <span class="font-medium text-sm text-gray-700 dark:text-gray-300 group-hover:text-[#58dbff] transition-colors" data-en={translations.downloadCv.en} data-es={translations.downloadCv.es}>{translations.downloadCv.es}</span>
-                            <svg class="w-5 h-5 text-gray-500 group-hover:text-[#58dbff] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                            </svg>
+                    <div class="mt-16 flex w-full justify-center lg:justify-start">
+                        <a href={cvFile} download="CV_LuisAngelMorenoDelgado.pdf" class="group flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-all duration-500">
+                            <span class="w-8 h-[1px] bg-zinc-300 dark:bg-zinc-700 group-hover:bg-[#e11d48] group-hover:w-12 transition-all duration-500 ease-out"></span>
+                            <span data-en={translations.downloadCv.en} data-es={translations.downloadCv.es}>{translations.downloadCv.es}</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto py-16 border-t border-gray-200 dark:border-gray-800 fade-in w-full">
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-10 tracking-tight" data-en={translations.aboutTitle.en} data-es={translations.aboutTitle.es}>{translations.aboutTitle.es}</h2>
+        <div class="w-full max-w-5xl mx-auto h-px bg-zinc-200 dark:bg-white/10 my-4 parallax-section"></div>
+
+        <section class="max-w-5xl mx-auto py-24 fade-in w-full">
+            <h2 class="text-xs font-mono uppercase tracking-[0.3em] text-zinc-400 dark:text-zinc-500 mb-16 text-center md:text-left" data-en={translations.aboutTitle.en} data-es={translations.aboutTitle.es}>{translations.aboutTitle.es}</h2>
             
-            <div class="space-y-8">
-                <div class="p-6 rounded-xl bg-gray-50 dark:bg-zinc-900/30 border border-gray-200 dark:border-gray-800 hover:border-[#58dbff] transition-colors duration-300 group">
-                    <h3 class="text-xl font-bold text-[#58dbff] mb-6 flex items-center gap-2">
-                         <span data-en={translations.meTitle.en} data-es={translations.meTitle.es}>{translations.meTitle.es}</span>
-                    </h3>
-                    <ul class="space-y-4 text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
-                            <span>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-5 p-8 sm:p-10 bg-zinc-50 dark:bg-[#080808] border border-zinc-200 dark:border-white/5 hover:border-[#e11d48]/50 transition-colors duration-500 group">
+                    <ul class="space-y-8 text-zinc-700 dark:text-zinc-400 text-sm sm:text-base font-light leading-relaxed">
+                        <li class="flex items-start gap-5">
+                            <span class="font-mono text-xs mt-1 text-[#e11d48]">01</span>
+                            <span class="text-zinc-900 dark:text-zinc-300">
                                 <span data-en={translations.meLine1.en} data-es={translations.meLine1.es}>{translations.meLine1.es}</span> 
-                                (<a href="https://www.fciencias.unam.mx/" target="_blank" rel="noopener noreferrer" class="text-[#58dbff] hover:underline font-medium">FC UNAM</a>)
+                                (<a href="https://www.fciencias.unam.mx/" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-[#e11d48] border-b border-transparent hover:border-[#e11d48] transition-all duration-300">FC UNAM</a>)
                             </span>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            <span data-en={translations.meLine2.en} data-es={translations.meLine2.es}>{translations.meLine2.es}</span>
+                        <li class="flex items-start gap-5">
+                            <span class="font-mono text-xs mt-1 text-[#e11d48]">02</span>
+                            <span class="text-zinc-900 dark:text-zinc-300" data-en={translations.meLine2.en} data-es={translations.meLine2.es}>{translations.meLine2.es}</span>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.76 2.28a2 2 0 001.18 2.448l2.333.933a2 2 0 001.958-.51l1.62-1.62a2 2 0 00.51-1.958l-.933-2.333z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.76 2.28a2 2 0 001.18 2.448l2.333.933a2 2 0 001.958-.51l1.62-1.62a2 2 0 00.51-1.958l-.933-2.333z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3v4a1 1 0 001 1h4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h.01M5 12h.01M5 16h.01M8 8h.01M8 12h.01M8 16h.01M11 8h.01M11 12h.01M11 16h.01M14 8h.01M14 12h.01M14 16h.01M17 8h.01M17 12h.01M17 16h.01"/></svg>
-                            <span data-en={translations.meLine3.en} data-es={translations.meLine3.es}>{translations.meLine3.es}</span>
+                        <li class="flex items-start gap-5">
+                            <span class="font-mono text-xs mt-1 text-[#e11d48]">03</span>
+                            <span class="text-zinc-900 dark:text-zinc-300" data-en={translations.meLine3.en} data-es={translations.meLine3.es}>{translations.meLine3.es}</span>
                         </li>
                     </ul>
-
-                    <div class="flex flex-wrap gap-2.5 mt-8 border-t border-gray-200 dark:border-gray-800 pt-6">
-                        <div class="px-3.5 py-1 rounded-md border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-zinc-900/50 text-xs text-gray-700 dark:text-gray-300 font-mono font-medium">
-                            <span data-en={translations.techJava.en} data-es={translations.techJava.es}>{translations.techJava.es}</span>
-                        </div>
-                        <div class="px-3.5 py-1 rounded-md border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-zinc-900/50 text-xs text-gray-700 dark:text-gray-300 font-mono font-medium">
-                            <span data-en={translations.techPython.en} data-es={translations.techPython.es}>{translations.techPython.es}</span>
-                        </div>
-                        <div class="px-3.5 py-1 rounded-md border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-zinc-900/50 text-xs text-gray-700 dark:text-gray-300 font-mono font-medium">
-                            <span data-en={translations.techScala.en} data-es={translations.techScala.es}>{translations.techScala.es}</span>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="p-6 rounded-xl bg-gray-50 dark:bg-zinc-900/30 border border-gray-200 dark:border-gray-800 hover:border-[#58dbff] transition-colors duration-300 group">
-                    <h3 class="text-xl font-bold text-[#58dbff] mb-6 flex items-center gap-2">
+                <div class="md:col-span-7 p-8 sm:p-10 bg-zinc-50 dark:bg-[#080808] border border-zinc-200 dark:border-white/5 hover:border-[#e11d48]/50 transition-colors duration-500 group flex flex-col justify-center">
+                    
+                    <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-10 flex items-center gap-3">
+                         <div class="w-1.5 h-1.5 bg-[#e11d48]"></div>
                          <span data-en={translations.resourcesTitle.en} data-es={translations.resourcesTitle.es}>{translations.resourcesTitle.es}</span>
                     </h3>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
                         <div>
-                            <h4 class="text-xs font-mono uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4" data-en={translations.industryTitle.en} data-es={translations.industryTitle.es}>{translations.industryTitle.es}</h4>
-                            <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300 font-medium">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <a href="https://www-oracle-com.translate.goog/technical-resources/articles/javase/bloch-effective-08-qa.html" target="_blank" rel="noopener noreferrer" class="hover:text-[#58dbff] transition-colors break-words">
-                                        <span class="italic text-gray-900 dark:text-white">Effective Java</span> - Joshua Bloch
+                            <h4 class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#e11d48] mb-6" data-en={translations.industryTitle.en} data-es={translations.industryTitle.es}>{translations.industryTitle.es}</h4>
+                            <ul class="space-y-6 text-sm text-zinc-600 dark:text-zinc-400 font-light">
+                                <li class="group/item">
+                                    <a href="https://www-oracle-com.translate.goog/technical-resources/articles/javase/bloch-effective-08-qa.html" target="_blank" rel="noopener noreferrer" class="flex flex-col gap-1">
+                                        <span class="font-medium text-zinc-900 dark:text-zinc-200 group-hover/item:text-[#e11d48] transition-colors duration-300">Effective Java</span>
+                                        <span class="text-[10px] font-mono tracking-widest uppercase opacity-70">Joshua Bloch</span>
                                     </a>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <span>Spring <span class="opacity-60 font-normal">(Documentation & Community)</span></span>
+                                <li class="group/item flex flex-col gap-1">
+                                    <span class="font-medium text-zinc-900 dark:text-zinc-200">Spring</span>
+                                    <span class="text-[10px] font-mono tracking-widest uppercase opacity-70">Doc & Community</span>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <a href="https://github.com/c4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md" target="_blank" rel="noopener noreferrer" class="hover:text-[#58dbff] transition-colors break-words">
-                                        ML Roadmap <span class="opacity-60 font-normal text-xs" data-en={translations.madeByMe.en} data-es={translations.madeByMe.es}>{translations.madeByMe.es}</span>
+                                <li class="group/item">
+                                    <a href="https://github.com/c4mdax/Machine_Learning/blob/main/Roadmap/ROADMAP.md" target="_blank" rel="noopener noreferrer" class="flex flex-col gap-1">
+                                        <span class="font-medium text-zinc-900 dark:text-zinc-200 group-hover/item:text-[#e11d48] transition-colors duration-300">ML Roadmap</span>
+                                        <span class="text-[10px] font-mono tracking-widest uppercase opacity-70 text-[#e11d48]" data-en={translations.madeByMe.en} data-es={translations.madeByMe.es}>{translations.madeByMe.es}</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
                         <div>
-                            <h4 class="text-xs font-mono uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4" data-en={translations.academiaTitle.en} data-es={translations.academiaTitle.es}>{translations.academiaTitle.es}</h4>
-                            <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300 font-medium">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <a href="https://wolframscience.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#58dbff] transition-colors break-words">
-                                        <span class="italic text-gray-900 dark:text-white">A New Kind of Science</span> - Stephen Wolfram
+                            <h4 class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#e11d48] mb-6" data-en={translations.academiaTitle.en} data-es={translations.academiaTitle.es}>{translations.academiaTitle.es}</h4>
+                            <ul class="space-y-6 text-sm text-zinc-600 dark:text-zinc-400 font-light">
+                                <li class="group/item">
+                                    <a href="https://wolframscience.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col gap-1">
+                                        <span class="font-medium text-zinc-900 dark:text-zinc-200 group-hover/item:text-[#e11d48] transition-colors duration-300">A New Kind of Science</span>
+                                        <span class="text-[10px] font-mono tracking-widest uppercase opacity-70">Stephen Wolfram</span>
                                     </a>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <a href="https://www.semanticscholar.org/paper/Collision-Based-Computing-Adamatzky-Durand-Lose/e0d199d9ae0ebfdf18f589dee027f26e05c44ec5" target="_blank" rel="noopener noreferrer" class="hover:text-[#58dbff] transition-colors break-words">
-                                        <span class="italic text-gray-900 dark:text-white">Collision-based Computing</span> - A. Adamatzky
+                                <li class="group/item">
+                                    <a href="https://www.semanticscholar.org/paper/Collision-Based-Computing-Adamatzky-Durand-Lose/e0d199d9ae0ebfdf18f589dee027f26e05c44ec5" target="_blank" rel="noopener noreferrer" class="flex flex-col gap-1">
+                                        <span class="font-medium text-zinc-900 dark:text-zinc-200 group-hover/item:text-[#e11d48] transition-colors duration-300">Collision-based Computing</span>
+                                        <span class="text-[10px] font-mono tracking-widest uppercase opacity-70">A. Adamatzky</span>
                                     </a>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-[#58dbff] mt-0.5">•</span>
-                                    <a href="https://www.taylorfrancis.com/books/mono/10.1201/9780429280801/introduction-chaotic-dynamical-systems-robert-devaney" target="_blank" rel="noopener noreferrer" class="hover:text-[#58dbff] transition-colors break-words">
-                                        <span class="italic text-gray-900 dark:text-white">An Intro to Chaotic Dynamical Systems</span> - R. Devaney
+                                <li class="group/item">
+                                    <a href="https://www.taylorfrancis.com/books/mono/10.1201/9780429280801/introduction-chaotic-dynamical-systems-robert-devaney" target="_blank" rel="noopener noreferrer" class="flex flex-col gap-1">
+                                        <span class="font-medium text-zinc-900 dark:text-zinc-200 group-hover/item:text-[#e11d48] transition-colors duration-300">Chaotic Dynamical Systems</span>
+                                        <span class="text-[10px] font-mono tracking-widest uppercase opacity-70">R. Devaney</span>
                                     </a>
                                 </li>
                             </ul>
@@ -236,40 +221,22 @@ const translations = {
             </div>
         </section>
 
-<section class="max-w-4xl mx-auto pt-16 pb-24 border-t border-gray-200 dark:border-gray-800 fade-in w-full">
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-8 tracking-tight" data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
+        <section class="max-w-5xl mx-auto pt-12 pb-32 fade-in w-full overflow-hidden">
+            <h2 class="text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-400 dark:text-zinc-600 mb-12 text-center" data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
             
-            <div class="carousel-container">
+            <div class="carousel-container font-mono opacity-80 hover:opacity-100 transition-opacity duration-700">
                 <div class="carousel-track">
                     {[1, 2].map(() => (
                         <>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Java</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Spring Boot</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Scala</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Python</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">SQL</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Machine Learning</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">LLMs</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Data Engineering</p>
-                            </div>
-                            <div class="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-zinc-900/30 hover:border-[#58dbff] dark:hover:border-[#58dbff] transition-colors whitespace-nowrap cursor-default">
-                                <p class="text-sm font-semibold text-gray-900 dark:text-white">Docker</p>
-                            </div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">JAVA</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">SPRING</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">SCALA</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">PYTHON</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">SQL</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">ML / AI</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">LLMS</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">DATA ENG</div>
+                            <div class="px-10 py-4 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-zinc-900 dark:text-zinc-200 border border-zinc-200 dark:border-white/5 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] transition-colors cursor-default bg-zinc-50 dark:bg-transparent shadow-sm">DOCKER</div>
                         </>
                     ))}
                 </div>
@@ -284,16 +251,15 @@ const translations = {
             width: 100%;
             overflow: hidden;
             position: relative;
-            /* Máscara de desvanecimiento suave en los bordes */
-            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
 
         .carousel-track {
             display: flex;
-            gap: 1rem; /* Espacio entre los items */
-            width: max-content; /* Crítico: obliga al contenedor a medir exactamente lo de sus hijos */
-            animation: scroll 25s linear infinite;
+            gap: 1.5rem;
+            width: max-content;
+            animation: scroll 35s linear infinite;
         }
 
         .carousel-track:hover {
@@ -302,12 +268,12 @@ const translations = {
 
         @keyframes scroll {
             0% { transform: translateX(0); }
-            /* Se desplaza exactamente a la mitad (el arreglo está duplicado) menos la mitad del gap */
-            100% { transform: translateX(calc(-50% - 0.5rem)); } 
+            100% { transform: translateX(calc(-50% - 0.75rem)); } 
         }
     </style>
 
-    <script>        document.addEventListener('DOMContentLoaded', () => {
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
@@ -329,7 +295,7 @@ const translations = {
             window.addEventListener('scroll', () => {
                 const scrolled = window.pageYOffset;
                 document.querySelectorAll('.parallax-section').forEach(section => {
-                    const speed = 0.1;
+                    const speed = 0.08;
                     (section as HTMLElement).style.transform = `translateY(${scrolled * speed}px)`;
                 });
             });

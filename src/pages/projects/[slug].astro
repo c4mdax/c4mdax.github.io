@@ -20,38 +20,72 @@ const { Content } = await entry.render();
 <Layout title={`${entry.data.title} | Luis Angel Moreno`}>
     <Header />
     
-    <main class="min-h-screen pt-40 pb-16 px-4 sm:px-6 md:px-6 max-w-3xl mx-auto">
+    <main class="min-h-screen pt-40 pb-16 px-4 sm:px-6 md:px-8 max-w-4xl mx-auto bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white">
         
-        <article class="w-full">
+        <article class="w-full fade-in">
             
             {entry.data.cover && (
-                <div class="w-full rounded-2xl overflow-hidden mb-8 border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-zinc-900 flex justify-center">
+                <div class="w-full rounded-sm overflow-hidden mb-12 border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 flex justify-center shadow-xl p-2">
                     <Image 
                         src={entry.data.cover} 
                         alt={entry.data.title} 
-                        class="w-full h-auto object-contain max-h-[500px]"
+                        class="w-full h-auto object-cover max-h-[600px] grayscale hover:grayscale-0 transition-all duration-700 rounded-[2px]"
                     />
                 </div>
             )}
 
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-1.5 h-1.5 bg-[#e11d48]"></div>
+                <span class="text-[10px] font-mono text-zinc-500 tracking-[0.3em] uppercase">Project</span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold text-zinc-900 dark:text-white mb-8 tracking-tighter leading-tight">
                 {entry.data.title}
             </h1>
             
             {entry.data.tags && (
-                <div class="flex flex-wrap gap-2 mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
+                <div class="flex flex-wrap gap-3 mb-12 pb-12 border-b border-zinc-200 dark:border-white/10">
                     {entry.data.tags.map((tag: string) => (
-                        <span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-700">
+                        <span class="text-[10px] uppercase font-mono tracking-[0.2em] px-3 py-1.5 bg-zinc-50 dark:bg-[#0a0a0a] text-[#e11d48] rounded-sm border border-zinc-200 dark:border-[#e11d48]/20">
                             {tag}
                         </span>
                     ))}
                 </div>
             )}
             
-            <div class="prose prose-zinc dark:prose-invert max-w-none mt-8">
+            <div class="prose prose-zinc dark:prose-invert prose-lg max-w-none font-light 
+                        prose-headings:tracking-tight prose-headings:font-bold 
+                        prose-p:text-zinc-700 dark:prose-p:text-zinc-300 leading-relaxed
+                        prose-a:text-[#e11d48] prose-a:decoration-[#e11d48]/30 hover:prose-a:decoration-[#e11d48] prose-a:transition-all
+                        prose-code:text-[#e11d48] prose-code:bg-[#e11d48]/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm
+                        prose-pre:border prose-pre:border-white/10 prose-pre:bg-[#0a0a0a]
+                        prose-img:border prose-img:border-zinc-200 dark:prose-img:border-white/10 prose-img:p-1 prose-img:rounded-sm">
                 <Content />
             </div>
         </article>
     </main>
+    
     <Footer />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </Layout>

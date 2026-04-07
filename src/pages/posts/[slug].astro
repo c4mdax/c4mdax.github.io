@@ -5,7 +5,6 @@ import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-    // Filtramos también aquí
     const postEntries = await getCollection('posts', ({ data }) => {
         return data.draft !== true;
     });
@@ -28,22 +27,25 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
 
 <Layout title={`${entry.data.title} | Luis Angel Moreno`}>
     <Header />
-    <main class="min-h-screen pt-40 pb-20 px-6 max-w-3xl mx-auto">
-        <article class="w-full">
+    <main class="min-h-screen pt-32 sm:pt-40 pb-20 px-4 sm:px-6 md:px-8 max-w-3xl mx-auto bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white">
+        <article class="w-full fade-in">
             
-            <header class="mb-12">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+            <header class="mb-12 sm:mb-16">
+                <div class="flex items-center flex-wrap gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#e11d48]/50 hidden sm:block"></span>
+                    <span class="text-[10px] font-mono uppercase tracking-[0.3em] text-[#e11d48]">
+                        {formattedDate}
+                    </span>
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-zinc-900 dark:text-white mb-8 tracking-tighter leading-tight">
                     {entry.data.title}
                 </h1>
                 
-                <p class="text-lg text-gray-500 dark:text-zinc-400 mb-6">
-                    {formattedDate}
-                </p>
-
                 {entry.data.categories && (
-                    <div class="flex flex-wrap gap-2 pb-8 border-b border-gray-200 dark:border-zinc-800">
+                    <div class="flex flex-wrap gap-2 pb-8 sm:pb-12 border-b border-zinc-200 dark:border-white/10">
                         {entry.data.categories.map((category: string) => (
-                            <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400 rounded-md border border-gray-200 dark:border-zinc-700">
+                            <span class="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.2em] px-3 py-1.5 bg-zinc-50 dark:bg-[#0a0a0a] text-zinc-600 dark:text-zinc-400 rounded-sm border border-zinc-200 dark:border-white/5 hover:border-[#e11d48]/30 transition-colors cursor-default">
                                 {category}
                             </span>
                         ))}
@@ -51,12 +53,42 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
                 )}
             </header>
             
-            <div class="prose prose-zinc dark:prose-invert prose-lg max-w-none 
-                        prose-headings:scroll-mt-28 prose-p:text-gray-700 dark:prose-p:text-gray-300
-                        prose-a:text-blue-600 dark:prose-a:text-blue-400">
+            <div class="prose prose-zinc dark:prose-invert prose-base sm:prose-lg max-w-none font-light leading-relaxed
+                        prose-headings:tracking-tight prose-headings:font-bold prose-headings:text-zinc-900 dark:prose-headings:text-white
+                        prose-p:text-zinc-700 dark:prose-p:text-zinc-300
+                        prose-a:text-[#e11d48] prose-a:decoration-[#e11d48]/30 hover:prose-a:decoration-[#e11d48] prose-a:transition-all
+                        prose-code:text-[#e11d48] prose-code:bg-[#e11d48]/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:font-mono prose-code:text-xs sm:prose-code:text-sm
+                        prose-pre:border prose-pre:border-zinc-200 dark:prose-pre:border-white/10 prose-pre:bg-zinc-50 dark:prose-pre:bg-[#0a0a0a] prose-pre:rounded-sm
+                        prose-img:border prose-img:border-zinc-200 dark:prose-img:border-white/10 prose-img:p-1 prose-img:rounded-sm
+                        prose-blockquote:border-l-[#e11d48] prose-blockquote:bg-zinc-50 dark:prose-blockquote:bg-[#0a0a0a] prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:font-normal prose-blockquote:not-italic
+                        prose-li:marker:text-[#e11d48]">
                 <Content />
             </div>
+            
         </article>
     </main>
+    
     <Footer />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </Layout>

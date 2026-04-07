@@ -10,84 +10,65 @@ const projects = await getCollection('projects');
 
 <Layout title="Proyectos | Luis Angel Moreno">
     <Header />
-    <main class="min-h-screen px-4 sm:px-6 md:px-6 flex flex-col justify-center bg-white dark:bg-[#050505] transition-colors duration-300 selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-white">
-        <section class="max-w-3xl mx-auto w-full pt-32 pb-16 fade-in">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-white mb-12 tracking-tighter" data-en="Projects" data-es="Proyectos">
-                Proyectos
-            </h1>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 parallax-section">
-                {projects.map((project) => (
-                    <a href={`/projects/${project.slug}`} class="group flex flex-col gap-5">
+    <main class="min-h-screen pt-32 pb-16 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-zinc-900 dark:text-white mb-16 tracking-tighter fade-in" data-en="Projects" data-es="Proyectos">
+            Proyectos
+        </h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 parallax-section">
+            {projects.map((project) => (
+                <a href={`/projects/${project.slug}`} class="group flex flex-col gap-6 fade-in">
+                    
+                    <div class="w-full aspect-video bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-white/10 p-2 flex items-center justify-center overflow-hidden transition-all duration-700 relative z-10 shadow-lg group-hover:shadow-[0_0_30px_rgba(225,29,72,0.1)] group-hover:border-[#e11d48]/50">
+                        {project.data.cover && (
+                            <Image 
+                                src={project.data.cover} 
+                                alt={project.data.title} 
+                                class="w-full h-full object-cover grayscale contrast-110 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.02]"
+                            />
+                        )}
+                    </div>
+                    
+                    <div class="flex flex-col items-start">
+                        <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3 group-hover:text-[#e11d48] transition-colors duration-300 tracking-tight"
+                            data-en={project.data.title_en || project.data.title} 
+                            data-es={project.data.title}>
+                            {project.data.title}
+                        </h2>
                         
-                        <div class="w-full aspect-video rounded-sm overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 relative">
-                            <div class="absolute inset-0 bg-black/5 dark:bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none"></div>
-                            {project.data.cover && (
-                                <Image 
-                                    src={project.data.cover} 
-                                    alt={project.data.title} 
-                                    class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.03]"
-                                />
-                            )}
-                        </div>
+                        <p class="text-zinc-600 dark:text-zinc-400 text-sm md:text-base mb-5 line-clamp-2 font-light leading-relaxed"
+                           data-en={project.data.description_en || project.data.description} 
+                           data-es={project.data.description}>
+                            {project.data.description}
+                        </p>
                         
-                        <div>
-                            <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-2 group-hover:underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4"
-                                data-en={project.data.title_en || project.data.title} 
-                                data-es={project.data.title}>
-                                {project.data.title}
-                            </h2>
-                            
-                            <p class="text-zinc-600 dark:text-zinc-400 text-sm mb-4 line-clamp-2 font-light"
-                               data-en={project.data.description_en || project.data.description} 
-                               data-es={project.data.description}>
-                                {project.data.description}
-                            </p>
-                            
-                            {project.data.tags && (
-                                <div class="flex flex-wrap gap-2">
-                                    {project.data.tags.map((tag: string) => (
-                                        <span class="text-[10px] uppercase font-mono tracking-wider px-2 py-1 bg-zinc-50 dark:bg-zinc-950 text-zinc-500 rounded-sm border border-zinc-200 dark:border-white/5">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    </a>
-                ))}
-            </div>
-        </section>
+                        {project.data.tags && (
+                            <div class="flex flex-wrap gap-2">
+                                {project.data.tags.map((tag: string) => (
+                                    <span class="text-[10px] uppercase font-mono tracking-widest px-3 py-1.5 bg-zinc-50 dark:bg-[#0a0a0a] text-zinc-500 rounded-sm border border-zinc-200 dark:border-white/5 group-hover:border-[#e11d48]/30 transition-colors">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </a>
+            ))}
+        </div>
     </main>
     <Footer />
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.1 });
 
-            document.querySelectorAll('.fade-in').forEach(el => {
-                observer.observe(el);
-            });
-
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                document.querySelectorAll('.parallax-section').forEach(section => {
-                    const speed = 0.05;
-                    (section as HTMLElement).style.transform = `translateY(${scrolled * speed}px)`;
-                });
-            });
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
     </script>
 </Layout>
