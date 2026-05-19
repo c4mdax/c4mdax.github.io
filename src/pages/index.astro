@@ -10,89 +10,105 @@ import cvFileEN from '../assets/CV_2026Q2_EN.pdf';
 
 const translations = {
     name: { en: "Luis Angel Moreno Delgado", es: "Luis Angel Moreno Delgado" },
-    heroDesc1: { en: "Computer Science Student", es: "Estudiante de Ciencias de la Computación" },
-    heroDesc2: { en: "&", es: "y" },
-    heroDesc3: { en: "Backend · ML", es: "Backend · ML" },
+    heroDesc: { en: "Computer Science", es: "Ciencias de la Computación" },
+    badge1: { en: "Backend", es: "Backend" },
+    badge2: { en: "AI", es: "IA" },
+    badge3: { en: "Data Engineering", es: "Ingeniería de Datos" },
     viewProjects: { en: "Projects", es: "Proyectos" },
     getInTouch: { en: "Contact", es: "Contacto" },
     roleTitle: { en: "", es: "" },
     downloadCv: { en: "Download CV - English version", es: "Descargar CV - versión en Español" },
     aboutTitle: { en: "About", es: "Sobre Mí" },
-    meLine1: { en: "Computer Science student @ UNAM", es: "Estudiante de Ciencias de la Computación @ UNAM" },
+    meLine1: { en: "Computer Science", es: "Ciencias de la Computación" },
     meLine2: { en: "In the industry, enthusiastic about Backend Architecture & ML", es: "En la industria, entusiasta de la Arquitectura Backend y el Machine Learning" },
-    meLine3: { en: "In academia, interested about Automata Theory & Discrete Dynamical Systems", es: "En la academia, interesado por la Teoría de Autómatas y los Sistemas Dinámicos Discretos" },
+    meLine3: { en: "In academia, interested about Automata Theory (emphasis on Cellular Automata) & Discrete Dynamical Systems", es: "En la academia, interesado por la Teoría de Autómatas (énfasis en Autómatas Celulares) y los Sistemas Dinámicos Discretos" },
     resourcesTitle: { en: "Resources I'm studying", es: "Recursos que estoy estudiando" },
     industryTitle: { en: "Industry", es: "Industria" },
     academiaTitle: { en: "Academia", es: "Academia" },
-    madeByMe: { en: "(made by me)", es: "(hecho por mí)" },
     tech: { en: "Tech Stack", es: "Stack Tecnológico" }
 };
 
-const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / AI', 'LLMs', 'Data Eng'];
+const techStack = [
+    'Java', 'Python', 'Scala',
+    'Spring', 'FastAPI',
+    'SQL', 'PostgreSQL', 'Spark',
+    'PyTorch', 'scikit-learn',
+    'Docker', 'Linux', 'Git',
+];
 ---
 
 <Layout title={`Luis Angel Moreno Delgado`}>
     <Header />
     
-    <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white relative overflow-hidden">
-        
-        <!-- INCREASED OPACITY HERE -->
-        <canvas id="automataCanvas" class="absolute inset-0 w-full h-full opacity-15 dark:opacity-10 pointer-events-none z-0"></canvas>
+    <div class="fixed inset-0 pointer-events-none z-50 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.85)_100%)]"></div>
+    <div class="fixed inset-0 pointer-events-none z-40 opacity-[0.03] mix-blend-overlay noise-bg"></div>
 
-        <!-- HERO -->
+    <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center bg-black transition-colors duration-1000 selection:bg-[#e11d48]/30 selection:text-white relative overflow-hidden text-zinc-300">
+        
+        <canvas id="automataCanvas" class="absolute inset-0 w-full h-full opacity-30 pointer-events-none z-0"></canvas>
+
         <section class="max-w-5xl mx-auto w-full pt-40 sm:pt-56 pb-24 sm:pb-32 fade-in relative z-10">
             <div class="flex flex-col lg:flex-row items-center lg:items-start gap-14 sm:gap-20 text-center lg:text-left">
                 
-                <!-- Foto -->
-                <div class="flex-shrink-0 relative">
-                    <div class="absolute -inset-px rounded-full border border-zinc-200 dark:border-white/8"></div>
-                    <div class="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border border-zinc-300 dark:border-white/10 shadow-lg relative z-10">
+                <div class="flex-shrink-0 relative group">
+                    <div class="absolute -inset-4 rounded-full bg-[#e11d48] opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-1000"></div>
+                    <div class="absolute -inset-px rounded-full border border-zinc-800"></div>
+                    <div class="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border border-white/5 shadow-[0_0_40px_rgba(0,0,0,0.8)] relative z-10">
                         <img 
                             src={heroPhoto.src} 
                             alt="Luis Angel Moreno Delgado" 
-                            class="w-full h-full object-cover object-top grayscale contrast-105 brightness-95 scale-105"
+                            class="w-full h-full object-cover object-top grayscale contrast-125 brightness-105 scale-105"
                             onerror="this.style.display='none';" 
-                            loading="eager"
-                            fetchpriority="high"
                         />
                     </div>
-                    <div class="absolute bottom-1.5 right-1.5 flex items-center gap-1.5 z-20">
-                        <span class="w-2 h-2 rounded-full bg-[#e11d48] shadow-sm shadow-[#e11d48]/60"></span>
+                    <div class="absolute bottom-2 right-2 flex items-center gap-1.5 z-20">
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#e11d48] shadow-[0_0_10px_#e11d48] animate-pulse"></span>
                     </div>
                 </div>
 
-                <!-- Texto -->
                 <div class="flex flex-col items-center lg:items-start max-w-2xl mt-6 lg:mt-2">
-                    <p class="text-[10px] font-mono uppercase tracking-[0.35em] text-zinc-400 dark:text-zinc-600 mb-6"
+                    <p class="text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-500 mb-6"
                        data-en={translations.roleTitle.en} data-es={translations.roleTitle.es}>
                         {translations.roleTitle.es}
                     </p>
                     
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight leading-[1.08]"
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tighter leading-[1.05] drop-shadow-2xl"
                         data-en={translations.name.en} data-es={translations.name.es}>
                         {translations.name.es}
                     </h1>
 
-                    <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-500 mb-12 leading-relaxed font-light max-w-md">
-                        <span data-en={translations.heroDesc1.en} data-es={translations.heroDesc1.es}>{translations.heroDesc1.es}</span><span class="text-[#e11d48] mx-2 font-serif italic" data-en={translations.heroDesc2.en} data-es={translations.heroDesc2.es}>{translations.heroDesc2.es}</span><span data-en={translations.heroDesc3.en} data-es={translations.heroDesc3.es}>{translations.heroDesc3.es}</span>
-                    </p>
+                    <div class="mb-12">
+                        <p class="text-lg sm:text-xl text-zinc-400 mb-6 font-light tracking-wide">
+                            <span data-en={translations.heroDesc.en} data-es={translations.heroDesc.es}>{translations.heroDesc.es}</span>
+                        </p>
 
-                    <!-- CTAs -->
-                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start w-full font-mono">
+                        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                            <span class="px-5 py-2 rounded-sm text-[10px] font-mono uppercase tracking-[0.2em] font-bold border border-[#e11d48]/20 bg-[#e11d48]/5 text-[#e11d48] shadow-[0_0_15px_rgba(225,29,72,0.1)] transition-all hover:bg-[#e11d48]/10 hover:shadow-[0_0_25px_rgba(225,29,72,0.2)] cursor-default">
+                                <span data-en={translations.badge1.en} data-es={translations.badge1.es}>{translations.badge1.es}</span>
+                            </span>
+                            <span class="px-5 py-2 rounded-sm text-[10px] font-mono uppercase tracking-[0.2em] font-bold border border-[#e11d48]/20 bg-[#e11d48]/5 text-[#e11d48] shadow-[0_0_15px_rgba(225,29,72,0.1)] transition-all hover:bg-[#e11d48]/10 hover:shadow-[0_0_25px_rgba(225,29,72,0.2)] cursor-default">
+                                <span data-en={translations.badge2.en} data-es={translations.badge2.es}>{translations.badge2.es}</span>
+                            </span>
+                            <span class="px-5 py-2 rounded-sm text-[10px] font-mono uppercase tracking-[0.2em] font-bold border border-[#e11d48]/20 bg-[#e11d48]/5 text-[#e11d48] shadow-[0_0_15px_rgba(225,29,72,0.1)] transition-all hover:bg-[#e11d48]/10 hover:shadow-[0_0_25px_rgba(225,29,72,0.2)] cursor-default">
+                                <span data-en={translations.badge3.en} data-es={translations.badge3.es}>{translations.badge3.es}</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-5 justify-center lg:justify-start w-full font-mono">
                         <a href="/projects"
-                           class="relative px-7 py-2.5 text-[11px] tracking-[0.18em] uppercase text-white dark:text-black bg-zinc-900 dark:bg-white hover:bg-[#e11d48] dark:hover:bg-[#e11d48] dark:hover:text-white transition-colors duration-300"
+                           class="relative px-8 py-3 text-[10px] tracking-[0.25em] uppercase text-black bg-white hover:bg-[#e11d48] hover:text-white transition-colors duration-500 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(225,29,72,0.3)]"
                            data-en={translations.viewProjects.en} data-es={translations.viewProjects.es}>
                             {translations.viewProjects.es}
                         </a>
                         <a href="/contact"
-                           class="relative px-7 py-2.5 text-[11px] tracking-[0.18em] uppercase text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-white/15 hover:border-[#e11d48] hover:text-[#e11d48] dark:hover:text-[#e11d48] dark:hover:border-[#e11d48] transition-colors duration-300"
+                           class="relative px-8 py-3 text-[10px] tracking-[0.25em] uppercase text-zinc-400 border border-zinc-700 hover:border-[#e11d48] hover:text-[#e11d48] transition-colors duration-500"
                            data-en={translations.getInTouch.en} data-es={translations.getInTouch.es}>
                             {translations.getInTouch.es}
                         </a>
                     </div>
                     
-                    <!-- CV Download -->
-                    <div class="mt-14 flex w-full justify-center lg:justify-start">
+                    <div class="mt-16 flex w-full justify-center lg:justify-start">
                         <a 
                             href={cvFileES}
                             download="CV_LuisAngelMoreno_ES.pdf"
@@ -101,9 +117,9 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
                             data-filename-en="CV_LuisAngelMoreno_EN.pdf"
                             data-filename-es="CV_LuisAngelMoreno_ES.pdf"
                             id="cv-download-link"
-                            class="group flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-zinc-400 hover:text-[#e11d48] dark:text-zinc-600 dark:hover:text-[#e11d48] transition-colors duration-400"
+                            class="group flex items-center gap-5 text-[9px] uppercase tracking-[0.4em] text-zinc-500 hover:text-[#e11d48] transition-colors duration-700"
                         >
-                            <span class="w-6 h-px bg-current transition-all duration-500 group-hover:w-10"></span>
+                            <span class="w-8 h-px bg-current transition-all duration-700 group-hover:w-14"></span>
                             <span data-en={translations.downloadCv.en} data-es={translations.downloadCv.es}>{translations.downloadCv.es}</span>
                         </a>
                     </div>
@@ -111,73 +127,89 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
             </div>
         </section>
 
-        <div class="w-full max-w-5xl mx-auto h-px bg-zinc-100 dark:bg-white/5 my-2 relative z-10"></div>
+        <div class="w-full max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent my-4 relative z-10"></div>
 
-        <!-- ABOUT -->
         <section class="max-w-5xl mx-auto py-28 fade-in w-full relative z-10">
-            <h2 class="text-[10px] font-mono uppercase tracking-[0.35em] text-zinc-400 dark:text-zinc-600 mb-14 text-center md:text-left"
+            <h2 class="text-[10px] font-mono uppercase tracking-[0.4em] text-zinc-500 mb-16 text-center md:text-left"
                 data-en={translations.aboutTitle.en} data-es={translations.aboutTitle.es}>
                 {translations.aboutTitle.es}
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-5 p-8 sm:p-10 bg-zinc-50/60 dark:bg-[#080808]/60 border border-zinc-150 dark:border-white/[0.04] hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-500">
-                    <ul class="space-y-9 text-zinc-700 dark:text-zinc-400 text-sm font-light leading-relaxed">
-                        <li class="flex items-start gap-5">
-                            <span class="font-mono text-[10px] mt-0.5 text-[#e11d48] shrink-0">01</span>
-                            <span class="text-zinc-800 dark:text-zinc-300 text-sm">
+                <div class="md:col-span-5 p-8 sm:p-10 bg-[#030303]/80 border border-white/[0.02] backdrop-blur-sm transition-colors duration-700 relative overflow-hidden">
+                    <ul class="space-y-10 text-zinc-400 text-sm font-light leading-relaxed">
+                        <li class="flex items-start gap-6">
+                            <span class="font-mono text-[9px] mt-1 text-[#e11d48] opacity-70">01</span>
+                            <span class="text-zinc-300">
                                 <span data-en={translations.meLine1.en} data-es={translations.meLine1.es}>{translations.meLine1.es}</span> 
                                 (<a href="https://www.fciencias.unam.mx/" target="_blank" rel="noopener noreferrer"
-                                    class="text-zinc-500 dark:text-zinc-500 hover:text-[#e11d48] border-b border-transparent hover:border-[#e11d48] transition-all duration-300">FC UNAM</a>)
+                                    class="text-zinc-500 hover:text-[#e11d48] border-b border-transparent hover:border-[#e11d48] transition-all duration-500">Universidad Nacional Autónoma de México</a>)
                             </span>
                         </li>
-                        <li class="flex items-start gap-5">
-                            <span class="font-mono text-[10px] mt-0.5 text-[#e11d48] shrink-0">02</span>
-                            <span class="text-zinc-800 dark:text-zinc-300 text-sm"
+                        <li class="flex items-start gap-6">
+                            <span class="font-mono text-[9px] mt-1 text-[#e11d48] opacity-70">02</span>
+                            <span class="text-zinc-300"
                                   data-en={translations.meLine2.en} data-es={translations.meLine2.es}>{translations.meLine2.es}</span>
                         </li>
-                        <li class="flex items-start gap-5">
-                            <span class="font-mono text-[10px] mt-0.5 text-[#e11d48] shrink-0">03</span>
-                            <span class="text-zinc-800 dark:text-zinc-300 text-sm"
+                        <li class="flex items-start gap-6">
+                            <span class="font-mono text-[9px] mt-1 text-[#e11d48] opacity-70">03</span>
+                            <span class="text-zinc-300"
                                   data-en={translations.meLine3.en} data-es={translations.meLine3.es}>{translations.meLine3.es}</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="md:col-span-7 p-8 sm:p-10 bg-zinc-50/60 dark:bg-[#080808]/60 border border-zinc-150 dark:border-white/[0.04] hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-500 flex flex-col justify-center">
-                    <h3 class="text-[11px] font-mono font-medium text-zinc-900 dark:text-white mb-10 flex items-center gap-3 uppercase tracking-[0.2em]">
-                        <div class="w-1 h-1 bg-[#e11d48]"></div>
+                <div class="md:col-span-7 p-8 sm:p-10 bg-[#030303]/80 border border-white/[0.02] backdrop-blur-sm transition-colors duration-700 flex flex-col justify-center relative overflow-hidden">
+                    <h3 class="text-[10px] font-mono text-white mb-12 flex items-center gap-4 uppercase tracking-[0.3em]">
+                        <div class="w-1.5 h-1.5 bg-[#e11d48] rotate-45"></div>
                         <span data-en={translations.resourcesTitle.en} data-es={translations.resourcesTitle.es}>{translations.resourcesTitle.es}</span>
                     </h3>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
                         <div>
-                            <h4 class="text-[9px] font-mono uppercase tracking-[0.25em] text-[#e11d48] mb-6"
+                            <h4 class="text-[9px] font-mono uppercase tracking-[0.3em] text-[#e11d48] mb-8 opacity-80"
                                 data-en={translations.industryTitle.en} data-es={translations.industryTitle.es}>{translations.industryTitle.es}</h4>
-                            <ul class="space-y-5 text-sm text-zinc-600 dark:text-zinc-500 font-light">
+                            <ul class="space-y-6 text-base text-zinc-500 font-light">
                                 <li>
-                                    <a href="#" class="flex flex-col gap-0.5 group/item">
-                                        <span class="text-zinc-800 dark:text-zinc-300 text-[13px] group-hover/item:text-[#e11d48] transition-colors duration-300">Effective Java</span>
-                                        <span class="text-[9px] font-mono tracking-widest uppercase text-zinc-400 dark:text-zinc-600">Joshua Bloch</span>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">Effective Java</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-zinc-600">Joshua Bloch</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="flex flex-col gap-0.5 group/item">
-                                        <span class="text-zinc-800 dark:text-zinc-300 text-[13px] group-hover/item:text-[#e11d48] transition-colors duration-300">ML Roadmap</span>
-                                        <span class="text-[9px] font-mono tracking-widest uppercase text-[#e11d48]/70"
-                                              data-en={translations.madeByMe.en} data-es={translations.madeByMe.es}>{translations.madeByMe.es}</span>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">Spring Start Here</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-zinc-600">Laurentiu Spilca</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">Programming in Scala (Beginner focus)</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-zinc-600">Martin Odersky, et al.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">ML Roadmap</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-[#e11d48]/50">Hecho por mí</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="text-[9px] font-mono uppercase tracking-[0.25em] text-[#e11d48] mb-6"
+                            <h4 class="text-[9px] font-mono uppercase tracking-[0.3em] text-[#e11d48] mb-8 opacity-80"
                                 data-en={translations.academiaTitle.en} data-es={translations.academiaTitle.es}>{translations.academiaTitle.es}</h4>
-                            <ul class="space-y-5 text-sm text-zinc-600 dark:text-zinc-500 font-light">
+                            <ul class="space-y-6 text-base text-zinc-500 font-light">
                                 <li>
-                                    <a href="#" class="flex flex-col gap-0.5 group/item">
-                                        <span class="text-zinc-800 dark:text-zinc-300 text-[13px] group-hover/item:text-[#e11d48] transition-colors duration-300">A New Kind of Science</span>
-                                        <span class="text-[9px] font-mono tracking-widest uppercase text-zinc-400 dark:text-zinc-600">Stephen Wolfram</span>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">A New Kind of Science</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-zinc-600">Stephen Wolfram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex flex-col gap-1.5 group/item">
+                                        <span class="text-zinc-300 text-[15px] group-hover/item:text-[#e11d48] transition-colors duration-500">Cellular Automata and Complexity</span>
+                                        <span class="text-[9px] font-mono tracking-[0.2em] uppercase text-zinc-600">Stephen Wolfram</span>
                                     </a>
                                 </li>
                             </ul>
@@ -187,20 +219,17 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
             </div>
         </section>
 
-        <!-- TECH STACK -->
-        <section class="max-w-5xl mx-auto pt-4 pb-36 fade-in w-full relative z-10">
-            <h2 class="text-[9px] font-mono uppercase tracking-[0.4em] text-zinc-400 dark:text-zinc-600 mb-10 text-center md:text-left"
+        <section class="max-w-5xl mx-auto pt-8 pb-40 fade-in w-full relative z-10">
+            <h2 class="text-[9px] font-mono uppercase tracking-[0.5em] text-zinc-600 mb-12 text-center md:text-left"
                 data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
             
-            <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+            <div class="flex flex-wrap gap-3">
                 {techStack.map(tech => (
-                    <li>
-                        <span class="px-4 py-2 text-[10px] font-mono uppercase tracking-[0.15em] border border-zinc-200 dark:border-white/[0.06] text-zinc-500 dark:text-zinc-500 hover:border-[#e11d48] hover:text-[#e11d48] transition-colors duration-300 cursor-default block">
-                            {tech}
-                        </span>
-                    </li>
+                    <span class="px-5 py-2.5 text-[9px] font-mono uppercase tracking-[0.2em] border border-zinc-800 bg-[#030303] text-zinc-400 hover:border-[#e11d48] hover:text-white transition-all duration-500 cursor-default shadow-lg">
+                        {tech}
+                    </span>
                 ))}
-            </ul>
+            </div>
         </section>
 
     </main>
@@ -210,17 +239,22 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
     <style>
         .fade-in {
             opacity: 0;
-            transform: translateY(16px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
+            transform: translateY(24px);
+            transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* TV/Film Noise Effect */
+        .noise-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
     </style>
 
     <script>
-        /* ─── Automata de Conway ─── */
+        /* ─── The "Kurayami" Automata ─── */
         function startAutomata() {
             const canvas = document.getElementById('automataCanvas') as HTMLCanvasElement;
             if (!canvas) return;
@@ -228,7 +262,7 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
             if (!ctx) return;
 
             let cols: number, rows: number;
-            const cellSize = 12;
+            const cellSize = 16;
             let grid: number[][];
 
             function init() {
@@ -237,8 +271,10 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
                 rows = Math.floor(rect.height / cellSize);
                 canvas.width  = cols * cellSize;
                 canvas.height = rows * cellSize;
+                
+                // Sparse grid for a more isolated, dark feel
                 grid = Array.from({ length: cols }, () =>
-                    Array.from({ length: rows }, () => (Math.random() > 0.88 ? 1 : 0))
+                    Array.from({ length: rows }, () => (Math.random() > 0.90 ? 1 : 0))
                 );
             }
 
@@ -261,8 +297,12 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
             }
 
             function draw() {
-                ctx!.clearRect(0, 0, canvas.width, canvas.height);
-                ctx!.fillStyle = '#e11d48';
+                // Semi-transparent black fill creates fading ghost trails
+                ctx!.fillStyle = 'rgba(0, 0, 0, 0.2)'; 
+                ctx!.fillRect(0, 0, canvas.width, canvas.height);
+                
+                // Deep red embers
+                ctx!.fillStyle = '#9f1239';
                 for (let i = 0; i < cols; i++) {
                     for (let j = 0; j < rows; j++) {
                         if (grid[i][j] === 1) {
@@ -274,7 +314,8 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
 
             let lastTime = 0;
             function animate(time: number) {
-                if (time - lastTime > 220) {
+                // Slower tick rate
+                if (time - lastTime > 250) {
                     update();
                     draw();
                     lastTime = time;
@@ -282,21 +323,11 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
                 requestAnimationFrame(animate);
             }
 
-            // Performance: Debounce window resize to avoid excessive recalcs
-            let resizeTimeout: ReturnType<typeof setTimeout>;
-            window.addEventListener('resize', () => {
-                clearTimeout(resizeTimeout);
-                resizeTimeout = setTimeout(() => {
-                    init();
-                    draw();
-                }, 150);
-            });
-            
+            window.addEventListener('resize', () => { init(); draw(); });
             init();
             animate(0);
         }
 
-        /* ─── CV Sync Logic ─── */
         function syncCvLink() {
             const link = document.getElementById('cv-download-link') as HTMLAnchorElement | null;
             if (!link) return;
@@ -314,33 +345,23 @@ const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / A
             }
         }
 
-        /* ─── Scroll Observer ─── */
         function initObserver() {
             const observer = new IntersectionObserver(
                 (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-                { threshold: 0.1 }
+                { threshold: 0.15 }
             );
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         }
 
-        /* ─── Init ─── */
         document.addEventListener('DOMContentLoaded', () => {
             startAutomata();
             initObserver();
             syncCvLink();
 
-            document.addEventListener('languageChanged', () => {
-                setTimeout(syncCvLink, 50);
-            });
+            document.addEventListener('languageChanged', () => setTimeout(syncCvLink, 50));
             
-            const htmlObserver = new MutationObserver(() => {
-                syncCvLink();
-            });
-
-            htmlObserver.observe(document.documentElement, { 
-                attributes: true, 
-                attributeFilter: ['lang', 'data-lang'] 
-            });
+            const htmlObserver = new MutationObserver(() => syncCvLink());
+            htmlObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang', 'data-lang'] });
         });
     </script>
 </Layout>
