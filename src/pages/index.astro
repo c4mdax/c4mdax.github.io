@@ -27,6 +27,8 @@ const translations = {
     madeByMe: { en: "(made by me)", es: "(hecho por mí)" },
     tech: { en: "Tech Stack", es: "Stack Tecnológico" }
 };
+
+const techStack = ['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / AI', 'LLMs', 'Data Eng'];
 ---
 
 <Layout title={`Luis Angel Moreno Delgado`}>
@@ -34,7 +36,8 @@ const translations = {
     
     <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white relative overflow-hidden">
         
-        <canvas id="automataCanvas" class="absolute inset-0 w-full h-full opacity-[0.06] dark:opacity-[0.04] pointer-events-none z-0"></canvas>
+        <!-- INCREASED OPACITY HERE -->
+        <canvas id="automataCanvas" class="absolute inset-0 w-full h-full opacity-15 dark:opacity-10 pointer-events-none z-0"></canvas>
 
         <!-- HERO -->
         <section class="max-w-5xl mx-auto w-full pt-40 sm:pt-56 pb-24 sm:pb-32 fade-in relative z-10">
@@ -49,6 +52,8 @@ const translations = {
                             alt="Luis Angel Moreno Delgado" 
                             class="w-full h-full object-cover object-top grayscale contrast-105 brightness-95 scale-105"
                             onerror="this.style.display='none';" 
+                            loading="eager"
+                            fetchpriority="high"
                         />
                     </div>
                     <div class="absolute bottom-1.5 right-1.5 flex items-center gap-1.5 z-20">
@@ -58,7 +63,6 @@ const translations = {
 
                 <!-- Texto -->
                 <div class="flex flex-col items-center lg:items-start max-w-2xl mt-6 lg:mt-2">
-
                     <p class="text-[10px] font-mono uppercase tracking-[0.35em] text-zinc-400 dark:text-zinc-600 mb-6"
                        data-en={translations.roleTitle.en} data-es={translations.roleTitle.es}>
                         {translations.roleTitle.es}
@@ -188,13 +192,15 @@ const translations = {
             <h2 class="text-[9px] font-mono uppercase tracking-[0.4em] text-zinc-400 dark:text-zinc-600 mb-10 text-center md:text-left"
                 data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
             
-            <div class="flex flex-wrap gap-2">
-                {['Java', 'Spring', 'Python', 'Scala', 'SQL', 'Docker', 'ML / AI', 'LLMs', 'Data Eng'].map(tech => (
-                    <span class="px-4 py-2 text-[10px] font-mono uppercase tracking-[0.15em] border border-zinc-200 dark:border-white/[0.06] text-zinc-500 dark:text-zinc-500 hover:border-[#e11d48] hover:text-[#e11d48] transition-colors duration-300 cursor-default">
-                        {tech}
-                    </span>
+            <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+                {techStack.map(tech => (
+                    <li>
+                        <span class="px-4 py-2 text-[10px] font-mono uppercase tracking-[0.15em] border border-zinc-200 dark:border-white/[0.06] text-zinc-500 dark:text-zinc-500 hover:border-[#e11d48] hover:text-[#e11d48] transition-colors duration-300 cursor-default block">
+                            {tech}
+                        </span>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </section>
 
     </main>
@@ -276,7 +282,16 @@ const translations = {
                 requestAnimationFrame(animate);
             }
 
-            window.addEventListener('resize', () => { init(); draw(); });
+            // Performance: Debounce window resize to avoid excessive recalcs
+            let resizeTimeout: ReturnType<typeof setTimeout>;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    init();
+                    draw();
+                }, 150);
+            });
+            
             init();
             animate(0);
         }
@@ -314,7 +329,6 @@ const translations = {
             initObserver();
             syncCvLink();
 
-            // Sincronizar con pequeño delay cuando cambie el idioma
             document.addEventListener('languageChanged', () => {
                 setTimeout(syncCvLink, 50);
             });
