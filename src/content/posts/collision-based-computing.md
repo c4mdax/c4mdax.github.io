@@ -1,55 +1,97 @@
 ---
 title: "Computación basada en Colisiones"
 description: "Explicación del cómputo basado en colisiones y su conexión con autómatas celulares en la construcción de sistemas computacionales."
-pubDate: "2026-04-26"
+pubDate: "2026-02-26"
 categories: ["Computación basada en colisiones", "Teoría de Autómatas", "Turing completitud"] 
 draft: false
 ---
 
-Leyendo *Collision-Based Computing*, editado por Andrew Adamatzky, encontré una idea particularmente interesante: la posibilidad de realizar computación sin arquitectura centralizada ni separación estricta entre memoria y procesamiento.
+La idea tradicional de computación suele estar asociada a:
+- procesadores,
+- memoria,
+- arquitectura centralizada,
+- y secuencias explícitas de instrucciones.
 
-En este paradigma, la información es representada por entidades moviles dentro de un sistema dinámico, y el cálculo emerge a partir de sus colisiones.
+Sin embargo, el paradigma de *collision-based computing* propone una noción distinta:
+la posibilidad de realizar computación a psrtir de interacciones físicas entre entidades móviles dentro de un sistema dinámico.
 
-Dichas entidades pueden ser:
+En este contexto, el calculo no ocurre “sobre” el sistema; emerge directamente de su dinámica.
+
+Las entidades involucradas pueden ser:
 - partículas,
 - ondas,
 - excitaciones químicas,
-- o *spaceships* dentro de un autómata celular.
+- señales ópticas,
+- o patrones móviles dentro de un autómata celular.
 
 ---
 
 ## ¿Qué es el cómputo basado en colisiones?
 
-La idea central puede resumirse así:
+La idea central puede resumirse de forma relativamente simple:
 
-> La información es representada por objetos móviles, y la computación ocurre cuando éstos interactúan.
+> La información es representada por objetos móviles, y la computación ocurre cuando éstos colisionan.
 
-Durante una colisión, las entidades pueden:
+Durante una interacción, las entidades pueden:
 - aniquilarse,
 - fusionarse,
 - desviarse,
+- reflejarse,
 - o generar nuevas estructuras.
 
-Cada interacción representa una transformación lógica.
+Cada colisión representa una transformación lógica dentro del sistema.
 
-A diferencia de la computación clásica, aquí no existe necessriamente un “procesador” central; el sistema completo actúa como medio computacional.
+A diferencia de la computación clásica, aquí no existe necesariamente:
+- un procesador central,
+- un reloj global,
+- ni separación estricta entre memoria y procesamiento.
+
+El propio medio físico funciona simultáneamente como:
+- soporte,
+- canal de transmisión,
+- y mecanismo computacional.
 
 ---
 
-## El Juego de la Vida como sistema computacional
+## Origen conceptual
+
+El paradigma posee conexiones profundas con:
+- autómatas celulares,
+- dinámica de partículas,
+- sistemas reversibles,
+- y física computacional.
+
+Uno de los antecedentes más importantes aparece en el trabajo de Edward Fredkin y Tommaso Toffoli sobre *Conservative Logic*, donde la computación es modelada mediante partículas ideales que preservan información y momento.
+
+Posteriormente, estas ideas se expandieron hacia:
+- medios químicos,
+- materiales excitables,
+- redes ópticas,
+- dinámica molecular,
+- y particularmente, autómatas celulares.
+
+La idea fundamental detrás de todos estos enfoques es similar:
+la computación puede emerger espontáneamente de interacciones locales suficientemente ricas.
+
+---
+
+## El Juego de la Vida como medio computacional
 
 El *Game of Life* de Conway resulta especialmente interesante porque contiene:
 - estructuras móviles,
-- objetos estacionarios,
 - osciladores,
+- objetos estacionarios,
 - mecanismos de crecimiento,
 - y colisiones complejas.
 
+En otras palabras:
+posee todos los ingredientes necesarios para construir sistemas computacionales universales.
+
 Los *gliders* funcionan como señales binarias móviles:
-- presencia → `1`
+- presencia de un patrón → `1`
 - ausencia → `0`
 
-Mientras tanto, objetos estacionarios pueden actuar como:
+Mientras tanto, estructuras estacionarias pueden actuar como:
 - memoria,
 - reflectores,
 - absorbentes,
@@ -62,50 +104,113 @@ Esto permite construir circuitos lógicos enteros dentro del propio autómata.
 
 ## Colisiones como lógica
 
-Cuando dos *gliders* colisionan, el resultado depende de:
+La parte más interesante aparece cuando múltiples *gliders* interactúan.
+
+Dependiendo de:
 - sincronización,
 - fase,
 - ángulo,
-- y posición relativa.
+- y posición relativa,
 
-Algunss colisiones destruyen señales; otras generan nuevas trayectorias o preservan información.
+la colisión puede producir resultados distintos.
 
-Estas interacciones permiten implementar compuertas booleanas como:
+Algunas interacciones:
+- destruyen señales,
+- generan nuevos *gliders*,
+- alteran trayectorias,
+- o preservan parcialmente información.
+
+Estas colisiones permiten implementar operaciones booleanas fundamentales como:
 - AND,
-- OR,
+- OR
 - NOT.
 
-La consecuencia más importante es la siguiente:
+A partir de suficientes combinaciones lógicas, el sistema adquiere capacidad de computación universal.
+
+---
+
+## Universalidad computacional
+
+La consecuencia más importante de todo esto es la siguiente:
 
 > Si un sistema puede transmitir, almacenar y transformar información, entonces puede realizar computación universal.
 
-Precisamente por ello, el *Game of Life* es considerado Turing-completo.
+Precisamente por ello, el *Game of Life* es considerado Turing-completo
+
+Dentro del sistema es posible:
+- transmitir información mediante patrones móviles,
+- almacenarla utilizando estructuras estables,
+- sincronizar eventos,
+- y construir compuertas arbitrarias mediante colisiones.
+
+En esencia:
+las partículas emergentes del autómata terminan formando una computadora dentro del propio sistema.
 
 ---
 
 ## Emergencia computacional
 
-Quizá lo más interesante es que las reglas locales del sistema no contienen explícitamente:
-- memoria,
+Quizá lo más inquietante es que las reglas locales del sistema no contienen explícitamente:
 - compuertas,
-- arquitectura,
-- ni intención computacional.
+- memoria,
+- arquitectura computacional,
+- ni intención de cálculo.
 
-Sin embargo, la interacción colectiva de patrones termina produciendo todos estos fenómenos.
+Cada célula únicamente sigue reglas extremadamente simples.
 
-La computación emerge espontáneamente a partir de dinámica local extremadamente simple.
+Sin embargo, la interacción colectiva entre patrones produce:
+- organización,
+- transmisión de información,
+- sincronización,
+- y computación universal.
+
+Esto convierte al cómputo basado en colisiones en uno de los ejemplos mas claros de emergencia computacional.
+
+---
+
+## Computación más allá de la electrónica
+
+El paradigma también sugiere una idea particularmente profunda:
+
+> La computación no pertenece exclusivamente a dispositivos electrónicos.
+
+Cualquier sistema físico capaz de:
+- propagar información,
+- transformar estados,
+- y mantener interacciones suficientemente complejas,
+
+puede, potencialmente, computar.
+
+Por ello, el *collision-based computing* ha sido estudiado en:
+- medios químicos,
+- colonias bacterianas,
+- óptica,
+- fluidos,
+- materiales excitables,
+- e incluso sistemas biológicos.
+
+La computadora deja entonces de entenderse como un objeto específico y pasa a interpretarse como una propiedad dinámica de ciertos sistemas.
 
 ---
 
 ## Reflexión final
 
-Existe algo particularmente inquietante en observar cómo entidades tan simples como los *gliders* terminan produciendo computación universal.
+Existe algo particularmente fascinante en observar cómo entidades tan simples como los *gliders* terminan produciendo computación universal.
 
-Especialmente porque dichas entidades no fueron diseñadas para “pensar” o “calcular”; simplemente obedecen reglas locales.
+Especialmente porque dichas entidades:
+- no poseen intención,
+- no poseen conocimiento global,
+- ni fueron diseñadas para “pensar”.
 
-Quizá una de las ideas más profundas detrás del cómputo basado en colisiones es precisamente esa:
+Simplemente obedecen reglas locales.
 
-> La computación puede emerger allí donde exista dinámica suficientemente rica.
+Y aun así, de sus interacciones emergen:
+- logica,
+- memoria,
+- transmisión de información,
+- y computación.
+
+Quizá una de las ideas más profundas detrás del cómputo basado en colisiones es precisamente esa:  _La computación puede emerger allí donde exista dinámica suficientemente rica._
 
 ---
 
@@ -114,5 +219,6 @@ Quizá una de las ideas más profundas detrás del cómputo basado en colisiones
 - Andrew Adamatzky (ed.), *Collision-Based Computing*
 - Stephen Wolfram, *A New Kind of Science*
 - Tommaso Toffoli & Norman Margolus, *Cellular Automata Machines*
+- Martin Gardner, *Mathematical Games — The Fantastic Combinations of John Conway’s New Solitaire Game "Life"*
 
 [-> Recurso](https://www.semanticscholar.org/paper/Collision-Based-Computing-Adamatzky-Durand-Lose/e0d199d9ae0ebfdf18f589dee027f26e05c44ec5)
