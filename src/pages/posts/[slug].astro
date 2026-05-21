@@ -27,21 +27,24 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
 
 <Layout title={`${entry.data.title} | Luis Angel Moreno`}>
     <Header />
+
     <main class="min-h-screen pt-32 sm:pt-40 pb-20 px-4 sm:px-6 md:px-8 max-w-3xl mx-auto bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white">
-        <article class="w-full fade-in">
+        
+        <article class="w-full fade-in visible">
             
             <header class="mb-12 sm:mb-16">
                 <div class="flex items-center flex-wrap gap-3 mb-6">
                     <span class="w-8 h-[1px] bg-[#e11d48]/50 hidden sm:block"></span>
+
                     <span class="text-[10px] font-mono uppercase tracking-[0.3em] text-[#e11d48]">
                         {formattedDate}
                     </span>
                 </div>
-                
+
                 <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-zinc-900 dark:text-white mb-8 tracking-tighter leading-tight">
                     {entry.data.title}
                 </h1>
-                
+
                 {entry.data.categories && (
                     <div class="flex flex-wrap gap-2 pb-8 sm:pb-12 border-b border-zinc-200 dark:border-white/10">
                         {entry.data.categories.map((category: string) => (
@@ -52,7 +55,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
                     </div>
                 )}
             </header>
-            
+
             <div class="prose prose-zinc dark:prose-invert prose-base sm:prose-lg max-w-none font-light leading-relaxed
                         prose-headings:tracking-tight prose-headings:font-bold prose-headings:text-zinc-900 dark:prose-headings:text-white
                         prose-p:text-zinc-700 dark:prose-p:text-zinc-300
@@ -64,18 +67,49 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('es-ES', {
                         prose-li:marker:text-[#e11d48]">
                 <Content />
             </div>
-            
+
         </article>
     </main>
-    
+
     <Footer />
+
+    <style>
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition:
+                opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+            will-change: opacity, transform;
+        }
+
+        @media (min-width: 769px) {
+            .fade-in {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+
+            if (window.innerWidth <= 768) {
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    el.classList.add('visible');
+                });
+                return;
+            }
+
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.1
+                threshold: 0.05
             };
 
             const observer = new IntersectionObserver((entries) => {
