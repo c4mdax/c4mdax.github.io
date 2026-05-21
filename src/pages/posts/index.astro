@@ -109,23 +109,33 @@ const translations = {
     </style>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                        }
-                    });
-                },
-                {
-                    threshold: 0.1
-                }
-            );
+        function initFadeIn() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
 
-            document.querySelectorAll('.fade-in').forEach((el) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: Stop observing once visible to save resources
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
                 observer.observe(el);
             });
-        });
+        }
+
+        // Run immediately for standard Astro navigation
+        initFadeIn();
+
+        // If you are using Astro View Transitions (<ViewTransitions />), 
+        // you must also listen for the astro:page-load event:
+        document.addEventListener('astro:page-load', initFadeIn);
     </script>
 </Layout>
