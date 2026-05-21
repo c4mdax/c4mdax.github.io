@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="es" class="dark"> <head><meta charset="UTF-8"><meta name="description" content="Luis Angel Moreno Delgado Portfolio"><meta name="viewport" content="width=device-width"><meta name="google-site-verification" content="k55eSCNIwKGhLQSqWPTtQNw10HnX7ZdqzkNynyf64pE"><link rel="icon" type="image/png" href="/favicon.png?v=5"><meta name="generator" content="Astro v5.16.10"><title>Autómatas celulares | Luis Angel Moreno</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous"><link rel="stylesheet" href="/_astro/contact.DdcS-M-T.css"></head> <body class="bg-white dark:bg-[#050505] text-zinc-900 dark:text-zinc-100 transition-colors duration-300 antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-white">  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 sm:pt-8 px-4 font-mono"> <div class="backdrop-blur-md bg-[#050505]/80 border border-white/10 rounded-md px-4 sm:px-6 py-2 sm:py-3 flex items-center justify-between sm:justify-center gap-4 sm:gap-8 shadow-[0_4px_20px_rgba(0,0,0,0.5)] w-full sm:w-auto transition-colors duration-300"> <div class="hidden sm:flex items-center gap-6"> <a href="/" class="text-xs uppercase tracking-widest transition-colors whitespace-nowrap text-zinc-400 hover:text-white" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" class="text-xs uppercase tracking-widest transition-colors whitespace-nowrap text-zinc-400 hover:text-white" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" class="text-xs uppercase tracking-widest transition-colors whitespace-nowrap text-zinc-400 hover:text-white" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" class="text-xs uppercase tracking-widest transition-colors whitespace-nowrap text-white font-bold" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" class="text-xs uppercase tracking-widest transition-colors whitespace-nowrap text-zinc-400 hover:text-white" data-en="Contact" data-es="Contacto">
+Contact
+</a> <div class="w-px h-4 bg-zinc-800"></div> </div> <div class="flex items-center gap-3"> <button id="lang-btn" onclick="window.toggleLang()" class="px-2 py-0.5 text-[10px] font-bold rounded bg-zinc-900 border border-white/5 text-zinc-300 hover:bg-zinc-800 hover:text-white transition-all cursor-pointer whitespace-nowrap tracking-wider">
+EN
+</button> </div> <button id="mobile-menu-btn" class="sm:hidden p-1 rounded text-zinc-500 hover:text-white transition-colors cursor-pointer" aria-label="Toggle menu"> <svg class="w-5 h-5" id="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg class="w-5 h-5 hidden" id="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div id="mobile-menu" class="hidden absolute top-16 left-4 right-4 backdrop-blur-md bg-[#050505]/95 border border-white/10 rounded-md px-4 py-4 space-y-1 shadow-lg sm:hidden"> <a href="/" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded text-xs uppercase tracking-widest transition-colors text-zinc-500 hover:text-white hover:bg-zinc-900/50" data-en="Home" data-es="Inicio">
+Home
+</a> <a href="/projects" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded text-xs uppercase tracking-widest transition-colors text-zinc-500 hover:text-white hover:bg-zinc-900/50" data-en="Projects" data-es="Proyectos">
+Projects
+</a> <a href="/work" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded text-xs uppercase tracking-widest transition-colors text-zinc-500 hover:text-white hover:bg-zinc-900/50" data-en="Work" data-es="Trabajo">
+Work
+</a> <a href="/posts" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded text-xs uppercase tracking-widest transition-colors bg-zinc-900 text-white font-bold" data-en="Posts" data-es="Blog">
+Posts
+</a> <a href="/contact" onclick="window.closeMobileMenu()" class="block px-3 py-2 rounded text-xs uppercase tracking-widest transition-colors text-zinc-500 hover:text-white hover:bg-zinc-900/50" data-en="Contact" data-es="Contacto">
+Contact
+</a> </div> </nav> <script type="module">function c(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.toggle("hidden"),n.classList.toggle("hidden"),t.classList.toggle("hidden"))}function i(){const e=document.getElementById("mobile-menu"),n=document.getElementById("hamburger-icon"),t=document.getElementById("close-icon");e&&n&&t&&(e.classList.add("hidden"),n.classList.remove("hidden"),t.classList.add("hidden"))}window.toggleMobileMenu=c;window.closeMobileMenu=i;const o=document.getElementById("mobile-menu-btn");o&&o.addEventListener("click",e=>{e.stopPropagation(),c()});document.addEventListener("click",e=>{const n=document.getElementById("mobile-menu"),t=document.getElementById("mobile-menu-btn");n&&t&&!n.classList.contains("hidden")&&!n.contains(e.target)&&!t.contains(e.target)&&i()});</script> <main class="min-h-screen pt-32 sm:pt-40 pb-20 px-4 sm:px-6 md:px-8 max-w-3xl mx-auto bg-white dark:bg-[#050505] transition-colors duration-500 selection:bg-[#e11d48]/20 selection:text-[#e11d48] dark:selection:text-white"> <article class="w-full fade-in"> <header class="mb-12 sm:mb-16"> <div class="flex items-center flex-wrap gap-3 mb-6"> <span class="w-8 h-[1px] bg-[#e11d48]/50 hidden sm:block"></span> <span class="text-[10px] font-mono uppercase tracking-[0.3em] text-[#e11d48]"> 18 de febrero de 2026 </span> </div> <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-zinc-900 dark:text-white mb-8 tracking-tighter leading-tight"> Autómatas celulares </h1> <div class="flex flex-wrap gap-2 pb-8 sm:pb-12 border-b border-zinc-200 dark:border-white/10"> <span class="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.2em] px-3 py-1.5 bg-zinc-50 dark:bg-[#0a0a0a] text-zinc-600 dark:text-zinc-400 rounded-sm border border-zinc-200 dark:border-white/5 hover:border-[#e11d48]/30 transition-colors cursor-default"> Teoría de Autómatas </span><span class="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.2em] px-3 py-1.5 bg-zinc-50 dark:bg-[#0a0a0a] text-zinc-600 dark:text-zinc-400 rounded-sm border border-zinc-200 dark:border-white/5 hover:border-[#e11d48]/30 transition-colors cursor-default"> Autómatas Celulares </span> </div> </header> <div class="prose prose-zinc dark:prose-invert prose-base sm:prose-lg max-w-none font-light leading-relaxed
+                        prose-headings:tracking-tight prose-headings:font-bold prose-headings:text-zinc-900 dark:prose-headings:text-white
+                        prose-p:text-zinc-700 dark:prose-p:text-zinc-300
+                        prose-a:text-[#e11d48] prose-a:decoration-[#e11d48]/30 hover:prose-a:decoration-[#e11d48] prose-a:transition-all
+                        prose-code:text-[#e11d48] prose-code:bg-[#e11d48]/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:font-mono prose-code:text-xs sm:prose-code:text-sm
+                        prose-pre:border prose-pre:border-zinc-200 dark:prose-pre:border-white/10 prose-pre:bg-zinc-50 dark:prose-pre:bg-[#0a0a0a] prose-pre:rounded-sm
+                        prose-img:border prose-img:border-zinc-200 dark:prose-img:border-white/10 prose-img:p-1 prose-img:rounded-sm
+                        prose-blockquote:border-l-[#e11d48] prose-blockquote:bg-zinc-50 dark:prose-blockquote:bg-[#0a0a0a] prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:font-normal prose-blockquote:not-italic
+                        prose-li:marker:text-[#e11d48]"> <p>Los automatas celulares son modelos matemáticos discretos utilizados para estudiar cómo comportamientos complejos pueden emerger a partir de reglas locales extremadamente simples.</p>
+<p>A grandes rasgos, un autómata celular consiste en una cuadrícula de células donde cada una:</p>
+<ul>
+<li>posee un estado,</li>
+<li>interactúa únicamente con sus vecinos,</li>
+<li>y evoluciona simultáneamente mediante reglas discretas.</li>
+</ul>
+<p>A pesar de esta simplicidad estructural, dichos sistemas pueden producir:</p>
+<ul>
+<li>estabilidad,</li>
+<li>periodicidad,</li>
+<li>propagación,</li>
+<li>caos,</li>
+<li>autoorganización,</li>
+<li>e incluso computación universal.</li>
+</ul>
+<hr>
+<h2 id="formalización">Formalización</h2>
+<p>Un autómata celular puede definirse formslmente como una tupla:</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>L</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>N</mi><mo separator="true">,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A = (L, S, N, f)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mclose">)</span></span></span></span></span>
+<p>donde:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span> representa la retícula o espacio celular,</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span></span></span></span> el conjunto finito de estados posibles,</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span> la vecindad,</li>
+<li>y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span></span></span></span> la función de transición local.</li>
+</ul>
+<p>La evolución del sistema ocurre en pasos discretos de tiempo.<br>
+El estado de una célula en el instante <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6984em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> depende únicamente de:</p>
+<ul>
+<li>su estado actual,</li>
+<li>y los estados de las células pertenecientes a su vecindad.</li>
+</ul>
+<p>Formalmente:</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>s</mi><mi>i</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><msubsup><mi>N</mi><mi>i</mi><mi>t</mi></msubsup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">s_i^{t+1} = f(N_i^t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1311em;vertical-align:-0.267em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.433em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.267em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0936em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8436em;"><span style="top:-2.453em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>
+<p>donde:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>s</mi><mi>i</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex">s_i^{t+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1311em;vertical-align:-0.2769em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8542em;"><span style="top:-2.4231em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.1031em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2769em;"><span></span></span></span></span></span></span></span></span></span> representa el nuevo estado de la célula <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span>,</li>
+<li>y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>N</mi><mi>i</mi><mi>t</mi></msubsup></mrow><annotation encoding="application/x-tex">N_i^t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0522em;vertical-align:-0.2587em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7936em;"><span style="top:-2.4413em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2587em;"><span></span></span></span></span></span></span></span></span></span> corresponde a la configuración local de vecinos en el tiempo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>.</li>
+</ul>
+<p>La característica más importante es que no existe coordinación centralizada:
+el comportamiento global emerge exclusivamente de interacciones locales.</p>
+<hr>
+<h2 id="emergencia">Emergencia</h2>
+<p>Quizá el aspecto más interesante de los autómatas celulares es la emergencia.</p>
+<p>Las reglas individuales suelen ser extremadamente pequeñas y simples; sin embargo, la interacción colectiva entre células produce patrones globales inesperadamente sofisticados.</p>
+<p>Dependiendo de las reglas utilizadas, el sistema puede:</p>
+<ul>
+<li>estabilizarse,</li>
+<li>oscilar,</li>
+<li>propagarse indefinidamente,</li>
+<li>o evolucionar hacia dinámicas caóticas.</li>
+</ul>
+<p>El <em>Game of Life</em> de Conway es probablemente el ejemplo más representativo de este fenómeno.</p>
+<hr>
+<h2 id="el-juego-de-la-vida">El Juego de la Vida</h2>
+<p>En el <em>Game of Life</em>, cada célula únicamente puede:</p>
+<ul>
+<li>sobrevivir,</li>
+<li>morir,</li>
+<li>o nacer,</li>
+</ul>
+<p>dependiendo del número de vecinos vivos que la rodean.</p>
+<p>Formalmente:</p>
+<ul>
+<li>una célula viva sobrevive si posee 2 o 3 vecinos vivos,</li>
+<li>una célula muerta nace si posee exactamente 3 vecinos vivos.</li>
+</ul>
+<p>A pesar de estas reglas mínimas, emergen:</p>
+<ul>
+<li>objetos estacionarios,</li>
+<li>osciladores,</li>
+<li>estructuras móviles,</li>
+<li>mecanismos de crecimiento,</li>
+<li>y patrones capaces de transmitir información.</li>
+</ul>
+<p>Particularmente interesantes resultan los <em>gliders</em>, pequeñas estructuras móviles que pueden interpretarse como señales dentro del sistema.</p>
+<p>A partir de colisiones entre estos patrones es posible construir:</p>
+<ul>
+<li>memoria,</li>
+<li>sincronización,</li>
+<li>compuertas lógicas,</li>
+<li>e incluso computación universal.</li>
+</ul>
+<hr>
+<h2 id="aplicaciones">Aplicaciones</h2>
+<p>Los autómatas celulares han sido utilizados para modelar fenómenos en múltiples áreas:</p>
+<ul>
+<li>dinámica de poblaciones,</li>
+<li>propagación de incendios,</li>
+<li>tráfico vehicular,</li>
+<li>crecimiento cristalino,</li>
+<li>fluidos,</li>
+<li>sistemas biológicos,</li>
+<li>física estadística,</li>
+<li>y teoría de la computación.</li>
+</ul>
+<p>Esto se debe a que muchos sistemas reales también presentan:</p>
+<ul>
+<li>interacciones locales,</li>
+<li>evolución discreta,</li>
+<li>y comportamiento colectivo emergente.</li>
+</ul>
+<hr>
+<h2 id="sobre-complejidad">Sobre complejidad</h2>
+<p>Existe algo particularmente fascinante en observar cómo reglas locales tan pequeñas terminan produciendo estructuras tan complejas.</p>
+<p>Especialmente porque el sistema:</p>
+<ul>
+<li>no posee intención,</li>
+<li>no posee conocimiento global,</li>
+<li>ni arquitectura centralizada.</li>
+</ul>
+<p>Simplemente evoluciona.</p>
+<p>Y aun así, aparecen:</p>
+<ul>
+<li>patrones organizados,</li>
+<li>transmisión de información,</li>
+<li>estabilidad,</li>
+<li>adaptación,</li>
+<li>e incluso computación.</li>
+</ul>
+<p>Quizá por ello los autómatas celulares resultan tan importantes: muestran que la complejidad puede emerger espontáneamente a partir de reglas extremadamente simples.</p>
+<hr>
+<h3 id="recursos">Recursos</h3>
+<ul>
+<li>Stephen Wolfram, <em>A New Kind of Science</em></li>
+<li>John Conway, <em>The Game of Life</em></li>
+<li>Tommaso Toffoli &#x26; Norman Margolus, <em>Cellular Automata Machines</em></li>
+<li>Andrew Adamatzky, <em>Collision-Based Computing</em></li>
+</ul> </div> </article> </main> <footer class="border-t border-zinc-200 dark:border-white/5 py-8 mt-20 bg-white dark:bg-[#050505] transition-colors duration-300 font-mono"> <div class="max-w-3xl mx-auto px-4 sm:px-6 md:px-6 flex flex-col items-center gap-4"> <div class="flex items-center justify-center gap-3 opacity-60 hover:opacity-100 transition-opacity duration-300"> <span class="text-[10px] uppercase tracking-widest text-zinc-500 dark:text-zinc-500" data-en="Built with" data-es="Construido con"> Built with </span> <div class="flex items-center gap-3"> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform" aria-label="Astro"> <img src="/_astro/Astro_light.BkQuFR_J.svg" class="dark:hidden h-3 w-auto" alt="Astro"> <img src="/_astro/Astro_dark.grJ3tsv2.svg" class="hidden dark:block h-3 w-auto" alt="Astro"> </a> <span class="text-zinc-300 dark:text-zinc-800">/</span> <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform" aria-label="Tailwind CSS"> <img src="/_astro/tailwindcss.CSt91nGH.svg" class="h-3 w-auto grayscale contrast-200" alt="Tailwind CSS"> </a> </div> </div> <p class="text-[10px] uppercase tracking-widest text-zinc-400 dark:text-zinc-600" data-en="© 2026 c4mdax" data-es="© 2026 c4mdax"> © 2026 c4mdax </p> </div> </footer> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const t={root:null,rootMargin:"0px",threshold:.1},r=new IntersectionObserver(e=>{e.forEach(o=>{o.isIntersecting&&o.target.classList.add("visible")})},t);document.querySelectorAll(".fade-in").forEach(e=>{r.observe(e)})});</script>  <script type="module">const l=localStorage.getItem("theme");l?document.documentElement.classList.toggle("dark",l==="dark"):(document.documentElement.classList.add("dark"),localStorage.setItem("theme","dark"));let s=localStorage.getItem("lang")||"es";document.documentElement.setAttribute("data-lang",s);window.updatePageContent=function(){const t=document.documentElement.getAttribute("data-lang")||"es",o=document.getElementById("lang-btn");o&&(o.textContent=t==="es"?"ES":"EN"),document.querySelectorAll("[data-en]").forEach(e=>{const a=e.getAttribute("data-en"),n=e.getAttribute("data-es");a&&n&&(e.innerHTML.includes("<span")?t==="es"?e.innerHTML=n.replace("Technologist in Information Systems",'<span class="font-semibold text-zinc-900 dark:text-white">Tecnólogo en Sistemas de información</span>').replace("Full Stack Developer",'<span class="font-semibold text-zinc-900 dark:text-white">Desarrollador Full Stack</span>'):e.innerHTML=a.replace("Technologist in Information Systems",'<span class="font-semibold text-zinc-900 dark:text-white">Technologist in Information Systems</span>').replace("Full Stack Developer",'<span class="font-semibold text-zinc-900 dark:text-white">Full Stack Developer</span>'):e.textContent=t==="es"?n:a)}),document.querySelectorAll("[data-en-placeholder]").forEach(e=>{const a=e.getAttribute("data-en-placeholder"),n=e.getAttribute("data-es-placeholder");a&&n&&(e.placeholder=t==="es"?n:a)}),document.querySelectorAll("[data-en-label]").forEach(e=>{const a=e.getAttribute("data-en-label"),n=e.getAttribute("data-es-label");a&&n&&(e.textContent=t==="es"?n:a)})};window.toggleTheme=()=>{const o=document.documentElement.classList.toggle("dark")?"dark":"light";localStorage.setItem("theme",o),document.cookie=`theme=${o}; path=/; max-age=31536000`};window.toggleLang=()=>{const t=document.createElement("div");t.className="lang-change-overlay";const o=document.createElement("div");o.className="lang-change-modal";const n=(document.documentElement.getAttribute("data-lang")||"en")==="es"?"CHANGING LOCALE...":"CAMBIANDO LOCALE...";o.innerHTML=`<h2 class="font-mono text-sm tracking-[0.2em] uppercase">${n}</h2>`,t.appendChild(o),document.body.appendChild(t),setTimeout(()=>{s=s==="en"?"es":"en",document.documentElement.setAttribute("data-lang",s),localStorage.setItem("lang",s),window.updatePageContent(),t.classList.add("hidden"),setTimeout(()=>{t.remove()},300)},800)};document.addEventListener("DOMContentLoaded",()=>{window.updatePageContent()});</script> </body> </html>
