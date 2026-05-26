@@ -1,379 +1,328 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
-import heroPhoto from '../assets/photo.jpeg';
-
-import cvFileES from '../assets/CV_2026Q2_ES.pdf';
-import cvFileEN from '../assets/CV_2026Q2_EN.pdf';
+import myPhoto from '../assets/photo.jpeg';
 
 const translations = {
-    name:          { en: "Luis Angel Moreno Delgado", es: "Luis Angel Moreno Delgado" },
-    heroDesc:      { en: "Computer Science",           es: "Ciencias de la Computación" },
-    badge1:        { en: "Backend",                    es: "Backend" },
-    badge2:        { en: "AI",                         es: "IA" },
-    badge3:        { en: "Data Engineering",           es: "Ingeniería de Datos" },
-    viewProjects:  { en: "Projects",                   es: "Proyectos" },
-    getInTouch:    { en: "Contact",                    es: "Contacto" },
-    roleTitle:     { en: "",                           es: "" },
-    downloadCv:    { en: "Download CV - English version", es: "Descargar CV - versión en Español" },
-    aboutTitle:    { en: "About",                      es: "Sobre Mí" },
-    meLine1:       { en: "Computer Science",           es: "Ciencias de la Computación" },
-    meLine2:       { en: "In the industry, enthusiastic about Backend Architecture & ML",
-                     es: "En la industria, entusiasta de la Arquitectura Backend y el Machine Learning" },
-    meLine3:       { en: "In academia, interested about Automata Theory (emphasis on Cellular Automata) & Discrete Dynamical Systems",
-                     es: "En la academia, interesado por la Teoría de Autómatas (énfasis en Autómatas Celulares) y los Sistemas Dinámicos Discretos" },
-    resourcesTitle:{ en: "Resources I'm studying",    es: "Recursos que estoy estudiando" },
-    industryTitle: { en: "Industry",                   es: "Industria" },
-    academiaTitle: { en: "Academia",                   es: "Academia" },
-    tech:          { en: "Tech Stack",                 es: "Stack Tecnológico" },
+    subtitle: { en: "Computer Science Student", es: "Estudiante de Ciencias de la Computación" },
+    description: {
+        en: "I work at the intersection of theory and engineering, building reliable systems grounded in formal foundations and solid architecture.",
+        es: "Trabajo en la intersección entre teoría e ingeniería, construyendo sistemas confiables basados en fundamentos formales y arquitectura sólida."
+    },
+    viewResearch: { en: "View Research", es: "View Research" },
+    selectedWork: { en: "Selected Work", es: "Selected Work" }
 } as const;
-
-const techStack = [
-    'Java', 'Python', 'Scala',
-    'Spring', 'FastAPI',
-    'SQL', 'PostgreSQL', 'Spark',
-    'PyTorch', 'scikit-learn',
-    'Docker', 'Linux', 'Git',
-] as const;
 ---
 
 <Layout title="Luis Angel Moreno Delgado">
-    <Header />
 
-    <div class="fixed inset-0 pointer-events-none z-50 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.85)_100%)]"></div>
-    <div class="fixed inset-0 pointer-events-none z-40 opacity-[0.03] mix-blend-overlay noise-bg"></div>
+    <main class="min-h-screen bg-[#020202] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
 
-    <main class="min-h-screen px-4 sm:px-6 md:px-8 flex flex-col justify-center bg-black transition-colors duration-1000 selection:bg-[#e11d48]/30 selection:text-white relative overflow-hidden text-zinc-300">
+        <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
+        <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
 
-        <canvas id="automataCanvas" class="absolute inset-0 w-full h-full opacity-30 pointer-events-none z-0" style="will-change: transform;"></canvas>
-
-        <section class="max-w-5xl mx-auto w-full pt-40 sm:pt-56 pb-24 sm:pb-32 fade-in relative z-10">
-            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-14 sm:gap-20 text-center lg:text-left">
-
-                <div class="flex-shrink-0 relative group">
-                    <div class="absolute -inset-4 rounded-full bg-[#e11d48] opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-1000"></div>
-                    <div class="absolute -inset-px rounded-full border border-zinc-800"></div>
-                    <div class="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border border-white/5 shadow-[0_0_40px_rgba(0,0,0,0.8)] relative z-10">
-                        <Image
-                            src={heroPhoto}
-                            alt="Luis Angel Moreno Delgado"
-                            class="w-full h-full object-cover object-top grayscale contrast-125 brightness-105 scale-105"
-                            loading="eager"
-                            fetchpriority="high"
-                            decoding="sync"
-                        />
-                    </div>
-                    <div class="absolute bottom-2 right-2 flex items-center gap-1.5 z-20">
-                        <span class="w-2.5 h-2.5 rounded-full bg-[#e11d48] shadow-[0_0_10px_#e11d48] animate-pulse"></span>
+        <header class="relative z-20 border-b border-white/[0.05] shrink-0">
+            <div class="max-w-[1400px] mx-auto px-10 py-4 flex items-center justify-between">
+                <div class="font-serif text-[20px] tracking-wide text-white font-light">
+                    C4MDAX
+                </div>
+                <div class="hidden md:flex items-center gap-10">
+                    <nav class="flex items-center gap-10 font-mono">
+                        <a href="#" class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-300">Research</a>
+                        <a href="#" class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-300">Projects</a>
+                        <a href="#" class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-300">Publications</a>
+                        <a href="#" class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-300">About</a>
+                    </nav>
+                    <div class="border-l border-white/[0.08] pl-8 text-zinc-400">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <rect x="9.5" y="1" width="5.5" height="5.5" fill="currentColor" opacity="0.8"/>
+                            <rect x="1" y="9.5" width="5.5" height="5.5" fill="currentColor" opacity="0.8"/>
+                            <rect x="9.5" y="9.5" width="5.5" height="5.5" fill="currentColor" opacity="0.8"/>
+                        </svg>
                     </div>
                 </div>
+            </div>
+        </header>
 
-                <div class="flex flex-col items-center lg:items-start max-w-2xl mt-6 lg:mt-2">
-                    <p class="text-xs font-mono uppercase tracking-[0.4em] text-zinc-500 mb-6"
-                       data-en={translations.roleTitle.en} data-es={translations.roleTitle.es}>
-                        {translations.roleTitle.es}
-                    </p>
-
-                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tighter leading-[1.05] drop-shadow-2xl"
-                        data-en={translations.name.en} data-es={translations.name.es}>
-                        {translations.name.es}
+        <section class="relative z-10 max-w-[1400px] w-full mx-auto px-10 pt-8 pb-4 shrink-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="max-w-[540px]">
+                    <h1 class="font-serif leading-none tracking-tight text-white font-light mb-5" style="font-size: clamp(40px, 6.5vw, 56px);">
+                        Luis Angel Moreno Delgado
                     </h1>
-
-                    <div class="mb-12">
-                        <p class="text-lg sm:text-xl text-zinc-400 mb-6 font-light tracking-wide">
-                            <span data-en={translations.heroDesc.en} data-es={translations.heroDesc.es}>{translations.heroDesc.es}</span>
+                    <div class="flex items-center gap-4 mb-4">
+                        <Image 
+                            src={myPhoto} 
+                            alt="Portrait of Angel" 
+                            class="w-12 h-12 rounded-full border border-white/[0.1] object-cover flex-shrink-0"
+                            widths={[96]}
+                            aspectRatio={1/1}
+                        />
+                        <p class="font-mono text-[14px] uppercase tracking-[0.2em] text-zinc-400 flex-1">
+                            {translations.subtitle.en}
                         </p>
-
-                        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                            {[translations.badge1, translations.badge2, translations.badge3].map(b => (
-                                <span class="px-5 py-2 rounded-sm text-xs font-mono uppercase tracking-[0.2em] font-bold border border-[#e11d48]/20 bg-[#e11d48]/5 text-[#e11d48] shadow-[0_0_15px_rgba(225,29,72,0.1)] transition-all hover:bg-[#e11d48]/10 hover:shadow-[0_0_25px_rgba(225,29,72,0.2)] cursor-default"
-                                    data-en={b.en} data-es={b.es}>
-                                    {b.es}
-                                </span>
-                            ))}
-                        </div>
                     </div>
-
-                    <div class="flex flex-wrap gap-5 justify-center lg:justify-start w-full font-mono">
-                        <a href="/projects"
-                           class="relative px-8 py-3 text-xs tracking-[0.25em] uppercase text-black bg-white hover:bg-[#e11d48] hover:text-white transition-colors duration-500 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(225,29,72,0.3)]"
-                           data-en={translations.viewProjects.en} data-es={translations.viewProjects.es}>
-                            {translations.viewProjects.es}
-                        </a>
-                        <a href="/contact"
-                           class="relative px-8 py-3 text-xs tracking-[0.25em] uppercase text-zinc-400 border border-zinc-700 hover:border-[#e11d48] hover:text-[#e11d48] transition-colors duration-500"
-                           data-en={translations.getInTouch.en} data-es={translations.getInTouch.es}>
-                            {translations.getInTouch.es}
+                    <p class="font-mono text-[15px] leading-normal text-zinc-300 font-light max-w-[480px]">
+                        {translations.description.en}
+                    </p>
+                    <div class="mt-6">
+                        <a href="#" class="font-mono group inline-flex items-center gap-3 text-[13px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-500">
+                            <span class="text-zinc-400 group-hover:translate-x-1 transition-transform duration-300">›</span>
+                            <span class="border-b border-dashed border-zinc-600 pb-0.5">{translations.viewResearch.en}</span>
                         </a>
                     </div>
-
-                    <div class="mt-16 flex w-full justify-center lg:justify-start">
-                        <a
-                            href={cvFileES}
-                            download="CV_LuisAngelMoreno_ES.pdf"
-                            data-cv-en={cvFileEN}
-                            data-cv-es={cvFileES}
-                            data-filename-en="CV_LuisAngelMoreno_EN.pdf"
-                            data-filename-es="CV_LuisAngelMoreno_ES.pdf"
-                            id="cv-download-link"
-                            class="group flex items-center gap-5 text-xs uppercase tracking-[0.4em] text-zinc-500 hover:text-[#e11d48] transition-colors duration-700"
-                        >
-                            <span class="w-8 h-px bg-current transition-all duration-700 group-hover:w-14"></span>
-                            <span data-en={translations.downloadCv.en} data-es={translations.downloadCv.es}>{translations.downloadCv.es}</span>
-                        </a>
+                </div>
+                <div class="relative hidden lg:flex items-center justify-center" style="height: clamp(160px, 20vh, 260px);">
+                    <canvas id="triangleCanvas" class="w-full h-full opacity-[0.25]"></canvas>
+                    <div class="font-mono absolute bottom-0 right-0 text-zinc-500 text-[11px] tracking-wider">
+                        Rule 110
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="w-full max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent my-4 relative z-10"></div>
+        <div class="max-w-[1400px] w-full mx-auto px-10 shrink-0">
+            <div class="h-px bg-white/[0.05]"></div>
+        </div>
 
-        <section class="max-w-5xl mx-auto py-28 fade-in w-full relative z-10">
-            <h2 class="text-sm font-mono uppercase tracking-[0.4em] text-zinc-500 mb-16 text-center md:text-left"
-                data-en={translations.aboutTitle.en} data-es={translations.aboutTitle.es}>
-                {translations.aboutTitle.es}
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-5 p-8 sm:p-10 bg-[#030303]/80 border border-white/[0.02] backdrop-blur-sm transition-colors duration-700 relative overflow-hidden">
-                    <ul class="space-y-10 text-zinc-400 text-base font-light leading-relaxed">
-                        <li class="flex items-start gap-6">
-                            <span class="font-mono text-xs mt-1 text-[#e11d48] opacity-70">01</span>
-                            <span class="text-zinc-300">
-                                <span data-en={translations.meLine1.en} data-es={translations.meLine1.es}>{translations.meLine1.es}</span>
-                                (<a href="https://www.fciencias.unam.mx/" target="_blank" rel="noopener noreferrer"
-                                    class="text-zinc-500 hover:text-[#e11d48] border-b border-transparent hover:border-[#e11d48] transition-all duration-500">Universidad Nacional Autónoma de México</a>)
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-6">
-                            <span class="font-mono text-xs mt-1 text-[#e11d48] opacity-70">02</span>
-                            <span class="text-zinc-300" data-en={translations.meLine2.en} data-es={translations.meLine2.es}>{translations.meLine2.es}</span>
-                        </li>
-                        <li class="flex items-start gap-6">
-                            <span class="font-mono text-xs mt-1 text-[#e11d48] opacity-70">03</span>
-                            <span class="text-zinc-300" data-en={translations.meLine3.en} data-es={translations.meLine3.es}>{translations.meLine3.es}</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="md:col-span-7 p-8 sm:p-10 bg-[#030303]/80 border border-white/[0.02] backdrop-blur-sm transition-colors duration-700 flex flex-col justify-center relative overflow-hidden">
-                    <h3 class="text-sm font-mono text-white mb-12 flex items-center gap-4 uppercase tracking-[0.3em]">
-                        <div class="w-1.5 h-1.5 bg-[#e11d48] rotate-45"></div>
-                        <span data-en={translations.resourcesTitle.en} data-es={translations.resourcesTitle.es}>{translations.resourcesTitle.es}</span>
-                    </h3>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
-                        <div>
-                            <h4 class="text-xs font-mono uppercase tracking-[0.3em] text-[#e11d48] mb-8 opacity-80"
-                                data-en={translations.industryTitle.en} data-es={translations.industryTitle.es}>{translations.industryTitle.es}</h4>
-                            <ul class="space-y-6 text-base text-zinc-500 font-light">
-                                <li><a href="#" class="flex flex-col gap-1.5 group/item">
-                                    <span class="text-zinc-300 text-base group-hover/item:text-[#e11d48] transition-colors duration-500">Effective Java</span>
-                                    <span class="text-xs font-mono tracking-[0.2em] uppercase text-zinc-600">Joshua Bloch</span>
-                                </a></li>
-                                <li><a href="#" class="flex flex-col gap-1.5 group/item">
-                                    <span class="text-zinc-300 text-base group-hover/item:text-[#e11d48] transition-colors duration-500">Spring Start Here</span>
-                                    <span class="text-xs font-mono tracking-[0.2em] uppercase text-zinc-600">Laurentiu Spilca</span>
-                                </a></li>
-                                <li><a href="#" class="flex flex-col gap-1.5 group/item">
-                                    <span class="text-zinc-300 text-base group-hover/item:text-[#e11d48] transition-colors duration-500">Programming in Scala</span>
-                                    <span class="text-xs font-mono tracking-[0.2em] uppercase text-zinc-600">Martin Odersky, et al.</span>
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-mono uppercase tracking-[0.3em] text-[#e11d48] mb-8 opacity-80"
-                                data-en={translations.academiaTitle.en} data-es={translations.academiaTitle.es}>{translations.academiaTitle.es}</h4>
-                            <ul class="space-y-6 text-base text-zinc-500 font-light">
-                                <li><a href="#" class="flex flex-col gap-1.5 group/item">
-                                    <span class="text-zinc-300 text-base group-hover/item:text-[#e11d48] transition-colors duration-500">A New Kind of Science</span>
-                                    <span class="text-xs font-mono tracking-[0.2em] uppercase text-zinc-600">Stephen Wolfram</span>
-                                </a></li>
-                                <li><a href="#" class="flex flex-col gap-1.5 group/item">
-                                    <span class="text-zinc-300 text-base group-hover/item:text-[#e11d48] transition-colors duration-500">Cellular Automata and Complexity</span>
-                                    <span class="text-xs font-mono tracking-[0.2em] uppercase text-zinc-600">Stephen Wolfram</span>
-                                </a></li>
-                            </ul>
-                        </div>
+        <section class="relative z-10 max-w-[1400px] w-full mx-auto px-10 py-5 shrink-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-6">
+                <div class="pr-6 xl:border-r border-white/[0.05]">
+                    <div class="text-zinc-300 mb-3">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <path d="M24 6H10L18 16L10 26H24" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+                        </svg>
                     </div>
+                    <h3 class="font-mono text-[13px] tracking-[0.2em] text-white mb-2 font-normal">THEORY</h3>
+                    <p class="font-mono text-zinc-400 leading-snug text-[14px] font-light pr-4">
+                        Automata theory, formal languages, computability, and complexity.
+                    </p>
+                </div>
+                <div class="xl:px-6 xl:border-r border-white/[0.05]">
+                    <div class="text-zinc-300 mb-3">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L28 10.5V21.5L16 28L4 21.5V10.5L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M4 10.5L16 17M28 10.5L16 17M16 17V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-mono text-[13px] tracking-[0.2em] text-white mb-2 font-normal">ARCHITECTURE</h3>
+                    <p class="font-mono text-zinc-400 leading-snug text-[14px] font-light pr-4">
+                        Designing modular, scalable and maintainable software systems.
+                    </p>
+                </div>
+                <div class="xl:px-6 xl:border-r border-white/[0.05]">
+                    <div class="text-zinc-300 mb-3">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <path d="M11 10L4 16L11 22M21 10L28 16L21 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 5L14 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-mono text-[13px] tracking-[0.2em] text-white mb-2 font-normal">ENGINEERING</h3>
+                    <p class="font-mono text-zinc-400 leading-snug text-[14px] font-light pr-4">
+                        Backend systems, compilers, tooling and developer infrastructure.
+                    </p>
+                </div>
+                <div class="xl:pl-6">
+                    <div class="text-zinc-300 mb-3">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <ellipse cx="16" cy="8" rx="10" ry="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 8V24C6 26.2 10.5 28 16 28C21.5 28 26 26.2 26 24V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6 16C6 18.2 10.5 20 16 20C21.5 20 26 18.2 26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-mono text-[13px] tracking-[0.2em] text-white mb-2 font-normal">SYSTEMS</h3>
+                    <p class="font-mono text-zinc-400 leading-snug text-[14px] font-light pr-4">
+                        Building performant and reliable systems that solve real problems.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="max-w-5xl mx-auto pt-8 pb-40 fade-in w-full relative z-10">
-            <h2 class="text-sm font-mono uppercase tracking-[0.5em] text-zinc-600 mb-12 text-center md:text-left"
-                data-en={translations.tech.en} data-es={translations.tech.es}>{translations.tech.es}</h2>
+        <div class="max-w-[1400px] w-full mx-auto px-10 shrink-0">
+            <div class="h-px bg-white/[0.05]"></div>
+        </div>
 
-            <div class="flex flex-wrap gap-3">
-                {techStack.map(tech => (
-                    <span class="px-5 py-2.5 text-xs font-mono uppercase tracking-[0.2em] border border-zinc-800 bg-[#030303] text-zinc-400 hover:border-[#e11d48] hover:text-white transition-all duration-500 cursor-default shadow-lg">
-                        {tech}
-                    </span>
-                ))}
+        <section class="relative z-10 max-w-[1400px] w-full mx-auto px-10 py-5 shrink-0 flex-1 flex flex-col justify-center">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 font-mono gap-4">
+                <h2 class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 font-normal">
+                    {translations.selectedWork.en}
+                </h2>
+                <a href="#" class="text-[12px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-500">
+                    VIEW ALL PROJECTS →
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 font-mono">
+                
+                <article class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#030303] relative overflow-hidden flex flex-col justify-between" style="min-height: 160px;">
+                    <div>
+                        <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">
+                            COMPILERS &amp; IRs
+                        </h3>
+                        <p class="text-zinc-400 leading-snug text-[14px] max-w-[240px] font-light">
+                            Exploring intermediate representations, optimizations and program analysis.
+                        </p>
+                    </div>
+                    <div class="mt-3 text-zinc-500 text-sm">→</div>
+                    <div class="absolute bottom-4 right-4 opacity-[0.25] pointer-events-none scale-90 origin-bottom-right">
+                        <svg width="90" height="80" viewBox="0 0 90 80" fill="none">
+                            <rect x="36" y="10" width="18" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                            <rect x="16" y="35" width="18" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                            <rect x="56" y="35" width="18" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                            <rect x="6" y="60" width="16" height="10" rx="2" stroke="white" stroke-width="1.5"/>
+                            <rect x="28" y="60" width="16" height="10" rx="2" stroke="white" stroke-width="1.5"/>
+                            <path d="M45 22 L25 35 M45 22 L65 35" stroke="white" stroke-width="1.5"/>
+                            <path d="M25 47 L14 60 M25 47 L36 60" stroke="white" stroke-width="1.5"/>
+                            <path d="M74 41 h8 v15 h-20 v-9" stroke="white" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+                            <polygon points="62,47 60,50 64,50" fill="white" />
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#030303] relative overflow-hidden flex flex-col justify-between" style="min-height: 160px;">
+                    <div>
+                        <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">
+                            AUTOMATA &amp; LANGUAGES
+                        </h3>
+                        <p class="text-zinc-400 leading-snug text-[14px] max-w-[240px] font-light">
+                            Research and implementations in automata theory and formal language processing.
+                        </p>
+                    </div>
+                    <div class="mt-3 text-zinc-500 text-sm">→</div>
+                    <div class="absolute bottom-4 right-4 opacity-[0.25] pointer-events-none scale-90 origin-bottom-right">
+                        <svg width="90" height="80" viewBox="0 0 90 80" fill="none">
+                            <defs>
+                                <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                    <path d="M 0 1 L 10 5 L 0 9 z" fill="white"/>
+                                </marker>
+                            </defs>
+                            <circle cx="25" cy="40" r="12" stroke="white" stroke-width="1.5"/>
+                            <circle cx="65" cy="40" r="12" stroke="white" stroke-width="1.5"/>
+                            <circle cx="65" cy="40" r="9" stroke="white" stroke-width="1"/>
+                            <line x1="2" y1="40" x2="13" y2="40" stroke="white" stroke-width="1.5" marker-end="url(#arrow)"/>
+                            <path d="M 33 31 Q 45 15 57 31" stroke="white" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+                            <path d="M 57 49 Q 45 65 33 49" stroke="white" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+                            <path d="M 72 30 C 90 10, 90 40, 76 38" stroke="white" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#030303] relative overflow-hidden flex flex-col justify-between" style="min-height: 160px;">
+                    <div>
+                        <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">
+                            SYSTEMS &amp; INFRASTRUCTURE
+                        </h3>
+                        <p class="text-zinc-400 leading-snug text-[14px] max-w-[240px] font-light">
+                            Backend services, APIs and developer tools focused on reliability and scale.
+                        </p>
+                    </div>
+                    <div class="mt-3 text-zinc-500 text-sm">→</div>
+                    <div class="absolute bottom-4 right-4 opacity-[0.25] pointer-events-none scale-90 origin-bottom-right">
+                        <svg width="90" height="80" viewBox="0 0 90 80" fill="none">
+                            <ellipse cx="25" cy="45" rx="12" ry="4" stroke="white" stroke-width="1.5"/>
+                            <path d="M13 45 V55 C13 57.2 18.4 59 25 59 C31.6 59 37 57.2 37 55 V45" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M13 55 V65 C13 67.2 18.4 69 25 69 C31.6 69 37 67.2 37 65 V55" stroke="white" stroke-width="1.5" fill="none"/>
+                            <ellipse cx="65" cy="45" rx="12" ry="4" stroke="white" stroke-width="1.5"/>
+                            <path d="M53 45 V55 C53 57.2 58.4 59 65 59 C71.6 59 77 57.2 77 55 V45" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M53 55 V65 C53 67.2 58.4 69 65 69 C71.6 69 77 67.2 77 65 V55" stroke="white" stroke-width="1.5" fill="none"/>
+                            <rect x="35" y="10" width="20" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                            <circle cx="45" cy="16" r="2" fill="white"/>
+                            <path d="M40 22 L25 41" stroke="white" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <path d="M50 22 L65 41" stroke="white" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <path d="M25 41 L23 37 M25 41 L28 37" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M65 41 L62 37 M65 41 L67 37" stroke="white" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                </article>
+
             </div>
         </section>
+
+        <footer class="relative z-10 max-w-[1400px] w-full mx-auto px-10 shrink-0 font-mono py-4">
+            <div class="h-px bg-white/[0.05] mb-4"></div>
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                <div class="text-zinc-500 text-[12px] tracking-wider">
+                    $ whoami &nbsp; c4mdax@researcher:~-
+                </div>
+                <div class="flex items-center gap-6 text-zinc-500">
+                    <a href="#" class="hover:text-white transition-colors duration-500">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
+                    <span class="text-zinc-700 text-[11px]">|</span>
+                    <a href="#" class="hover:text-white transition-colors duration-500">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 7l10 7 10-7"/>
+                        </svg>
+                    </a>
+                    <span class="text-zinc-700 text-[11px]">|</span>
+                    <a href="#" class="hover:text-white transition-colors duration-500">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
     </main>
 
-    <Footer />
-
     <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
-                        transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+
         .noise-bg {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+        .grid-overlay {
+            background-image:
+                linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+            background-size: 80px 80px;
         }
     </style>
 
     <script>
-        function startAutomata() {
-            const canvas = document.getElementById('automataCanvas') as HTMLCanvasElement;
+        function initTriangleAutomata() {
+            const canvas = document.getElementById('triangleCanvas') as HTMLCanvasElement | null;
             if (!canvas) return;
-            const ctx = canvas.getContext('2d', { alpha: false });
+            const ctx = canvas.getContext('2d');
             if (!ctx) return;
+            const width = canvas.clientWidth;
+            const height = canvas.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+            ctx.clearRect(0, 0, width, height);
 
-            const cellSize = 16;
-            let cols: number, rows: number;
-            let gridA: Uint8Array, gridB: Uint8Array;
-            let isGridA = true;
-            let rafId: number;
-
-            function handleVisibility() {
-                if (document.hidden) {
-                    cancelAnimationFrame(rafId);
-                } else {
-                    lastTime = 0;
-                    rafId = requestAnimationFrame(animate);
-                }
+            const cell = 4;
+            const rows = Math.floor(height / cell);
+            let current = new Array(Math.floor(width / cell)).fill(0);
+            current[Math.floor(current.length / 2)] = 1;
+            
+            function rule110(l: number, c: number, r: number): number {
+                const p = (l << 2) | (c << 1) | r;
+                return [0,1,1,1,0,1,1,0][p] ?? 0;
             }
-            document.addEventListener('visibilitychange', handleVisibility);
-
-            function init() {
-                const rect = canvas.getBoundingClientRect();
-                cols = Math.floor(rect.width  / cellSize);
-                rows = Math.floor(rect.height / cellSize);
-                canvas.width  = cols * cellSize;
-                canvas.height = rows * cellSize;
-
-                const size = cols * rows;
-                gridA = new Uint8Array(size);
-                gridB = new Uint8Array(size);
-                for (let i = 0; i < size; i++) {
-                    gridA[i] = Math.random() > 0.90 ? 1 : 0;
-                }
-                isGridA = true;
-            }
-
-            function update() {
-                const current = isGridA ? gridA : gridB;
-                const next    = isGridA ? gridB : gridA;
-
-                for (let y = 0; y < rows; y++) {
-                    for (let x = 0; x < cols; x++) {
-                        const idx = y * cols + x;
-                        let n = 0;
-                        for (let dy = -1; dy <= 1; dy++) {
-                            for (let dx = -1; dx <= 1; dx++) {
-                                if (dx === 0 && dy === 0) continue;
-                                const nx = (x + dx + cols) % cols;
-                                const ny = (y + dy + rows) % rows;
-                                n += current[ny * cols + nx];
-                            }
-                        }
-                        if      (current[idx] === 1 && (n < 2 || n > 3)) next[idx] = 0;
-                        else if (current[idx] === 0 && n === 3)           next[idx] = 1;
-                        else                                               next[idx] = current[idx];
+            
+            for (let y = 0; y < rows; y++) {
+                for (let x = 0; x < current.length; x++) {
+                    if (current[x]) {
+                        ctx.fillStyle = 'rgba(150,150,150,0.15)';
+                        ctx.fillRect(x * cell, y * cell, cell - 1, cell - 1);
                     }
                 }
-                isGridA = !isGridA;
-            }
-
-            function draw() {
-                ctx!.clearRect(0, 0, canvas.width, canvas.height);
-                ctx!.fillStyle = '#9f1239';
-                ctx!.beginPath();
-                const current = isGridA ? gridA : gridB;
-                for (let y = 0; y < rows; y++) {
-                    for (let x = 0; x < cols; x++) {
-                        if (current[y * cols + x] === 1) {
-                            ctx!.rect(x * cellSize + 1, y * cellSize + 1, cellSize - 2, cellSize - 2);
-                        }
-                    }
+                const next = new Array(current.length).fill(0);
+                for (let i = 1; i < current.length - 1; i++) {
+                    next[i] = rule110(current[i-1], current[i], current[i+1]);
                 }
-                ctx!.fill();
-            }
-
-            let lastTime = 0;
-            const FRAME_INTERVAL = 300;
-
-            function animate(time: number) {
-                rafId = requestAnimationFrame(animate);
-                if (time - lastTime < FRAME_INTERVAL) return;
-                update();
-                draw();
-                lastTime = time;
-            }
-
-            let resizeTimeout: number;
-            const ro = new ResizeObserver(() => {
-                clearTimeout(resizeTimeout);
-                resizeTimeout = window.setTimeout(() => { init(); draw(); }, 200);
-            });
-            ro.observe(canvas);
-
-            init();
-            rafId = requestAnimationFrame(animate);
-        }
-
-        function syncCvLink() {
-            const link = document.getElementById('cv-download-link') as HTMLAnchorElement | null;
-            if (!link) return;
-            const lang = (document.documentElement.getAttribute('data-lang') || document.documentElement.lang || 'es').toLowerCase();
-            if (lang.includes('en')) {
-                link.href     = link.getAttribute('data-cv-en')       || '';
-                link.download = link.getAttribute('data-filename-en') || 'CV_LuisAngelMoreno_EN.pdf';
-            } else {
-                link.href     = link.getAttribute('data-cv-es')       || '';
-                link.download = link.getAttribute('data-filename-es') || 'CV_LuisAngelMoreno_ES.pdf';
+                current = next;
             }
         }
-
-        function initObserver() {
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach(e => {
-                        if (e.isIntersecting) {
-                            e.target.classList.add('visible');
-                            observer.unobserve(e.target);
-                        }
-                    });
-                },
-                { threshold: 0.15 }
-            );
-            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            startAutomata();
-            initObserver();
-            syncCvLink();
-
-            document.addEventListener('languageChanged', () => setTimeout(syncCvLink, 50));
-
-            const htmlObserver = new MutationObserver(syncCvLink);
-            htmlObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang', 'data-lang'] });
-
-            document.addEventListener('astro:before-swap', () => htmlObserver.disconnect(), { once: true });
-        });
+        document.addEventListener('DOMContentLoaded', initTriangleAutomata);
     </script>
-</Layout>
+
+</Layout>w
