@@ -1,5 +1,5 @@
 ---
-title: "Juego de la Vida de Conway: Taxonomía"
+title: "Juego de la Vida (Autómata de Conway): Taxonomía"
 description: "Clasificación esclarecida de las entidades más importantes en el autómata celular de Conway."
 pubDate: "2026-01-12"
 categories: ["Teoría de Autómatas", "Autómatas Celulares", "Autómata de Conway"] 
