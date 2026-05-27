@@ -1,113 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { Image } from 'astro:assets';
-import myPhoto from '../assets/photo.jpeg';
-import { getCollection } from 'astro:content';
+const currentPage = Astro.url.pathname;
 
-const featuredSlugs = ['collision-based-computing', 'taxonomy-gol', 'cellular-automata'];
-
-const allPosts = await getCollection('posts');
-const posts = featuredSlugs
-  .map(slug => allPosts.find(p => p.slug === slug))
-  .filter(p => p !== undefined);
-
-const t = {
-  sub: { en: "Computer Science Student", es: "Estudiante de Ciencias de la Computación" },
-  desc: { en: "3rd year Computer Science student, studying the intersection between Theory and Engineering. In the industry, my primary focus is Backend Architecture but I also have interest and basic experience in Data Engineering and Machine Learning. In academia, I've been interested in Cellular Automata, Dynamical Discrete Systems,  Computational Logic and Knowledge Representation, but my current focus is on Programming Languages (PL).", es: "Estudiante de último año en Ciencias de la Computación, interesado en la intersección entre teoría e ingeniería. En la industria mi principal enfoque es Arquitectura Backend, pero destaco también curiosidad y experiencia básica en Ingeniería de Datos y Machine Learning. En lo académico, he tenido interés en Teoría de Autómatas Celulares, Sistemas Dinámicos Discretos, Lógica Computacional y Representación del Conocimiento, pero actualmente mi principal foco está en Lenguajes de Programación (PL)." },
-  btn: { en: "View Research", es: "Ver Investigación" },
-  workTitle: { en: "Public Study", es: "Escritos y Estudio Público" },
-  workBtn: { en: "VIEW ALL →", es: "VER TODO →" }
-};
-
-const skills = [
-  { en: "THEORY", es: "TEORÍA", descEn: "Programming Languages, Cellular Automata, Knowledge Representation.", descEs: "Lenguajes de programación, autómatas celulares, representación de conocimiento.", icon: '<path d="M24 6H10L18 16L10 26H24" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>' },
-  { en: "ENGINEERING", es: "INGENIERÍA", descEn: "Backend, Data, Infra.", descEs: "Backend, Datos, Infra.", icon: '<path d="M11 10L4 16L11 22M21 10L28 16L21 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 5L14 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' },
-  { en: "STACK", es: "STACK", descEn: "JVM (Java/Scala), Python, SQL/NoSQL, Docker, Linux systems.", descEs: "JVM (Java/Scala), Python, SQL/NoSQL, Docker, Linux (Arch).", icon: '<path d="M16 4L28 10.5V21.5L16 28L4 21.5V10.5L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 10.5L16 17M28 10.5L16 17M16 17V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' }
+const navLinks = [
+  { href: '/', en: 'Home', es: 'Inicio' },
+  { href: '/projects', en: 'Projects', es: 'Proyectos' },
+  { href: '/work', en: 'Work', es: 'Experiencia' },
+  { href: '/posts', en: 'Posts', es: 'Blog' },
+  { href: '/contact', en: 'Contact', es: 'Contacto' }
 ];
-
-const sWrap = "relative z-10 max-w-[1400px] w-full mx-auto px-10 shrink-0";
 ---
 
-<Layout title="Luis Angel Moreno Delgado">
-  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
-    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
-    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
+<header class="relative z-50 py-8">
+  <div class="max-w-[1400px] mx-auto px-10 flex items-center justify-between">
+    
+    <div class="font-sans text-[12px] tracking-[0.2em] text-white uppercase font-bold">
+      <a href="/">C4MDAX</a>
+    </div>
 
-    <Header />
-
-    <section class={`${sWrap} pt-12 pb-12`}>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-6" style="font-size: clamp(40px, 6vw, 64px);">
-            Luis Angel Moreno Delgado
-          </h1>
-          <p class="font-mono text-[14px] uppercase tracking-[0.2em] text-zinc-400 mb-6" data-en={t.sub.en} data-es={t.sub.es}>{t.sub.en}</p>
-          <p class="font-mono text-[15px] leading-relaxed text-zinc-300 font-light" data-en={t.desc.en} data-es={t.desc.es}>{t.desc.en}</p>
-        </div>
-        
-        <div class="flex flex-col items-center lg:items-end">
-          <Image 
-            src={myPhoto} 
-            alt="Portrait" 
-            class="w-48 h-48 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
-            widths={[192, 384]} 
-            sizes="(max-width: 768px) 192px, 384px"
-            quality={80}
-          />
-          <a 
-            id="cv-btn" 
-            href="/assets/CV_2026Q2_EN.pdf" 
-            class="font-mono text-[12px] uppercase tracking-[0.2em] text-zinc-500 hover:text-white transition-colors border border-zinc-700 px-4 py-2 mt-8 rounded hover:border-white inline-block"
-            data-en="/assets/CV_2026Q2_EN.pdf" 
-            data-es="/assets/CV_2026Q2_ES.pdf"
-          >
-            CV →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <div class={sWrap}><div class="h-px bg-white/[0.05]"></div></div>
-
-    <section class={`${sWrap} py-8`}>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {skills.map(s => (
-          <div class="border-l border-white/[0.05] pl-6">
-            <div class="text-zinc-300 mb-3"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" set:html={s.icon} /></div>
-            <h3 class="font-mono text-[13px] tracking-[0.2em] text-white mb-2 font-normal" data-en={s.en} data-es={s.es}>{s.en}</h3>
-            <p class="font-mono text-zinc-400 leading-snug text-[14px] font-light pr-4" data-en={s.descEn} data-es={s.descEs}>{s.descEn}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <div class={sWrap}><div class="h-px bg-white/[0.05]"></div></div>
-
-    <section class={`${sWrap} py-8 flex-1 flex flex-col justify-center`}>
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 font-mono gap-4">
-        <h2 class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 font-normal" data-en={t.workTitle.en} data-es={t.workTitle.es}>{t.workTitle.en}</h2>
-        <a href="/posts/" class="text-[12px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-500" data-en={t.workBtn.en} data-es={t.workBtn.es}>{t.workBtn.en}</a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
-        {posts.map(p => (
-          <a href={`/posts/${p.slug}`} class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#171616] hover:-translate-y-1 block relative overflow-hidden" style="min-height: 160px;">
-            <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">{p.data.title}</h3>
-            <p class="text-zinc-400 leading-snug text-[14px] font-light">{p.data.description}</p>
+    <div class="hidden md:flex items-center gap-12">
+      <nav class="flex gap-12 font-sans text-[10px] uppercase tracking-[0.3em] text-zinc-500">
+        {navLinks.map(link => (
+          <a href={link.href} 
+             class={currentPage === link.href || (link.href !== '/' && currentPage.startsWith(link.href)) ? 'text-white' : 'hover:text-white'}
+             data-en={link.en} 
+             data-es={link.es}>
+             {link.en}
           </a>
         ))}
+      </nav>
+
+      <button id="lang-btn" class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 hover:text-white transition-colors font-mono">
+        EN / ES
+      </button>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-zinc-400 p-2">
+      <div class="grid grid-cols-2 gap-1">
+        <div class="w-1 h-1 bg-white"></div><div class="w-1 h-1 bg-white"></div>
+        <div class="w-1 h-1 bg-white"></div><div class="w-1 h-1 bg-white"></div>
       </div>
-    </section>
+    </button>
+  </div>
 
-    <Footer />
-  </main>
+  <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen bg-[#191919] z-50 p-10 font-sans text-xl uppercase tracking-[0.2em] flex flex-col gap-8 justify-center items-center">
+    <button id="close-btn" class="absolute top-10 right-10 text-white">✕</button>
+    {navLinks.map(link => (
+      <a href={link.href} class="text-white" data-en={link.en} data-es={link.es}>{link.en}</a>
+    ))}
+    <button id="lang-btn-mobile" class="text-zinc-500 text-base mt-4 font-mono">EN / ES</button>
+  </div>
+</header>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
-    .font-serif { font-family: 'Crimson Text', serif; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
-  </style>
-</Layout>
+<script is:inline>
+  function toggleLang() {
+    const isEs = document.documentElement.lang === 'es';
+    document.documentElement.lang = isEs ? 'en' : 'es';
+    
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isEs ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    });
+
+    const cvBtn = document.getElementById('cv-btn');
+    if (cvBtn) {
+      const nextHref = isEs ? cvBtn.getAttribute('data-en') : cvBtn.getAttribute('data-es');
+      cvBtn.setAttribute('href', nextHref);
+    }
+  }
+
+  document.getElementById('lang-btn')?.addEventListener('click', toggleLang);
+  document.getElementById('lang-btn-mobile')?.addEventListener('click', toggleLang);
+  
+  const btn = document.getElementById('menu-btn');
+  const close = document.getElementById('close-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.remove('hidden'));
+  close?.addEventListener('click', () => menu?.classList.add('hidden'));
+</script>
