@@ -20,8 +20,46 @@ import '../styles/global.css';
         <title>{title}</title>        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     </head>
-    <body class="bg-white dark:bg-[#050505] text-zinc-900 dark:text-zinc-100 transition-colors duration-300 antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-white">
+    <body class="bg-[#020202] text-zinc-300 transition-colors duration-300 antialiased selection:bg-white/[0.15] selection:text-white">
         <slot />
+        
+        <style is:global>
+            .lang-change-overlay {
+                position: fixed;
+                inset: 0;
+                background-color: rgba(2, 2, 2, 0.85);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 1;
+                transition: opacity 0.3s ease-out;
+            }
+            .lang-change-overlay.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .lang-change-modal {
+                background-color: #050505;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                padding: 1.5rem 3rem;
+                border-radius: 4px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+                color: #e4e4e7;
+            }
+            .lang-change-modal h2::after {
+                content: '_';
+                font-weight: 700;
+                animation: pulse-cursor 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            @keyframes pulse-cursor {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0; }
+            }
+        </style>
+
         <script>
             declare global {
                 interface Window {
@@ -34,7 +72,7 @@ import '../styles/global.css';
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-            } else{
+            } else {
                 document.documentElement.classList.add('dark');
                 localStorage.setItem('theme', 'dark');
             }
@@ -46,21 +84,22 @@ import '../styles/global.css';
                 const lang = document.documentElement.getAttribute('data-lang') || 'es';
                 
                 const langBtn = document.getElementById('lang-btn');
-                if (langBtn) {
-                    langBtn.textContent = lang === 'es' ? 'ES' : 'EN';
-                }
+                const langBtnMobile = document.getElementById('lang-btn-mobile');
+                if (langBtn) langBtn.textContent = lang === 'es' ? 'ES' : 'EN';
+                if (langBtnMobile) langBtnMobile.textContent = lang === 'es' ? 'ES' : 'EN';
 
                 document.querySelectorAll('[data-en]').forEach(el => {
                     const en = el.getAttribute('data-en');
                     const es = el.getAttribute('data-es');
                     if (en && es) {
                         if (el.innerHTML.includes('<span')) {
+                            // Se conservan los reemplazos especiales por si los usas en otras páginas
                             if (lang === 'es') {
-                                el.innerHTML = es.replace('Technologist in Information Systems', '<span class="font-semibold text-zinc-900 dark:text-white">Tecnólogo en Sistemas de información</span>')
-                                    .replace('Full Stack Developer', '<span class="font-semibold text-zinc-900 dark:text-white">Desarrollador Full Stack</span>');
+                                el.innerHTML = es.replace('Technologist in Information Systems', '<span class="font-semibold text-white">Tecnólogo en Sistemas de información</span>')
+                                    .replace('Full Stack Developer', '<span class="font-semibold text-white">Desarrollador Full Stack</span>');
                             } else {
-                                el.innerHTML = en.replace('Technologist in Information Systems', '<span class="font-semibold text-zinc-900 dark:text-white">Technologist in Information Systems</span>')
-                                    .replace('Full Stack Developer', '<span class="font-semibold text-zinc-900 dark:text-white">Full Stack Developer</span>');
+                                el.innerHTML = en.replace('Technologist in Information Systems', '<span class="font-semibold text-white">Technologist in Information Systems</span>')
+                                    .replace('Full Stack Developer', '<span class="font-semibold text-white">Full Stack Developer</span>');
                             }
                         } else {
                             el.textContent = lang === 'es' ? es : en;
@@ -94,18 +133,23 @@ import '../styles/global.css';
 
             window.toggleLang = () => {
                 const overlay = document.createElement('div');
-                overlay.className = 'lang-change-overlay';
+                overlay.className = 'lang-change-overlay hidden';
                 
                 const modal = document.createElement('div');
                 modal.className = 'lang-change-modal';
                 
                 const currentLangAttr = document.documentElement.getAttribute('data-lang') || 'en';
                 const isSpanish = currentLangAttr === 'es';
-                const text = isSpanish ? 'CHANGING LOCALE...' : 'CAMBIANDO LOCALE...';
+                const text = isSpanish ? 'Changing Language' : 'Cambiando Idioma';
                 
-                modal.innerHTML = `<h2 class="font-mono text-sm tracking-[0.2em] uppercase">${text}</h2>`;
+                modal.innerHTML = `<h2 class="font-mono text-[13px] tracking-[0.2em] text-zinc-300 uppercase">${text}</h2>`;
                 overlay.appendChild(modal);
                 document.body.appendChild(overlay);
+                
+                // Forzar un reflow para que la transición CSS funcione
+                requestAnimationFrame(() => {
+                    overlay.classList.remove('hidden');
+                });
                 
                 setTimeout(() => {
                     currentLang = currentLang === 'en' ? 'es' : 'en';
@@ -116,7 +160,7 @@ import '../styles/global.css';
                     overlay.classList.add('hidden');
                     setTimeout(() => {
                         overlay.remove();
-                    }, 300);
+                    }, 300); // Dar tiempo a que termine la animación de fade-out
                 }, 800);
             };
 
