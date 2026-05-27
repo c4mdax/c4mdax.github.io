@@ -1,5 +1,13 @@
 ---
 const currentPage = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', en: 'Home', es: 'Inicio' },
+  { href: '/projects', en: 'Projects', es: 'Proyectos' },
+  { href: '/work', en: 'Work', es: 'Experiencia' },
+  { href: '/posts', en: 'Posts', es: 'Blog' },
+  { href: '/contact', en: 'Contact', es: 'Contacto' }
+];
 ---
 
 <header class="relative z-50 py-8">
@@ -11,44 +19,54 @@ const currentPage = Astro.url.pathname;
 
     <div class="hidden md:flex items-center gap-12">
       <nav class="flex gap-12 font-sans text-[10px] uppercase tracking-[0.3em] text-zinc-500">
-        <a href="/" class={currentPage === '/' ? 'text-white' : 'hover:text-white'}>Home</a>
-        <a href="/projects" class={currentPage.startsWith('/projects') ? 'text-white' : 'hover:text-white'}>Projects</a>
-        <a href="/work" class={currentPage.startsWith('/work') ? 'text-white' : 'hover:text-white'}>Work</a>
-        <a href="/posts" class={currentPage.startsWith('/posts') ? 'text-white' : 'hover:text-white'}>Posts</a>
-        <a href="/contact" class={currentPage === '/contact' ? 'text-white' : 'hover:text-white'}>Contact</a>
+        {navLinks.map(link => (
+          <a href={link.href} 
+             class={currentPage === link.href || (link.href !== '/' && currentPage.startsWith(link.href)) ? 'text-white' : 'hover:text-white'}
+             data-en={link.en} 
+             data-es={link.es}>
+             {link.en}
+          </a>
+        ))}
       </nav>
 
-      <button id="lang-btn" onclick="window.toggleLang()" class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 hover:text-white transition-colors font-mono">
+      <button id="lang-btn" class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 hover:text-white transition-colors font-mono">
         EN / ES
       </button>
     </div>
 
     <button id="menu-btn" class="md:hidden text-zinc-400 p-2">
       <div class="grid grid-cols-2 gap-1">
-        <div class="w-1 h-1 bg-white"></div>
-        <div class="w-1 h-1 bg-white"></div>
-        <div class="w-1 h-1 bg-white"></div>
-        <div class="w-1 h-1 bg-white"></div>
+        <div class="w-1 h-1 bg-white"></div><div class="w-1 h-1 bg-white"></div>
+        <div class="w-1 h-1 bg-white"></div><div class="w-1 h-1 bg-white"></div>
       </div>
     </button>
   </div>
 
   <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen bg-[#191919] z-50 p-10 font-sans text-xl uppercase tracking-[0.2em] flex flex-col gap-8 justify-center items-center">
     <button id="close-btn" class="absolute top-10 right-10 text-white">✕</button>
-    <a href="/" class="text-white">Home</a>
-    <a href="/projects" class="text-white">Projects</a>
-    <a href="/work" class="text-white">Work</a>
-    <a href="/posts" class="text-white">Posts</a>
-    <a href="/contact" class="text-white">Contact</a>
-    <button onclick="window.toggleLang()" class="text-zinc-500 text-base mt-4 font-mono">EN / ES</button>
+    {navLinks.map(link => (
+      <a href={link.href} class="text-white" data-en={link.en} data-es={link.es}>{link.en}</a>
+    ))}
+    <button id="lang-btn-mobile" class="text-zinc-500 text-base mt-4 font-mono">EN / ES</button>
   </div>
 </header>
 
-<script>
+<script is:inline>
+  function toggleLang() {
+    const isEs = document.documentElement.lang === 'es';
+    document.documentElement.lang = isEs ? 'en' : 'es';
+    
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isEs ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    });
+  }
+
+  document.getElementById('lang-btn')?.addEventListener('click', toggleLang);
+  document.getElementById('lang-btn-mobile')?.addEventListener('click', toggleLang);
+  
   const btn = document.getElementById('menu-btn');
   const close = document.getElementById('close-btn');
   const menu = document.getElementById('mobile-menu');
-
   btn?.addEventListener('click', () => menu?.classList.remove('hidden'));
   close?.addEventListener('click', () => menu?.classList.add('hidden'));
 </script>
