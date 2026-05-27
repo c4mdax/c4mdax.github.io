@@ -43,20 +43,32 @@ const sWrap = "relative z-10 max-w-[1400px] w-full mx-auto px-10 shrink-0";
           <h1 class="font-serif leading-none tracking-tight text-white font-light mb-6" style="font-size: clamp(40px, 6vw, 64px);">
             Luis Angel Moreno Delgado
           </h1>
+          
+          <div class="lg:hidden mb-8">
+            <Image 
+              src={myPhoto} 
+              alt="Portrait" 
+              class="w-32 h-32 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
+              widths={[192, 384]} 
+              sizes="(max-width: 768px) 192px, 384px"
+              quality={80}
+            />
+          </div>
+
           <p class="font-mono text-[14px] uppercase tracking-[0.2em] text-zinc-400 mb-6" data-en={t.sub.en} data-es={t.sub.es}>{t.sub.en}</p>
           <p class="font-mono text-[15px] leading-relaxed text-zinc-300 font-light" data-en={t.desc.en} data-es={t.desc.es}>{t.desc.en}</p>
         </div>
 
-<div class="flex flex-col items-center lg:items-end">
-  <Image 
-    src={myPhoto} 
-    alt="Portrait" 
-    class="w-48 h-48 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
-    widths={[192, 384]} 
-    sizes="(max-width: 768px) 192px, 384px"
-    quality={80}
-  />
-</div>
+        <div class="hidden lg:flex justify-end">
+          <Image 
+            src={myPhoto} 
+            alt="Portrait" 
+            class="w-48 h-48 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
+            widths={[192, 384]} 
+            sizes="(max-width: 768px) 192px, 384px"
+            quality={80}
+          />
+        </div>
       </div>
     </section>
 
