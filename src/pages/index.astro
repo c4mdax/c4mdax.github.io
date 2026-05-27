@@ -46,15 +46,25 @@ const sWrap = "relative z-10 max-w-[1400px] w-full mx-auto px-10 shrink-0";
           <p class="font-mono text-[14px] uppercase tracking-[0.2em] text-zinc-400 mb-6" data-en={t.sub.en} data-es={t.sub.es}>{t.sub.en}</p>
           <p class="font-mono text-[15px] leading-relaxed text-zinc-300 font-light" data-en={t.desc.en} data-es={t.desc.es}>{t.desc.en}</p>
         </div>
-        <div class="flex justify-center lg:justify-end">
-	<Image 
-  src={myPhoto} 
-  alt="Portrait" 
-  class="w-48 h-48 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
-  widths={[192, 384]} 
-  sizes="(max-width: 768px) 192px, 384px"
-  quality={80}
-/>
+        
+        <div class="flex flex-col items-center lg:items-end">
+          <Image 
+            src={myPhoto} 
+            alt="Portrait" 
+            class="w-48 h-48 rounded-full border border-white/[0.1] object-cover shadow-2xl" 
+            widths={[192, 384]} 
+            sizes="(max-width: 768px) 192px, 384px"
+            quality={80}
+          />
+          <a 
+            id="cv-btn" 
+            href="/assets/CV_2026Q2_EN.pdf" 
+            class="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 hover:text-white transition-colors flex items-center gap-2 mt-8"
+            data-en="/assets/CV_2026Q2_EN.pdf" 
+            data-es="/assets/CV_2026Q2_ES.pdf"
+          >
+            CV <span>→</span>
+          </a>
         </div>
       </div>
     </section>

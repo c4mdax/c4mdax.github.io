@@ -54,6 +54,12 @@ const navLinks = [
 <script is:inline>
   function toggleLang() {
     const isEs = document.documentElement.lang === 'es';
+    const cvBtn = document.getElementById('cv-btn');   
+    if (cvBtn) {
+      const isEs = document.documentElement.lang === 'es';
+      cvBtn.setAttribute('href', isEs ? cvBtn.getAttribute('data-en') : cvBtn.getAttribute('data-es'));
+      cvBtn.textContent = isEs ? cvBtn.getAttribute('data-label-en') : cvBtn.getAttribute('data-label-es');
+      }
     document.documentElement.lang = isEs ? 'en' : 'es';
     
     document.querySelectorAll('[data-en]').forEach(el => {
