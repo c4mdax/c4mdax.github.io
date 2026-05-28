@@ -39,11 +39,50 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 0: Fundamentos de Programación
+# Etapa 0: Fundamentos de Programación e Introducción al desarrollo de Software
 
 Aunque el roadmap contempla una etapa inicial dedicada a fundamentos de programación, optaré por omitirla debido a la base previamente desarrollada a lo largo de mi formación académica y experiencia acumulada hasta el momento. Sin embargo, compartiré lo que creo contempla esta etapa, esperando que este roadmap sirva para más personas:
 
+### Fundamentos generales de programación
+- Paradigmas de programación (imperativo, declarativo)
+- Sintaxis y estructuras básicas
+- Tipos de datos
+- Variables y alcance
+- Estructuras de control y condicionales 
+- Funciones y modularidad
+- Manejo básico de erores
+- Manejo de archivos I/O
+- Recursión
 
+### Programación Orientada a Objetos 
+- Clases y objetos 
+- Encapsulamiento
+- Herencia
+- Polimorfismo
+- Abstracción
+- Interfaces y clases abstractas
+- Principios SOLID
+- Composición
+- Patrones de diseño (Singleton, Factory, Observer, Strategy)
+
+### Estructuras de Datos y Algoritmos
+- ¿Qué es un algoritmo?
+- Notación Big O 
+- Genéricos
+- Estructuras lineales: arreglos, listas, pilas, colas
+- Estructuras no lineales: hashing, tablas hash, mapas hash, árboles, grafos
+- Búsqueda binaria
+- Algoritmos de ordenamiento
+- Algoritmos de balanceo en árboles
+- Algoritmos de búsqueda (BFS y DFS)
+- Recursión aplicada
+- Programación dinámica básica (memoización, tabulación)
+
+### Software 
+- Git y control de versiones
+- Línea de comandos/terminal
+- Depuración
+- Testing básico
 
 ---
 

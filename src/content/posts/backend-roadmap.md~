@@ -16,7 +16,7 @@ Durante mi jornada de estudio en desarrollo Backend, me he visto atorado múltip
 
 # Consideraciones
 
-Este roadmap será consecuencia de notas de estudio propias en conjunto, por lo que omitiré el tema de Fundamentos de Programación.
+Este roadmap será consecuencia de notas de estudio propias en conjunto, por lo que omitiré el tema de fundamentos de programación. La meta es completar la mayor parte de este recorrido en un periodo aproximado de entre seis meses y un año a partir de la publicación del mismo. El contenido será desarrollado públicamente y de manera progresiva, acompañado idealmente de proyectos y documentación personal.
 
 ---
 
@@ -41,6 +41,10 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 # Etapa 0: Fundamentos de Programación
 
+Aunque el roadmap contempla una etapa inicial dedicada a fundamentos de programación, optaré por omitirla debido a la base previamente desarrollada a lo largo de mi formación académica y experiencia acumulada hasta el momento. Sin embargo, compartiré lo que creo contempla esta etapa, esperando que este roadmap sirva para más personas:
+
+
+
 ---
 
 # Etapa 1: Fundamentos de Bases de Datos
@@ -51,7 +55,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 3: Computación Concurrencia y fundamentos de la JVM
+# Etapa 3: Computación Concurrente y fundamentos de la JVM
 
 ---
 
