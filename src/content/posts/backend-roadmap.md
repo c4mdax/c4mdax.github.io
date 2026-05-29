@@ -50,7 +50,7 @@ Aunque el roadmap contempla una etapa inicial dedicada a fundamentos de programa
 - Variables y alcance
 - Estructuras de control y condicionales 
 - Funciones y modularidad
-- Manejo básico de erores
+- Manejo básico de errores
 - Manejo de archivos I/O
 - Recursión
 
