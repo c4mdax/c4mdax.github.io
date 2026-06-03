@@ -88,6 +88,82 @@ Aunque el roadmap contempla una etapa inicial dedicada a fundamentos de programa
 
 # Etapa 1: Fundamentos de Bases de Datos
 
+### Conceptos Fundamentales
+- ¿Qué es una base de datos y para qué sirve?
+- ¿Qué es un DBMS y cuál es su rol?
+- Modelos de datos: relacional, documental, clave-valor, columnar, grafo
+- Diferencias entre bases de datos SQL y NoSQL
+- Persistencia vs. almacenamiento en memoria
+- ACID: Atomicidad, Consistencia, Aislamiento, Durabilidad
+- BASE: Basically Available, Soft state, Eventual consistency
+- Teorema CAP
+
+### Diseño Conceptual: Modelo Entidad-Relación
+- ¿Qué es el modelado conceptual y por qué es el primer paso?
+- Entidades y atributos
+- Relaciones y cardinalidad: uno a uno, uno a muchos, muchos a muchos
+- Entidades débiles y dependientes
+- Diagrama ER y notación crow's foot
+- Diferencia entre modelo conceptual, lógico y físico
+
+### Modelo Relacional (Modelo Lógico)
+- Traducción del modelo ER al modelo relacional
+- Tablas, filas y columnas
+- Claves primarias y claves foráneas
+- Restricciones: `NOT NULL`, `UNIQUE`, `CHECK`, `DEFAULT`
+- Tablas de unión (junction tables)
+- Vistas (views)
+- Formas normales: 1FN, 2FN, 3FN y BCNF
+- Desnormalización y cuándo aplicarla
+- Diseño orientado a consultas vs. diseño orientado a escritura
+
+### Modelo Físico e Implementación con SQL
+- Tipos de datos primitivos (enteros, flotantes, cadenas, booleanos, fechas)
+- DDL: `CREATE`, `ALTER`, `DROP`, `TRUNCATE`
+- DML: `SELECT`, `INSERT`, `UPDATE`, `DELETE`
+- Filtros y condiciones: `WHERE`, `BETWEEN`, `IN`, `LIKE`, `IS NULL`
+- Ordenamiento y paginación: `ORDER BY`, `LIMIT`, `OFFSET`
+- Agregaciones: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
+- Agrupamiento: `GROUP BY`, `HAVING`
+- Joins: `INNER`, `LEFT`, `RIGHT`, `FULL OUTER`, `CROSS`, `SELF JOIN`
+- Subconsultas y consultas correlacionadas
+- CTEs (Common Table Expressions) con `WITH`
+- Funciones de ventana: `OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`, `LAG`, `LEAD`
+
+### Índices
+- ¿Qué es un índice y cómo mejora las consultas?
+- Índices B-Tree, Hash, GIN, GiST (conceptual)
+- Índices simples, compuestos y parciales
+- Cuándo indexar y cuándo no
+- Impacto de los índices en escrituras y almacenamiento
+- `EXPLAIN` / `EXPLAIN ANALYZE` para analizar planes de ejecución
+
+### Transacciones y Control de Concurrencia
+- ¿Qué es una transacción y por qué existe?
+- `BEGIN`, `COMMIT`, `ROLLBACK`
+- Niveles de aislamiento: Read Uncommitted, Read Committed, Repeatable Read, Serializable
+- Anomalías de concurrencia: dirty reads, non-repeatable reads, phantom reads
+- Bloqueos (locks): compartidos, exclusivos, deadlocks
+- Optimistic vs. Pessimistic locking
+- MVCC (Multi-Version Concurrency Control): concepto general
+
+### Fundamentos de NoSQL
+- Motivaciones para NoSQL: escalabilidad horizontal, esquema flexible, alto throughput
+- Bases de datos de documentos: concepto (MongoDB como referencia)
+- Bases de datos clave-valor: concepto (Redis como referencia)
+- Bases de datos columnares: concepto (Cassandra como referencia)
+- Bases de datos de grafos: concepto (Neo4j como referencia)
+- Cuándo elegir SQL vs. NoSQL
+
+### Fundamentos de Almacenamiento y Rendimiento
+- Almacenamiento en disco vs. en memoria
+- Row-oriented vs. column-oriented storage
+- Write-ahead log (WAL): concepto y propósito
+- Buffer pool / page cache
+- Conceptos de particionamiento: horizontal (sharding) y vertical
+- Replicación: primary/replica, sincrónica vs. asincrónica
+- Connection pooling: qué es y por qué importa
+
 ---
 
 # Etapa 2: PostgreSQL y Persistencia
