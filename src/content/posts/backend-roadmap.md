@@ -58,7 +58,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Patrones de diseño (Singleton, Factory, Observer, Strategy)
 
 ### Estructuras de Datos y Algoritmos
-- ¿Qué es un algoritmo?
+- ¿Que es un algoritmo?
 - Notación Big O
 - Genéricos
 - Estructuras lineales: arreglos, listas, pilas, colas
@@ -164,11 +164,11 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - ¿Por qué PostgreSQL? Historia y casos de uso
 - Instalación y configuración inicial
 - Herramientas: psql, pgAdmin, DBeaver
-- Estructura interna: databases, schemas, roles
+- Estructura interna: databases, schémas, roles
 - Archivos de configuración: postgresql.conf, pg_hba.conf
 - Variables de entorno y conexión
 
-### Tipos de Datos Avanzados
+### Tipos de datos Avanzados
 - Tipos numéricos: smallint, integer, bigint, numeric, real, double precision
 - Tipos de texto: char, varchar, text
 - Tipos de fecha y hora: date, time, timestamp, timestamptz, interval
@@ -250,8 +250,8 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ### Fundamentos de Concurrencia
 - ¿Qué es la concurrencia y por qué importa?
-- Concurrencia vs. paralelismo: diferencias conceptuales
-- Procesos vs. hilos (threads): modelo del sistema operativo
+- Concurrencia vs paralelismo: diferencias conceptuales
+- Procesos vs hilos (threads): modelo del sistema operativo
 - Condiciones de carrera (race conditions)
 - Sección crítica y exclusión mutua
 - Deadlocks, livelocks y starvation
@@ -269,7 +269,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - La palabra clave synchronized: métodos y bloques sincronizados
 - Monitores y el modelo de lock intrínseco
 - volatile: visibilidad sin exclusión mutua
-- Clase Object: wait, notify, notifyAll
+- Clase Object: wait,notify, notifyAll
 - java.util.concurrent.locks: Lock, ReentrantLock, ReadWriteLock
 - Condiciones con Condition: await, signal, signalAll
 - Comparación: synchronized vs. ReentrantLock
@@ -328,7 +328,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Gestión de dependencias: repositorios, versiones, conflictos
 - Logging en Java: SLF4J, Logback, Log4j2
 - Configuración de aplicaciones: properties, YAML, variables de entorno
-- Introducción a Spring Framework: IoC, DI, ApplicationContext
+- Introducción a Spring Framework: IOC, DI, ApplicationContext
 - Spring Boot: autoconfiguración, starters, propiedades
 - Kotlin como alternativa a Java en la JVM: conceptos básicos
 
@@ -357,7 +357,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Estructura de una petición HTTP: método, URL, headers, body
 - Estructura de una respuesta HTTP: status code, headers, body
 - Métodos HTTP: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
-- Códigos de estado: 1xx, 2xx, 3xx, 4xx, 5xx
+- Códigos de estado: 1xxx, 2xx, 3xx, 4xx, 5xx
 - Headers importantes: Content-Type, Authorization, Cache-Control, Accept, CORS
 - Cookies y sesiones: Set-Cookie, Cookie, SameSite, HttpOnly, Secure
 - HTTP/2: multiplexing, server push, header compression
@@ -399,7 +399,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Limitaciones de HTTP para tiempo real: polling, long polling
 - WebSocket: handshake, frames, full-duplex
 - Casos de uso: chat, notificaciones, dashboards en vivo
-- Bibliotecas: Socket.IO, ws (Node.js), Spring WebSocket (Java)
+- Bibliotecas: Socket.IO, Spring WebSocket (Java)
 - Server-Sent Events (SSE): alternativa unidireccional
 - Comparación: WebSocket vs. SSE vs. polling
 
@@ -443,7 +443,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Problemas comunes: fat controllers, anemic domain models
 
 ### Patrones de Diseño Aplicados al Backend
-- Repository Pattern: abstracción del acceso a datos
+- Repository Pattern: abstracciön del acceso a datos
 - Service Layer: encapsulamiento de lógica de negocio
 - DTO (Data Transfer Object): separar representación de dominio
 - Mapper: conversión entre capas
@@ -546,7 +546,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 ### Testing de Integración
 - Qué prueba un test de integración
 - Testcontainers: bases de datos reales en tests con Docker
-- Spring Boot Test: @SpringBootTest, contexto de aplicación
+- Spring Boot Test: @SpringBootTest, contexto de aplicacion
 - Sliced tests: @WebMvcTest, @DataJpaTest
 - Testing de repositorios contra base de datos real
 - Fixtures y data setup: estrategias para datos de prueba
@@ -581,7 +581,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ### Fundamentos de Comunicación Asíncrona
 - Comunicación síncrona vs. asíncrona: diferencias y tradeoffs
-- ¿Cuándo usar mensajería en lugar de llamadas directas?
+- ¿Cuándo usar mensajeríia en lugar de llamadas directas?
 - Desacoplamiento temporal y espacial
 - At-most-once, at-least-once, exactly-once: semánticas de entrega
 - Idempotencia en consumidores: por qué es necesaria
@@ -602,7 +602,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Arquitectura de Kafka: broker, topic, partition, offset, segment
 - Productores: configuración, serialización, partitioner
 - Consumidores: consumer group, rebalancing, lag
-- Offsets: auto-commit vs. manual commit
+- Offsets: auto-commit vs manual commit
 - Retención de mensajes: por tiempo y por tamaño
 - Replicación: leader, follower, ISR (in-sync replicas)
 - Kafka vs. RabbitMQ: cuándo elegir cada uno
@@ -642,7 +642,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - PACELC: extensión del teorema CAP
 
 ### Microservicios
-- ¿Qué son los microservicios y de dónde vienen?
+- ¿Que son los microservicios y de dónde vienen?
 - Monolito vs. microservicios: ventajas y desventajas
 - Principios de microservicios: autonomía, responsabilidad única, deployabilidad independiente
 - Comunicación entre servicios: síncrona vs. asíncrona
@@ -673,7 +673,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Escalado vertical vs. horizontal
 - Stateless vs. stateful services: por qué stateless escala mejor
 - Sharding: estrategias de distribución de datos
-- Consistent hashing: distribución uniforme sin remapping total
+- Consistent hashing: distribución uniforme sin remapping total,
 - Read replicas: escalar lecturas
 - CQRS en contexto distribuido: separar modelos de lectura y escritura
 - Rate limiting distribuido
@@ -730,7 +730,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Métricas: tipos (contador, gauge, histograma, summary)
 - Prometheus: modelo de datos, scraping, PromQL básico
 - Grafana: dashboards, datasources, alertas visuales
-- RED method: Rate, Errors, Duration para servicios
+- RED method: Rate,Errors, Duration para servicios
 - USE method: Utilization, Saturation, Errors para recursos
 - SLI, SLO y SLA: definiciones y relaciones
 - Error budget: concepto y uso en SRE
@@ -756,7 +756,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 ### Seguridad en Infraestructura
 - Principio de menor privilegio en sistemas
 - Gestión de secretos: HashiCorp Vault, AWS Secrets Manager
-- Escaneo de imágenes Docker: Trivy, Snyk
+- Escaneo de imagenes Docker: Trivy, Snyk
 - Network policies en Kubernetes
 - mTLS: autenticación mutua entre servicios
 - Service mesh: Istio y Linkerd (concepto y motivación)
@@ -790,7 +790,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Sintaxis básica: val, var, def, tipos de datos
 - Inferencia de tipos
 - Clases, case classes y objects
-- Traits: composición de comportamiento
+- Traits: composicion de comportamiento
 - Pattern matching: match/case, deconstrucción
 - Option, Either, Try: manejo funcional de errores
 - Colecciones inmutables: List, Vector, Map, Set
