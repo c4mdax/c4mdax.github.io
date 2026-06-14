@@ -1,5 +1,5 @@
 ---
-title: "Roadmap de Fundamentos de Sistemas Backend"
+title: "Roadmap de Fundamentos de Sistemas Backend y Sistemas Distribuidos"
 description: "Roadmap completo sobre sistemas y arquitectura backend, mediante el stack JVM."
 pubDate: "2026-05-02"
 categories: ["Roadmap","Desarrollo Backend"]
@@ -638,7 +638,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 - Relojes lógicos: Lamport timestamps
 - Relojes vectoriales: concepto
 - Consistencia eventual vs. consistencia fuerte
-- Teorema CAP en la práctica: trade-offs reales
+- Teorema CAP en la práctica:trade-offs reales
 - PACELC: extensión del teorema CAP
 
 ### Microservicios
