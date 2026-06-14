@@ -14,7 +14,6 @@ const posts = defineCollection({
 
 const projects = defineCollection({
     type: 'content',
-    // Hacemos exactamente lo mismo para los proyectos
     schema: ({ image }) => z.object({
         title: z.string(),
   	title_en: z.string().optional(),

@@ -1,0 +1,71 @@
+g---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const t = {
+  title: { en: 'Contact', es: 'Contacto' },
+  email: { en: 'Email', es: 'Correo electrónico' },
+  social: { en: 'Social & Networks', es: 'Redes y perfiles' }
+};
+
+const socials = [
+  { name: 'GitHub', url: 'https://github.com/c4mdax' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/luis-angel-moreno-delgado-0a726a2a5/' },
+];
+---
+
+<Layout title="Contact">
+  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
+    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
+    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
+
+    <Header />
+    
+    <div class="flex-1 flex flex-col mt-12">
+      <section class="max-w-[1000px] w-full mx-auto px-10 pt-12 pb-24 relative z-10">
+        <header class="mb-20 border-b border-white/[0.05] pb-12">
+          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-6" style="font-size: clamp(40px, 6vw, 64px);" data-en={t.title.en} data-es={t.title.es}>
+            {t.title.en}
+          </h1>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-mono">
+          <div>
+            <h3 class="text-[14px] uppercase tracking-widest text-zinc-600 mb-8" data-en={t.email.en} data-es={t.email.es}>
+              {t.email.en}
+            </h3>
+            <a href="mailto:c4mdax@gmail.com" class="text-[16px] text-white hover:text-zinc-400 transition-colors border-b border-white/[0.1] pb-1">
+              c4mdax@gmail.com
+            </a>
+          </div>
+
+          <div>
+            <h3 class="text-[14px] uppercase tracking-widest text-zinc-600 mb-8" data-en={t.social.en} data-es={t.social.es}>
+              {t.social.en}
+            </h3>
+            <ul class="flex flex-col gap-4">
+              {socials.map(s => (
+                <li>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-[18px] text-zinc-300 hover:text-white transition-colors">
+                    {s.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <Footer />
+  </main>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+    .font-mono { font-family: 'IBM Plex Mono', monospace; }
+    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
+  </style>
+</Layout>

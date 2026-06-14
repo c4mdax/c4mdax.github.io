@@ -33,7 +33,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 0: Fundamentos de Programación e Introducción al desarrollo de Software
+## Etapa 0: Fundamentos de Programación e Introducción al desarrollo de Software
 
 ### Fundamentos generales de programación
 - Paradigmas de programación (imperativo, declarativo)
@@ -78,7 +78,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 1: Fundamentos de Bases de Datos
+## Etapa 1: Fundamentos de Bases de Datos
 
 ### Conceptos Fundamentales
 - ¿Qué es una base de datos y para qué sirve?
@@ -158,7 +158,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 2: PostgreSQL y Persistencia
+## Etapa 2: PostgreSQL y Persistencia
 
 ### Introducción a PostgreSQL
 - ¿Por qué PostgreSQL? Historia y casos de uso
@@ -246,7 +246,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 3: Computación Concurrente y Fundamentos de la JVM
+## Etapa 3: Computación Concurrente y Fundamentos de la JVM
 
 ### Fundamentos de Concurrencia
 - ¿Qué es la concurrencia y por qué importa?
@@ -334,7 +334,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 4: Comunicación y Redes
+## Etapa 4: Comunicación y Redes
 
 ### Fundamentos de Redes
 - Modelo OSI y modelo TCP/IP: capas y responsabilidades
@@ -424,7 +424,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 5: Diseño de Servicios Backend
+## Etapa 5: Diseño de Servicios Backend
 
 ### Principios de Diseño de Software
 - Separation of concerns
@@ -518,7 +518,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 6: Testing y Calidad
+## Etapa 6: Testing y Calidad
 
 ### Fundamentos de Testing
 - ¿Por qué testeamos? Confianza, documentación, refactoring seguro
@@ -577,7 +577,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 7: Sistemas Basados en Eventos
+## Etapa 7: Sistemas Basados en Eventos
 
 ### Fundamentos de Comunicación Asíncrona
 - Comunicación síncrona vs. asíncrona: diferencias y tradeoffs
@@ -629,7 +629,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 8: Computación Distribuida
+## Etapa 8: Computación Distribuida
 
 ### Fundamentos de Sistemas Distribuidos
 - ¿Qué es un sistema distribuido?
@@ -701,7 +701,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 9: Infraestructura y Observabilidad
+## Etapa 9: Infraestructura y Observabilidad
 
 ### Infrastructure as Code
 - ¿Qué es IaC y por qué importa?
@@ -772,7 +772,7 @@ Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de 
 
 ---
 
-# Etapa 10: Paradigmas Avanzados (Scala y Sistemas Funcionales)
+## Etapa 10: Paradigmas Avanzados (Scala y Sistemas Funcionales)
 
 ### Fundamentos de Programación Funcional
 - ¿Qué es la programación funcional y de dónde viene?

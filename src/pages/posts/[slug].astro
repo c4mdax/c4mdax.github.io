@@ -50,20 +50,42 @@ const sWrap = "max-w-[800px] w-full mx-auto px-10";
             </div>
           )}
 
-          {headings.length > 0 && (
-            <nav class="mt-12 p-6 bg-white/[0.02] border border-white/[0.05]">
-              <h2 class="text-[16px] uppercase tracking-[0.2em] text-zinc-400 font-mono mb-4">Índice</h2>
-              <ul class="space-y-2 font-mono text-[14px]">
-                {headings.map((heading) => (
-                  <li style={`padding-left: ${(heading.depth - 2) * 16}px`}>
-                    <a href={`#${heading.slug}`} class="text-zinc-400 hover:text-white transition-colors underline decoration-white/20 hover:decoration-white">
-                      {heading.text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
+	  {headings.length > 0 && (
+  <nav class="mt-12 border border-white/[0.05]">
+    <details class="group" open>
+      <summary class="cursor-pointer p-6 flex justify-between items-center bg-white/[0.02] hover:bg-white/[0.04] transition-colors list-none">
+        <h2 class="text-[16px] uppercase tracking-[0.2em] text-zinc-400 font-mono m-0">Índice</h2>
+        <span class="text-zinc-500 font-mono group-open:rotate-180 transition-transform">▼</span>
+      </summary>
+      
+      <div class="p-6 pt-0 border-t border-white/[0.05]">
+        <ul class="space-y-4 font-mono text-[14px] mt-4">
+          {/* Aquí filtramos los h2 para que sean los "nodos padre" (Etapas) */}
+          {headings.filter(h => h.depth === 2).map((stage) => (
+            <li class="border-b border-white/[0.05] last:border-0 pb-2">
+              <details class="group/stage">
+                <summary class="cursor-pointer flex justify-between items-center text-zinc-300 hover:text-white py-2 list-none">
+                  {stage.text}
+                  <span class="text-zinc-600 group-open/stage:rotate-180 transition-transform text-[10px]">▼</span>
+                </summary>
+                <ul class="pl-4 py-2 space-y-1">
+                  {/* Buscamos los h3 que pertenecen a esta etapa */}
+                  {headings.filter(h => h.depth === 3 && headings.indexOf(h) > headings.indexOf(stage) && headings.indexOf(h) < (headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2) === -1 ? headings.length : headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2))).map((sub) => (
+                    <li>
+                      <a href={`#${sub.slug}`} class="text-zinc-500 hover:text-white transition-colors">
+                        {sub.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </details>
+  </nav>
+)}
         </header>
         
         <div class="prose prose-invert max-w-none font-mono text-[16px] leading-relaxed

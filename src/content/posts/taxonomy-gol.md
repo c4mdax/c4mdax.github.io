@@ -4,6 +4,7 @@ description: "Clasificación esclarecida de las entidades más importantes en el
 pubDate: "2026-01-12"
 categories: ["Teoría de Autómatas", "Autómatas Celulares", "Autómata de Conway"] 
 ---
+
 Leyendo más sobre _Conway's Game of Life_, encontré varios recursos que particularizan la clasificación, lógica y comportamiento de entidades dentro de un autómata celular; en particular: [Conway's "Game of Life" and the Epigenetic Principle](https://pmc.ncbi.nlm.nih.gov/articles/PMC4905947/). 
 
 Dado que este espacio también sirve como espacio público de estudio personal, me propongo recuperar e interpretar dicha clasificación, haciendo un ligero paralelismo con la noción de taxonomía biológica.
@@ -12,7 +13,11 @@ Dado que este espacio también sirve como espacio público de estudio personal, 
 > Conway identifies three distinctive emergent forms. “Still life” configurations are stable over many iterations, like a block of 4 adjacent squares. “Oscillators” are stable over a cycle, returning to an initial state. Such cycles can be short or very long. Finally there is a rare, small set we call “movers,” which include “gliders,” which move across the grid.
 
 ---
-### Still Life (Objetos estacionarios)
+
+## Still Life (Objetos estacionarios)
+
+### Contenido
+
 Los *still lifes* son configuraciones que permanecen invariantes bajo la dinámica del sistema; es decir, tras cada iteración del autómata, su estructura no sufre modificación alguna.
 
 Formalmente, un *still life* corresponde a un patrón que constituye un **punto fijo** de la evolución del sistema. Esto implica que cada célula viva tiene exactamente dos o tres vecinos vivos, mientras que las células muertas adyacentes no satisfacen la condición de nacimiento.
@@ -23,7 +28,10 @@ Desde otra perspectiva, suerte de sociedad, podrían representar territorios alt
 
 ---
 
-### Oscillators (Osciladores)
+## Oscillators (Osciladores)
+
+### Contenido
+
 Los *oscillators* son configuraciones que evolucionan de manera periódica, retornando a su estado inicial tras un número finito de generaciones.
 
 Sea $T$ el operador de evolucion del sistema, un oscilador de periodo $n$ satisface:
@@ -42,7 +50,10 @@ Nuevamente, desde una perspectiva de suerte social, éstos representan un fallo 
 
 ---
 
-### Movers (Osciladores desplazados)
+## Movers (Osciladores desplazados)
+
+### Contenido
+
 Los *movers*, o mayormente conocidos como  *spaceships*, son configuraciones que, además de evolucionar periódicamente, presentan un desplazamiento neto en la cuadrícula.
 Formalmente, un patrón $P$ es un *spaceship* si existe un vector de traslación $ \vec{v} $ y un entero $ n > 0 $ tales que:
 
@@ -59,7 +70,11 @@ De igual forma que con los osciladores y objetos estacionarios, podemos ver a é
 ---
 
 Existe una cuarta categoría que me resulta importante agregar:
-### Generadores / Estructuras de Crecimiento Infinito
+
+## Generadores / Estructuras de Crecimiento Infinito
+
+### Contenido
+
 Estos objetos, como su nombre indica, aumentan la población total del sistema de manera perpetua mediante generación de objetos más simples. Pueden ser:
 
 - **Cañones (guns)**: estructuras estacionarias sin desplazamiento que emiten *spaceships* periódicamente. El _Cañón de Gliders de Gosper_ fue la primer estructura descubierta de este tipo.
@@ -68,7 +83,10 @@ Estos objetos, como su nombre indica, aumentan la población total del sistema d
 ---
 
 Por último, un quinto concepto relacionado a configuraciones de patrones:
-### Fenómenos transitorios
+
+## Fenómenos transitorios
+
+### Contenido
 Son configuraciones pequeñas que tardan un tiempo desproporcionadamente largo en estabilizarse. Las principales:
 - **R-pentomino**: a partir de solo 5 células, evoluciona durante 1103 generaciones antes de convertirse en un conjunto estable de 116 células (cenizas).
 - **Diehard**: esta configuración, tras un largo periodo de actividad evolutiva intensa (130 generaciones en el caso tradicional), desaparece por completo.
