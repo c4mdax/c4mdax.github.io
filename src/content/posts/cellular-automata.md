@@ -10,7 +10,7 @@ Los automatas celulares son modelos matemáticos discretos utilizados para estud
 
 A grandes rasgos, un autómata celular consiste en una cuadrícula de células donde cada una:
 - posee un estado,
-- interactúa únicamente con sus vecinos,
+- interactúa únicamente con sus vecinos
 - y evoluciona simultáneamente mediante reglas discretas.
 
 A pesar de esta simplicidad estructural, dichos sistemas pueden producir:

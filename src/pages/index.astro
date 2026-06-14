@@ -89,20 +89,28 @@ const sWrap = "relative z-10 max-w-[1400px] w-full mx-auto px-10 shrink-0";
     <div class={sWrap}><div class="h-px bg-white/[0.05]"></div></div>
 
     <section class={`${sWrap} py-8 flex-1 flex flex-col justify-center`}>
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 font-mono gap-4">
-        <h2 class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 font-normal" data-en={t.workTitle.en} data-es={t.workTitle.es}>{t.workTitle.en}</h2>
-        <a href="/posts/" class="text-[12px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-500" data-en={t.workBtn.en} data-es={t.workBtn.es}>{t.workBtn.en}</a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
-        {posts.map(p => (
-          <a href={`/posts/${p.slug}`} class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#171616] hover:-translate-y-1 block relative overflow-hidden" style="min-height: 160px;">
-            <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">{p.data.title}</h3>
-            <p class="text-zinc-400 leading-snug text-[14px] font-light">{p.data.description}</p>
-          </a>
-        ))}
-      </div>
-    </section>
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 font-mono gap-4">
+    <h2 class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 font-normal" data-en={t.workTitle.en} data-es={t.workTitle.es}>{t.workTitle.en}</h2>
+    <a href="/posts/" class="text-[12px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors duration-500" data-en={t.workBtn.en} data-es={t.workBtn.es}>{t.workBtn.en}</a>
+  </div>
 
+  <p
+    class="font-mono text-[11px] text-zinc-500 font-light mb-6"
+    data-en="None of the posts presented here were written with AI."
+    data-es="Ninguno de los escritos presentados aquí han sido escritos con IA."
+  >
+    None of the posts presented here were created in collaboration with AI.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
+    {posts.map(p => (
+      <a href={`/posts/${p.slug}`} class="border border-white/[0.05] p-5 hover:border-white/[0.15] transition-colors duration-500 bg-[#171616] hover:-translate-y-1 block relative overflow-hidden" style="min-height: 160px;">
+        <h3 class="text-white text-[14px] tracking-wide font-normal mb-2">{p.data.title}</h3>
+        <p class="text-zinc-400 leading-snug text-[14px] font-light">{p.data.description}</p>
+      </a>
+    ))}
+  </div>
+</section>
     <Footer />
   </main>
 
