@@ -10,74 +10,76 @@ const posts = (await getCollection('posts', ({ data }) => data.draft !== true))
 
 const t = {
   title: { en: "Writes & public study", es: "Escritos y estudio público" },
-  subtitle: { en: "Index of research, notes, and technical drafts.", es: "Índice de investigación, notas y borradores técnicos." }
 };
 
-const sWrap = "max-w-[1000px] w-full mx-auto px-10";
+const sWrap = "relative z-10 max-w-[1100px] w-full mx-auto px-6 md:px-10 shrink-0";
+
+const T = {
+  heading: "font-light tracking-tight text-white",
+  subheading: "font-mono uppercase tracking-[0.2em] text-zinc-500",
+  body: "text-zinc-400 leading-relaxed",
+  meta: "text-zinc-600 italic",
+  keywords: "font-mono text-zinc-600"
+};
 ---
 
 <Layout title="Posts">
-  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
-    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
-    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
-
+  <main class="font-serif min-h-screen bg-[#121212] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased selection:bg-blue-500/30 selection:text-white">
     <Header />
     
-    <div class="flex-1 flex flex-col mt-12">
-      <section class={`${sWrap} pt-12 pb-16 relative z-10`}>
-        
-        <header class="mb-10 border-b border-white/[0.05] pb-8">          
-          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-4" style="font-size: clamp(40px, 6vw, 64px);" data-en={t.title.en} data-es={t.title.es}>
-            {t.title.en}
-          </h1>
-          <p class="font-mono text-zinc-500 text-sm tracking-wide">
-            {t.subtitle.en}
-          </p>
-        </header>
+    <section class={`${sWrap} pt-12 md:pt-20 pb-8 md:pb-10 flex-1`}>
+      <header class="mb-12 border-b border-white/[0.06] pb-8">          
+        <h1 class="leading-[0.95] tracking-[-0.02em] text-white font-light" style="font-size: clamp(48px, 8vw, 80px);" data-en={t.title.en} data-es={t.title.es}>
+          {t.title.en}
+        </h1>
+      </header>
 
-        <div class="flex flex-col font-mono">
-          {posts.map((post) => (
-            <a href={`/posts/${post.slug}`} class="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 py-2.5 border-b border-white/[0.05] hover:bg-white/[0.03] transition-colors">
+      <div class="flex flex-col">
+        {posts.map((post) => (
+          <a href={`/posts/${post.slug}`} class="group flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 py-6 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-lg">
+            
+            <time class="font-mono text-[14px] text-zinc-500 sm:w-[120px] shrink-0 tabular-nums mt-1 border-l-2 border-transparent group-hover:border-zinc-600 pl-2 sm:pl-0 sm:border-0 transition-colors duration-300">
+              {new Date(post.data.pubDate).toISOString().split('T')[0]}
+            </time>
+            
+            <div class="flex-1 flex flex-col gap-2">
+              <h2 class={`${T.heading} text-[20px] md:text-[22px] group-hover:text-white transition-colors duration-500`}>
+                {post.data.title}
+              </h2>
               
-              <time class="text-[14px] text-zinc-500 sm:w-[120px] shrink-0 tabular-nums">
-                {new Date(post.data.pubDate).toISOString().split('T')[0]}
-              </time>
-              
-              <div class="flex-1 flex flex-col gap-1">
-                <h2 class="text-[16px] text-zinc-200 tracking-wide font-normal group-hover:text-white transition-colors">
-                  {post.data.title}
-                </h2>
-                
-		{post.data.description && (
-  <p class="text-[16px] text-zinc-500 max-w-[650px] leading-relaxed">
-    {post.data.description}
-  </p>
-)}
-</div>
+              {post.data.description && (
+                <p class={`${T.body} text-[17px] md:text-[18px] max-w-[650px]`}>
+                  {post.data.description}
+                </p>
+              )}
               
               {post.data.tags && (
-                <div class="hidden md:flex gap-2 shrink-0">
+                <div class="hidden md:flex gap-2 shrink-0 mt-2">
                   {post.data.tags.slice(0, 2).map((tag) => (
-                    <span class="text-[10px] uppercase tracking-wider text-zinc-600">
-                      [{tag}]
+                    <span class={`${T.keywords} text-[11px] uppercase tracking-widest border border-white/[0.06] px-2 py-0.5 group-hover:border-white/15 transition-colors duration-500`}>
+                      {tag}
                     </span>
                   ))}
                 </div>
               )}
-            </a>
-          ))}
-        </div>
-      </section>
-    </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
 
     <Footer />
   </main>
   
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-    .font-serif { font-family: 'Cormorant Garamond', serif; }
-    .font-mono { font-family: 'IBM Plex Mono', monospace; }
-    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    .font-serif { 
+      font-family: 'Crimson Text', Georgia, 'Times New Roman', serif; 
+    }
+    
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
   </style>
 </Layout>

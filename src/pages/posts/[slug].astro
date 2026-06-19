@@ -16,99 +16,97 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 
 const formattedDate = new Date(entry.data.pubDate).toISOString().split('T')[0];
-const sWrap = "max-w-[800px] w-full mx-auto px-10";
+const sWrap = "relative z-10 max-w-[800px] w-full mx-auto px-6 md:px-10 shrink-0";
 ---
 
 <Layout title={`${entry.data.title} | Luis Angel Moreno`}>
-  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
-    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
-    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
-
+  <main class="font-serif min-h-screen bg-[#121212] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased selection:bg-blue-500/30 selection:text-white">
     <Header />
     
-    <div class="flex-1 flex flex-col mt-12">
-      <article class={`${sWrap} pt-12 pb-20 relative z-10`}>
-        
-        <header class="mb-16 border-b border-white/[0.05] pb-12">
-          <div class="flex items-center gap-3 mb-8">
-            <time class="text-[15px] font-mono text-zinc-500">
-              {formattedDate}
-            </time>
-          </div>
-          
-          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-8" style="font-size: clamp(32px, 5vw, 56px);">
-            {entry.data.title}
-          </h1>
-          
-          {entry.data.categories && (
-            <div class="flex flex-wrap gap-2 font-mono">
-              {entry.data.categories.map((category: string) => (
-                <span class="text-[15px] uppercase tracking-widest px-3 py-1 bg-white/[0.02] border border-white/[0.05] text-zinc-500">
-                  {category}
-                </span>
-              ))}
-            </div>
-          )}
-
-	  {headings.length > 0 && (
-  <nav class="mt-12 border border-white/[0.05]">
-    <details class="group" open>
-      <summary class="cursor-pointer p-6 flex justify-between items-center bg-white/[0.02] hover:bg-white/[0.04] transition-colors list-none">
-        <h2 class="text-[16px] uppercase tracking-[0.2em] text-zinc-400 font-mono m-0">Índice</h2>
-        <span class="text-zinc-500 font-mono group-open:rotate-180 transition-transform">▼</span>
-      </summary>
+    <article class={`${sWrap} pt-12 md:pt-20 pb-16 md:pb-24 flex-1`}>
       
-      <div class="p-6 pt-0 border-t border-white/[0.05]">
-        <ul class="space-y-4 font-mono text-[14px] mt-4">
-          {headings.filter(h => h.depth === 2).map((stage) => (
-            <li class="border-b border-white/[0.05] last:border-0 pb-2">
-              <details class="group/stage">
-                <summary class="cursor-pointer flex justify-between items-center text-zinc-300 hover:text-white py-2 list-none">
-                  {stage.text}
-                  <span class="text-zinc-600 group-open/stage:rotate-180 transition-transform text-[10px]">▼</span>
-                </summary>
-                <ul class="pl-4 py-2 space-y-1">
-                  {headings.filter(h => h.depth === 3 && headings.indexOf(h) > headings.indexOf(stage) && headings.indexOf(h) < (headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2) === -1 ? headings.length : headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2))).map((sub) => (
-                    <li>
-                      <a href={`#${sub.slug}`} class="text-zinc-500 hover:text-white transition-colors">
-                        {sub.text}
-                      </a>
+      <header class="mb-12 border-b border-white/[0.06] pb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <time class="text-[14px] font-mono text-zinc-500 tracking-widest">
+            {formattedDate}
+          </time>
+        </div>
+        
+        <h1 class="leading-[0.95] tracking-[-0.02em] text-white font-light mb-8" style="font-size: clamp(40px, 6vw, 64px);">
+          {entry.data.title}
+        </h1>
+        
+        {entry.data.categories && (
+          <div class="flex flex-wrap gap-2 font-mono mb-8">
+            {entry.data.categories.map((category: string) => (
+              <span class="text-[12px] uppercase tracking-[0.2em] text-zinc-500 border border-white/[0.06] px-3 py-1">
+                {category}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {headings.length > 0 && (
+          <nav class="mt-8 border border-white/[0.06] rounded-lg overflow-hidden font-mono">
+            <details class="group" open>
+              <summary class="cursor-pointer p-5 flex justify-between items-center bg-white/[0.02] hover:bg-white/[0.04] transition-colors list-none">
+                <h2 class="text-[13px] uppercase tracking-[0.2em] text-zinc-400 m-0">Índice</h2>
+                <span class="text-zinc-500 group-open:rotate-180 transition-transform text-[12px]">▼</span>
+              </summary>
+              
+              <div class="p-5 pt-0 border-t border-white/[0.06] bg-[#121212]">
+                <ul class="space-y-3 text-[13px] mt-4">
+                  {headings.filter(h => h.depth === 2).map((stage) => (
+                    <li class="border-b border-white/[0.06] last:border-0 pb-3">
+                      <details class="group/stage">
+                        <summary class="cursor-pointer flex justify-between items-center text-zinc-400 hover:text-white transition-colors py-1 list-none">
+                          {stage.text}
+                          <span class="text-zinc-600 group-open/stage:rotate-180 transition-transform text-[10px]">▼</span>
+                        </summary>
+                        <ul class="pl-4 py-2 space-y-2 border-l border-white/[0.06] ml-2 mt-2">
+                          {headings.filter(h => h.depth === 3 && headings.indexOf(h) > headings.indexOf(stage) && headings.indexOf(h) < (headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2) === -1 ? headings.length : headings.findIndex((item, idx) => idx > headings.indexOf(stage) && item.depth === 2))).map((sub) => (
+                            <li>
+                              <a href={`#${sub.slug}`} class="text-zinc-500 hover:text-white transition-colors block">
+                                {sub.text}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
                     </li>
                   ))}
                 </ul>
-              </details>
-            </li>
-          ))}
-        </ul>
+              </div>
+            </details>
+          </nav>
+        )}
+      </header>
+      
+      <div class="prose prose-invert max-w-none text-[18px] md:text-[20px] leading-relaxed text-zinc-400
+                  prose-headings:font-serif prose-headings:font-light prose-headings:text-white prose-headings:tracking-tight prose-headings:mb-4 prose-headings:mt-8
+                  prose-h2:text-3xl prose-h3:text-2xl
+                  prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-blue-300/50 hover:prose-a:text-blue-200 prose-a:transition-all prose-a:duration-300
+                  prose-code:font-mono prose-code:text-[14px] prose-code:text-zinc-300 prose-code:bg-white/[0.03] prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:border prose-code:border-white/[0.06] prose-code:rounded-md
+                  prose-pre:border prose-pre:border-white/[0.06] prose-pre:bg-[#111] prose-pre:rounded-lg prose-pre:text-[14px]
+                  prose-img:border prose-img:border-white/[0.06] prose-img:rounded-lg
+                  prose-blockquote:border-l-zinc-600 prose-blockquote:bg-white/[0.02] prose-blockquote:py-2 prose-blockquote:px-5 prose-blockquote:not-italic prose-blockquote:text-zinc-400 prose-blockquote:rounded-r-lg
+                  prose-li:marker:text-zinc-600">
+        <Content />
       </div>
-    </details>
-  </nav>
-)}
-        </header>
-        
-        <div class="prose prose-invert max-w-none font-mono text-[16px] leading-relaxed
-                    prose-headings:font-serif prose-headings:font-light prose-headings:text-white prose-headings:tracking-tight
-                    prose-h2:text-3xl prose-h3:text-2xl
-                    prose-p:text-zinc-400
-                    prose-a:text-zinc-200 prose-a:underline prose-a:decoration-white/[0.2] hover:prose-a:decoration-white
-                    prose-code:text-zinc-300 prose-code:bg-white/[0.03] prose-code:px-1.5 prose-code:py-0.5 prose-code:font-mono prose-code:font-normal prose-code:border prose-code:border-white/[0.05]
-                    prose-pre:border prose-pre:border-white/[0.05] prose-pre:bg-[#111] prose-pre:rounded-none
-                    prose-img:border prose-img:border-white/[0.05] prose-img:rounded-none
-                    prose-blockquote:border-l-zinc-600 prose-blockquote:bg-white/[0.02] prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:not-italic prose-blockquote:text-zinc-400
-                    prose-li:marker:text-zinc-600">
-          <Content />
-        </div>
-      </article>
-    </div>
+    </article>
 
     <Footer />
   </main>
   
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-    .font-serif { font-family: 'Cormorant Garamond', serif; }
-    .font-mono { font-family: 'IBM Plex Mono', monospace; }
-    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    .font-serif { 
+      font-family: 'Crimson Text', Georgia, 'Times New Roman', serif; 
+    }
+    
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
   </style>
 </Layout>

@@ -13,59 +13,68 @@ const socials = [
   { name: 'GitHub', url: 'https://github.com/c4mdax' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/luis-angel-moreno-delgado-0a726a2a5/' },
 ];
+
+const sWrap = "relative z-10 max-w-[1100px] w-full mx-auto px-6 md:px-10 shrink-0";
+
+const T = {
+  heading: "font-light tracking-tight text-white",
+  subheading: "font-mono uppercase tracking-[0.2em] text-zinc-500",
+  body: "text-zinc-400 leading-relaxed",
+  meta: "text-zinc-600 italic",
+  keywords: "font-mono text-zinc-600"
+};
 ---
 
 <Layout title="Contact">
-  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
-    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
-    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
-
+  <main class="font-serif min-h-screen bg-[#121212] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased selection:bg-blue-500/30 selection:text-white">
     <Header />
     
-    <div class="flex-1 flex flex-col mt-12">
-      <section class="max-w-[1000px] w-full mx-auto px-10 pt-12 pb-24 relative z-10">
-        <header class="mb-20 border-b border-white/[0.05] pb-12">
-          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-6" style="font-size: clamp(40px, 6vw, 64px);" data-en={t.title.en} data-es={t.title.es}>
-            {t.title.en}
-          </h1>
-        </header>
+    <section class={`${sWrap} pt-12 md:pt-20 pb-8 md:pb-10 flex-1`}>
+      <header class="mb-12 border-b border-white/[0.06] pb-8">
+        <h1 class="leading-[0.95] tracking-[-0.02em] text-white font-light" style="font-size: clamp(48px, 8vw, 80px);" data-en={t.title.en} data-es={t.title.es}>
+          {t.title.en}
+        </h1>
+      </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-mono">
-          <div>
-            <h3 class="text-[14px] uppercase tracking-widest text-zinc-600 mb-8" data-en={t.email.en} data-es={t.email.es}>
-              {t.email.en}
-            </h3>
-            <a href="mailto:c4mdax@gmail.com" class="text-[16px] text-white hover:text-zinc-400 transition-colors border-b border-white/[0.1] pb-1">
-              c4mdax@gmail.com
-            </a>
-          </div>
-
-          <div>
-            <h3 class="text-[14px] uppercase tracking-widest text-zinc-600 mb-8" data-en={t.social.en} data-es={t.social.es}>
-              {t.social.en}
-            </h3>
-            <ul class="flex flex-col gap-4">
-              {socials.map(s => (
-                <li>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-[18px] text-zinc-300 hover:text-white transition-colors">
-                    {s.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-mono">
+        <div>
+          <h3 class={`${T.subheading} text-[14px] mb-8`} data-en={t.email.en} data-es={t.email.es}>
+            {t.email.en}
+          </h3>
+          <a href="mailto:c4mdax@gmail.com" class="text-[16px] md:text-[18px] text-white hover:text-zinc-400 transition-colors border-b border-white/[0.1] pb-1">
+            c4mdax@gmail.com
+          </a>
         </div>
-      </section>
-    </div>
+
+        <div>
+          <h3 class={`${T.subheading} text-[14px] mb-8`} data-en={t.social.en} data-es={t.social.es}>
+            {t.social.en}
+          </h3>
+          <ul class="flex flex-col gap-4">
+            {socials.map(s => (
+              <li>
+                <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-[18px] text-zinc-300 hover:text-white transition-colors">
+                  {s.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <Footer />
   </main>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-    .font-serif { font-family: 'Cormorant Garamond', serif; }
-    .font-mono { font-family: 'IBM Plex Mono', monospace; }
-    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    .font-serif { 
+      font-family: 'Crimson Text', Georgia, 'Times New Roman', serif; 
+    }
+    
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
   </style>
 </Layout>

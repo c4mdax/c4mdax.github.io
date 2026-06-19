@@ -14,55 +14,54 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+const sWrap = "relative z-10 max-w-[800px] w-full mx-auto px-6 md:px-10 shrink-0";
 ---
 
 <Layout title={`${entry.data.title}`}>
-  <main class="min-h-screen bg-[#191919] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased">
-    <div class="absolute inset-0 opacity-[0.035] noise-bg pointer-events-none"></div>
-    <div class="absolute inset-0 grid-overlay pointer-events-none"></div>
-
+  <main class="font-serif min-h-screen bg-[#121212] text-zinc-300 overflow-x-hidden relative flex flex-col justify-between antialiased selection:bg-blue-500/30 selection:text-white">
     <Header />
     
-    <div class="flex-1 flex flex-col mt-12">
-      <article class="max-w-[800px] w-full mx-auto px-10 pt-12 pb-24 relative z-10">
+    <article class={`${sWrap} pt-12 md:pt-20 pb-16 md:pb-24 flex-1`}>
+      <header class="mb-12 border-b border-white/[0.06] pb-8">
+        <h1 class="leading-[0.95] tracking-[-0.02em] text-white font-light mb-6" style="font-size: clamp(40px, 6vw, 64px);">
+          {entry.data.title}
+        </h1>
         
-        <header class="mb-16 border-b border-white/[0.05] pb-12">
-          <h1 class="font-serif leading-none tracking-tight text-white font-light mb-8" style="font-size: clamp(32px, 5vw, 56px);">
-            {entry.data.title}
-          </h1>
-          
-          {entry.data.tags && (
-            <div class="flex flex-wrap gap-3 font-mono">
-              {entry.data.tags.map((tag: string) => (
-                <span class="text-[14px] uppercase tracking-widest text-zinc-600 border border-white/[0.05] px-2 py-1">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
-        </header>
-        
-        <div class="prose prose-invert max-w-none font-mono text-[18px] leading-relaxed
-                    prose-headings:font-serif prose-headings:font-light prose-headings:text-white prose-headings:tracking-tight
-                    prose-p:text-zinc-400
-                    prose-a:text-zinc-200 prose-a:underline prose-a:decoration-white/[0.2] hover:prose-a:decoration-white
-                    prose-code:text-zinc-300 prose-code:bg-white/[0.03] prose-code:px-1.5 prose-code:py-0.5 prose-code:font-mono prose-code:font-normal prose-code:border prose-code:border-white/[0.05]
-                    prose-pre:border prose-pre:border-white/[0.05] prose-pre:bg-[#111] prose-pre:rounded-none
-                    prose-blockquote:border-l-zinc-600 prose-blockquote:bg-white/[0.02] prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:not-italic prose-blockquote:text-zinc-400">
-          <Content />
-        </div>
-        
-      </article>
-    </div>
+        {entry.data.tags && (
+          <div class="flex flex-wrap gap-3 font-mono">
+            {entry.data.tags.map((tag: string) => (
+              <span class="text-[12px] uppercase tracking-[0.2em] text-zinc-500 border border-white/[0.06] px-3 py-1">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+      </header>
+      
+      <div class="prose prose-invert max-w-none text-[18px] md:text-[20px] leading-relaxed text-zinc-400
+                  prose-headings:font-serif prose-headings:font-light prose-headings:text-white prose-headings:tracking-tight prose-headings:mb-4 prose-headings:mt-8
+                  prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-blue-300/50 hover:prose-a:text-blue-200 prose-a:transition-all prose-a:duration-300
+                  prose-code:font-mono prose-code:text-[14px] prose-code:text-zinc-300 prose-code:bg-white/[0.03] prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:border prose-code:border-white/[0.06] prose-code:rounded-md
+                  prose-pre:border prose-pre:border-white/[0.06] prose-pre:bg-[#111] prose-pre:rounded-lg prose-pre:text-[14px]
+                  prose-blockquote:border-l-zinc-600 prose-blockquote:bg-white/[0.02] prose-blockquote:py-2 prose-blockquote:px-5 prose-blockquote:not-italic prose-blockquote:text-zinc-400 prose-blockquote:rounded-r-lg
+                  prose-li:marker:text-zinc-600">
+        <Content />
+      </div>
+    </article>
 
     <Footer />
   </main>
   
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-    .font-serif { font-family: 'Cormorant Garamond', serif; }
-    .font-mono { font-family: 'IBM Plex Mono', monospace; }
-    .noise-bg { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-    .grid-overlay { background-size: 80px 80px; background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); }
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    .font-serif { 
+      font-family: 'Crimson Text', Georgia, 'Times New Roman', serif; 
+    }
+    
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
   </style>
 </Layout>
