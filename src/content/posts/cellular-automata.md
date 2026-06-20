@@ -8,7 +8,7 @@ draft: false
 
 ## Motivación
 
-Estudiando el libro de Stephen Wolfram, *A New Kind of Science*, me resulta muy fantástico lo complejo que puede resultar un sistema, a partir de reglas simples, y como el autor lo plantea, _un nuevo tipo de ciencia_. 
+Estudiando el libro de Stephen Wolfram, *A New Kind of Science*, me resulta muy fantástico lo complejo que puede resultar un sistema a partir de reglas simples, y como el autor lo plantea, _un nuevo tipo de ciencia_. 
 	
 ¿Un autómata celular puede exhibir adecuadamente un sistema complejo? Esta pregunta nos lleva directamente a una vieja discrepancia entre dos formas de entender la realidad: ¿puede comprenderse dicho sistema a partir de sus componentes básicos y las leyes que los gobiernan (_reduccionismo_)? ¿o es, acaso, más que la simple suma de sus partes (_emergentismo/holismo_)?
 
