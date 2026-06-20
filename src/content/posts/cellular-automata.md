@@ -6,7 +6,17 @@ categories: ["Teoría de Autómatas", "Autómatas Celulares"]
 draft: false
 ---
 
-Los automatas celulares son modelos matemáticos discretos utilizados para estudiar cómo comportamientos complejos pueden emerger a partir de reglas locales extremadamente simples.
+## Motivación
+
+Estudiando el libro de Stephen Wolfram, *A New Kind of Science*, me resulta muy fantástico lo complejo que puede resultar un sistema, a partir de reglas simples, y como el autor lo plantea, _un nuevo tipo de ciencia_. 
+	
+¿Un autómata celular puede exhibir adecuadamente un sistema complejo? Esta pregunta nos lleva directamente a una vieja discrepancia entre dos formas de entender la realidad: ¿puede comprenderse dicho sistema a partir de sus componentes básicos y las leyes que los gobiernan (_reduccionismo_)? ¿o es, acaso, más que la simple suma de sus partes (_emergentismo/holismo_)?
+
+En este post no abordaré tanto dicha pregunta, pues considero que debo tener juicio y postura que requiere de un estudio riguroso de sistemas complejos, área de la que, por supuesto, no tengo experiencia desde mi prematuro estudio.
+
+Me limitaré a explicar superficialmente lo que es un autómata celular, sus aplicaciones, consideraciones, y foco en el autómata de Conway o _Juego de la Vida_.
+
+## Definición vaga
 
 A grandes rasgos, un autómata celular consiste en una cuadrícula de células donde cada una:
 - posee un estado,
