@@ -6,7 +6,7 @@ categories: ["Roadmap","Desarrollo Backend"]
 draft: false
 ---
 
-# Motivación
+## Motivación
 
 Durante mi jornada de estudio en desarrollo Backend, me he visto atorado múltiples ocasiones por no saber por dónde empezar, con qué continuar, o hacia qué enfocarme, resultando en un tipo de **procrastinación** a la que muchos nos enfrentamos. Por ello, decidí extraer de diversos recursos en línea los temas esenciales y ricos en teoría y práctica, para una ruta de aprendizaje sólida y de alto rendimiento en desarrollo Backend, consolidándolos en el roadmap que presento a continuación.
 
@@ -14,7 +14,7 @@ _Este roadmap es producto de un par de meses de recopilación, desde múltiples 
 
 ---
 
-# Stack
+## Stack
 Este roadmap contiene **fundamentos genéricos e independientes del lenguaje de programación y herramientas**, pero particularicé un stack que permita aterrizar satisfactoriamente estos fundamentos, con tal vez un poco de sesgo consecuencia de mis intereses:
 
 - Java (lenguaje principal)
