@@ -6,11 +6,11 @@ categories: ["Computación basada en colisiones", "Teoría de Autómatas", "Turi
 draft: false
 ---
 
-Desde mi inicio en la licenciatura, se nos ha hecho entender (con suerte de intuición) que la computación está asociada a:
+Desde nuestras primeras concepciones del concepto de _computación_ hasta estudios más rigurosos y profesionales, asociamos (a suerte de intuición) esta área con:
 - procesadores,
 - memoria,
 - arquitectura centralizada,
-- y secuencias explícitas de instrucciones.
+- secuencias explícitas de instrucciones.
 
 Sin embargo, el paradigma de *collision-based computing* propone una noción distinta:
 la posibilidad de realizar computación a partir de interacciones físicas entre entidades móviles dentro de un sistema dinámico.
