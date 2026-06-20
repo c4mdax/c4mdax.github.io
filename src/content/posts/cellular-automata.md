@@ -16,6 +16,8 @@ En este post no abordaré tanto dicha pregunta, pues considero que debo tener ju
 
 Me limitaré a explicar superficialmente lo que es un autómata celular, sus aplicaciones, consideraciones, y foco en el autómata de Conway o _Juego de la Vida_.
 
+---
+
 ## Definición vaga
 
 A grandes rasgos, un autómata celular consiste en una cuadrícula de células donde cada una:
@@ -156,9 +158,11 @@ Quizá por ello los autómatas celulares resultan tan importantes: muestran que 
 
 ---
 
-### Recursos
+## Recursos
 
 - Stephen Wolfram, *A New Kind of Science*
 - John Conway, *The Game of Life*
 - Tommaso Toffoli & Norman Margolus, *Cellular Automata Machines*
 - Andrew Adamatzky, *Collision-Based Computing*
+
+---
