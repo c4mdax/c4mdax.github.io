@@ -6,16 +6,16 @@ categories: ["Computación basada en colisiones", "Teoría de Autómatas", "Turi
 draft: false
 ---
 
-La idea tradicional de computación suele estar asociada a:
+Desde mi inicio en la licenciatura, se nos ha hecho entender (con suerte de intuición) que la computación está asociada a:
 - procesadores,
 - memoria,
 - arquitectura centralizada,
 - y secuencias explícitas de instrucciones.
 
 Sin embargo, el paradigma de *collision-based computing* propone una noción distinta:
-la posibilidad de realizar computación a psrtir de interacciones físicas entre entidades móviles dentro de un sistema dinámico.
+la posibilidad de realizar computación a partir de interacciones físicas entre entidades móviles dentro de un sistema dinámico.
 
-En este contexto, el calculo no ocurre “sobre” el sistema; emerge directamente de su dinámica.
+A diferencia de la computación tradicional, que ocurre a partir de "sobre el sistema", la computación basada en colisiones emerge directamente de su dinámica (naturaleza de sistema dinámico). ¿De qué dinámica? de aquella resultante de las interacciones entre las _entidades_.
 
 Las entidades involucradas pueden ser:
 - partículas,
