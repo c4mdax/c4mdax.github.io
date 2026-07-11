@@ -48,7 +48,7 @@ La genialidad de Lamport fue desacoplar completamente *Safety* (Seguridad) de *L
 
 ## Concluyendo
 
-Si tuviéramos que trazar el proceso intelectual de Lamport para concebir Paxos, no veríamos una evolución de refactorización de código o arquitecturas de red. Veríamos una destilación de conceptos matemáticos y lógica formal pura. Su camino lógico probablemente se desarrolló bajo esta línea de tiempo conceptual:
+Es aquí cuando intento trazar el proceso intelectual de Lamport para concebir Paxos, pero no intuyo nada de refactorización de código o arquitecturas de red. Infiero un cumulo de conceptos matemáticos y lógica formal pura. Su camino lógico probablemente se desarrolló bajo esta línea de tiempo conceptual:
 
 **Ausencia de Tiempo Global (Relojes Lógicos) $\rightarrow$ Replicación de Máquinas de Estado $\rightarrow$ Desacoplamiento de Safety y Liveness (Aceptando los límites del FLP) $\rightarrow$ Intersección de Quórums (El Principio del Palomar) $\rightarrow$ Definición de Invariantes (Lógica Formal en Fases) $\rightarrow$ Analogía Griega (El Parlamento de Paxos)**
 
