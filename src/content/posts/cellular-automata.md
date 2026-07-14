@@ -4,6 +4,7 @@ description: "Explicación y exploración superficial de los usos y alcances mul
 pubDate: "2026-02-18"
 categories: ["Teoría de Autómatas", "Autómatas Celulares"] 
 draft: false
+isBlog: true
 ---
 
 ## Motivación

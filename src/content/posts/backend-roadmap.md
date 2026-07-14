@@ -4,6 +4,7 @@ description: "Roadmap completo sobre sistemas y arquitectura backend, mediante e
 pubDate: "2026-05-02"
 categories: ["Roadmap","Desarrollo Backend"]
 draft: false
+isBlog: false
 ---
 
 ## Motivación

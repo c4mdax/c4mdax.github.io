@@ -4,6 +4,7 @@ description: "Explicación del cómputo basado en colisiones y su conexión con 
 pubDate: "2026-02-26"
 categories: ["Computación basada en colisiones", "Teoría de Autómatas", "Turing completitud"] 
 draft: false
+isBlog: true
 ---
 
 Desde nuestras primeras concepciones del concepto de _computación_ hasta estudios más rigurosos y profesionales, asociamos (a suerte de intuición) esta área con:

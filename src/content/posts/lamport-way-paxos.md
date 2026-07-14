@@ -4,6 +4,7 @@ description: "¿Cómo pensó Leslie Lamport para ser capaz de inventar el algori
 pubDate: "2026-07-01"
 categories: ["Sistemas Distribuidos", "Leslie Lamport ", "Consenso Distribuido", 'Paxos'] 
 draft: false
+isBlog: true
 ---
 ## "Why should you pay attention to me?"
 

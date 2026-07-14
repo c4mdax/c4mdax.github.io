@@ -26,6 +26,9 @@
           "type": "boolean",
           "default": false
         },
+        "isBlog": {
+          "type": "boolean"
+        },
         "$schema": {
           "type": "string"
         }

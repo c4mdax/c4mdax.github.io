@@ -3,6 +3,7 @@ title: "Juego de la Vida (Autómata de Conway): Taxonomía"
 description: "Clasificación esclarecida de las entidades más importantes en el autómata celular de Conway."
 pubDate: "2026-01-12"
 categories: ["Teoría de Autómatas", "Autómatas Celulares", "Autómata de Conway"] 
+isBlog: true
 ---
 
 Leyendo más sobre _Conway's Game of Life_, encontré varios recursos que particularizan la clasificación, lógica y comportamiento de entidades dentro de un autómata celular; en particular: [Conway's "Game of Life" and the Epigenetic Principle](https://pmc.ncbi.nlm.nih.gov/articles/PMC4905947/). 

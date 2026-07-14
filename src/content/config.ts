@@ -7,18 +7,19 @@ const posts = defineCollection({
         description: z.string(),
         pubDate: z.string(),
         categories: z.array(z.string()).optional(),
-	cover: image().optional(),
-	draft: z.boolean().optional().default(false),
-})
+        cover: image().optional(),
+        draft: z.boolean().optional().default(false),
+        isBlog: z.boolean().optional(),
+    })
 });
 
 const projects = defineCollection({
     type: 'content',
     schema: ({ image }) => z.object({
         title: z.string(),
-  	title_en: z.string().optional(),
-	description: z.string(),
- 	description_en: z.string(),
+        title_en: z.string().optional(),
+        description: z.string(),
+        description_en: z.string(),
         tags: z.array(z.string()).optional(),
         cover: image().optional(),
     })

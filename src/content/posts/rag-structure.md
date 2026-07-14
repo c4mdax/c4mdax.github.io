@@ -4,6 +4,7 @@ description: "Explorando la integración de LLMs con Generación Aumentada por R
 pubDate: "2025-04-17"
 cover: "../../assets/posts-images/rag-llm.webp"
 categories: ["LLMs", "RAG"]
+isBlog: false
 ---
 Recientemente me sumergí en un estudio superficial en la teoría, biología y práctica de Redes Neuronales, con especial enfoque en los **Modelos de Lenguaje a Gran Escala (LLMs)** como GPT, Gemini, LLaMA, Claude, etc. En este proceso, conocí diversas técnicas de IA generativa aplicadas al **Procesamiento del Lenguaje Natural (PLN)**, destacando en particular la **Generación Aumentada por Recuperación (RAG)**. Ésto me llevó a desarrollar un proyecto (meramente de aprendizaje, pues no es nada innovador) de un agente basado en la arquitectura RAG, capaz de procesar documentos en formato PDF o TXT y generar respuetas concisas y precisas, fundamentadas exclusivamente en el contenido proporcionado.
 
