@@ -1,5 +1,5 @@
 ---
-title: "Estudiando TLA+: Introducción"
+title: "Estudiando TLA+: 1 Introducción"
 description: "\"Lecture 1: Introduction to TLA+\""
 pubDate: "2026-07-02"
 categories: ["TLA+", "Métodos Formales"] 
