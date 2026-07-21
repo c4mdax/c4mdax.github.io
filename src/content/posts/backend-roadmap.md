@@ -1,7 +1,7 @@
 ---
 title: "Roadmap de Fundamentos de Sistemas Backend y Sistemas Distribuidos"
 description: "Roadmap completo sobre sistemas y arquitectura backend, mediante el stack JVM."
-pubDate: "2026-05-02"
+pubDate: "2026-06-15"
 categories: ["Roadmap","Desarrollo Backend"]
 draft: false
 isBlog: false
