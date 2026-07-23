@@ -7,7 +7,7 @@ import myPhoto from '../assets/photo.jpeg';
 import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('posts');
-const posts = ['backend-roadmap', 'collision-based-computing', 'cellular-automata']
+const posts = ['backend-roadmap', 'collision-based-computing', 'actors-model']
   .map(slug => allPosts.find(p => p.slug === slug))
   .filter(Boolean);
 
