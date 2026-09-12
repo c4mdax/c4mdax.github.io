@@ -20,8 +20,19 @@ import '../styles/global.css';
         <title>{title}</title>        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     </head>
-    <body class="bg-[#020202] text-zinc-300 transition-colors duration-300 antialiased selection:bg-white/[0.15] selection:text-white">
-        <slot />
+    <body class="relative bg-[#020202] text-zinc-300 transition-colors duration-300 antialiased selection:bg-white/[0.15] selection:text-white">
+        
+      
+      <div 
+      	   class="fixed top-0 left-0 w-full h-14 flex items-center justify-center pointer-events-none z-0 select-none"
+      	   aria-hidden="true"
+      	   >
+      	   <span class="font-serif text-[18px] tracking-[0.35em] uppercase text-zinc-300">
+      	   	 Memento mori
+      		 </span>
+      </div>
+
+      <slot />
         
         <style is:global>
             .lang-change-overlay {
@@ -93,7 +104,6 @@ import '../styles/global.css';
                     const es = el.getAttribute('data-es');
                     if (en && es) {
                         if (el.innerHTML.includes('<span')) {
-                            // Se conservan los reemplazos especiales por si los usas en otras páginas
                             if (lang === 'es') {
                                 el.innerHTML = es.replace('Technologist in Information Systems', '<span class="font-semibold text-white">Tecnólogo en Sistemas de información</span>')
                                     .replace('Full Stack Developer', '<span class="font-semibold text-white">Desarrollador Full Stack</span>');
@@ -146,7 +156,6 @@ import '../styles/global.css';
                 overlay.appendChild(modal);
                 document.body.appendChild(overlay);
                 
-                // Forzar un reflow para que la transición CSS funcione
                 requestAnimationFrame(() => {
                     overlay.classList.remove('hidden');
                 });
@@ -160,7 +169,7 @@ import '../styles/global.css';
                     overlay.classList.add('hidden');
                     setTimeout(() => {
                         overlay.remove();
-                    }, 300); // Dar tiempo a que termine la animación de fade-out
+                    }, 300);
                 }, 800);
             };
 
